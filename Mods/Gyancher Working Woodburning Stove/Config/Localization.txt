@@ -1,0 +1,3 @@
+Key,Source,Context,Changes,English
++WorkingwoodBurningStove,blocks,Workstation,,,Working Wood Burning Stove,,
++WorkingwoodBurningStoveDesc,blocks,Workstation,,,"This is a working wood burning stove and can be used to cook without using a fuel source. Useful to cook food and warm up. Unlock more recipes by adding a cooking pot, cooking grill or beaker."

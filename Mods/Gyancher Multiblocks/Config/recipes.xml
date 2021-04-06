@@ -1,0 +1,44 @@
+
+<!-- PitMonks_Better_Ramps_Modlet -->
+<configs>
+	<append xpath="/recipes" >
+		<!-- Craft Wooden Ramps -->
+		<recipe name="PitMonks_Ramps" count="1">
+			<ingredient name="resourceWood" count="5" />
+		</recipe>
+		
+		
+<recipe name="AutoWall:Wood" count="1" craft_time="6">
+    <ingredient name="woodFrameBlockVariantHelper" count="6"/>
+    <ingredient name="resourceWood" count="12"/>
+	<ingredient name="resourceClayLump" count="24"/>
+    <ingredient name="resourceMechanicalParts" count="6"/>
+</recipe>
+
+<recipe name="AutoWall:ScrapIron" count="1" craft_time="20">
+    <ingredient name="scrapIronFrameBlockVariantHelper" count="6"/>
+    <ingredient name="resourceScrapIron" count="90"/>
+    <ingredient name="resourceClayLump" count="24"/>
+    <ingredient name="resourceMechanicalParts" count="6"/>
+</recipe>
+
+<recipe name="AutoWall:Concrete" count="1" craft_time="48">
+	<ingredient name="pouredConcreteBlockVariantHelper" count="6"/>
+    <ingredient name="resourceConcreteMix" count="60"/>
+    <ingredient name="resourceMechanicalParts" count="6"/>
+</recipe>
+
+<recipe name="AutoWall:cobblestoneBlock" count="1" craft_time="20">
+    <ingredient name="rebarFrameBlockVariantHelper" count="6"/>
+    <ingredient name="resourceCobblestones" count="24"/>
+    <ingredient name="resourceMechanicalParts" count="6"/>
+</recipe>
+
+<recipe name="AutoWall:flagstoneBlock" count="1" craft_time="48">
+	<ingredient name="flagstoneBlockVariantHelper" count="6"/>
+    <ingredient name="resourceCobblestones" count="60"/>
+    <ingredient name="resourceMechanicalParts" count="6"/>
+</recipe>
+		<!-- End -->
+	</append>
+</configs>

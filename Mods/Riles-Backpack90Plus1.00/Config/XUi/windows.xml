@@ -1,0 +1,33 @@
+<Riles-BackpackPlus>
+
+	<set xpath="/windows/window[@name='windowCraftingList']/panel[@name='header']">1008</set>	
+
+
+	<setattribute xpath="/windows/window[@name='windowBackpack']/panel[@name='header']" name="pos">0,8</setattribute>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@pos">0,-34</set>
+	
+	<set xpath="/windows/window[@name='windowBackpack']/@width">1008</set>
+
+
+	
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">1008</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">403</set>
+
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">15</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">6</set>
+	
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/@pos">504,0</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[@depth='2']/@pos">874,-8</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/sprite[@name='costIcon']/@pos">979,-10 </set>
+
+
+	<setattribute xpath="/windows/window[@name='windowCraftingQueue']/rect" name="pos">0,8</setattribute>
+	<set xpath="/windows/window[@name='windowCraftingQueue']/rect/grid/@cols">5</set>
+	<set xpath="/windows/window[@name='windowCraftingQueue']/rect/grid/@pos">3,-13</set>
+
+	<set xpath="/windows/window[@name='windowOutput']/rect/grid/@rows">3</set>
+	<set xpath="/windows/window[@name='windowOutput']/rect/@height">225</set>
+	<set xpath="/windows/window[@name='windowOutput']/rect/sprite/@height">225</set>
+
+
+</Riles-BackpackPlus>

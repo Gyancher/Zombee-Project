@@ -1,0 +1,3 @@
+Key,UsedInMainMenu,Source,Context,Changes,English
+catapultTrap,blocks,Block,--,Catapul trap,Catapul trap,Catapul trap,Catapul trap, 
+catapultTrapDesc,blocks,Block,--,Zombies that walk on the trap will get shocked/burned/ and fly up in the sky like rockets!,Zombies that walk on the trap will get shocked/burned/ and fly up in the sky like rockets!,Zombies that walk on the trap will get shocked/burned/ and fly up in the sky like rockets!,Zombies that walk on the trap will get shocked/burned/ and fly up in the sky like rockets!

@@ -1,0 +1,17 @@
+<configs>
+
+
+<append xpath="/progression/perks">
+	
+	<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='PlayerExpGain'][@value='-.1,-.4']/@value">0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain'][@value='-.1,-.4']/@value">0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkArtOfMiningCoffee']/effect_group/passive_effect[@name='PlayerExpGain'][@value='-.05']/@value">0</set>
+
+<!-- These lines make the perks disconnected from their main branches -->
+	<set xpath="/progression/perks/perk/level_requirements/requirement/@value">1</set>
+	<set xpath="/progression/perks/perk/level_requirements/requirement/@desc_key">reqGenericPoints01</set>
+	
+	
+</append>
+
+</configs>

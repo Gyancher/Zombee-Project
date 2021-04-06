@@ -1,0 +1,9 @@
+<lootcontainers>
+<append xpath="/lootcontainers">	
+<lootcontainer id="306" count="6" size="16" destroy_on_close="true" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="1" loot_quality_template="qualBaseTemplate">
+
+	<item name="ammoGasCan" count="20,200"/>
+					
+</lootcontainer>
+</append>
+</lootcontainers>

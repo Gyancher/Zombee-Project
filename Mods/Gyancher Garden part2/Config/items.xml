@@ -1,0 +1,14 @@
+<configs>
+	<append xpath="/items"> 
+ 
+ <append xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']">
+		<property name="Focused_blockname_6" value="Angel Statue"/>
+</append>
+
+<append xpath="/items/item[@name='bucketEmpty']/property[@class='Action1']">
+		<property name="Focused_blockname_6" value="Angel Statue"/>
+</append>
+
+
+   </append>
+</configs>

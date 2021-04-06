@@ -1,0 +1,23 @@
+<configs>
+	<append xpath="/blocks">
+
+
+ <block name="WindmillArms">
+	<property name="Material" value="Mconcrete" />
+	<property name="CustomIcon" value="WindmillArms" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/WindmillArms.unity3d?WindmillArms.prefab"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="FuelValue" value="100" />
+	<property name="MultiBlockDim" value="9,9,1" />
+	<property name="ModelOffset" value="0,5,0" />
+	<property name="LightOpacity" value="0"/>
+	<!-- <property name="IsDeveloper" value="true" /> -->
+	<property name="CanPickup" value="false" />
+	<property name="DescriptionKey" value="StatueDesc"/>
+	<property name="EconomicValue" value="10000"/>
+</block>	
+
+
+</append>
+</configs>

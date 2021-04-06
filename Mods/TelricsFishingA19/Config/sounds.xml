@@ -1,0 +1,45 @@
+<configs>
+<append xpath="/Sounds">
+<SoundDataNode name="FishingPoleCast">
+<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<AudioClip ClipName="#@modfolder:Resources/TelricsFishing.unity3d?FishingPoleCast"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="10"/>
+  <LowestPitch name="0.95"/>
+  <HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value=".1"/> 
+</SoundDataNode>
+<SoundDataNode name="FishingPoleCatch">
+<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<AudioClip ClipName="#@modfolder:Resources/TelricsFishing.unity3d?FishingPoleCatch"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="10"/>
+  <LowestPitch name="0.95"/>
+  <HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value=".1"/> 
+</SoundDataNode>
+<SoundDataNode name="FishingReelShort">
+<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<AudioClip ClipName="#@modfolder:Resources/TelricsFishing.unity3d?FishingReelShort"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="20"/>
+  <LowestPitch name="0.95"/>
+  <HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxRepeatRate value=".1"/> 
+</SoundDataNode>
+<SoundDataNode name="FishingComplete">
+<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<AudioClip ClipName="#@modfolder:Resources/TelricsFishing.unity3d?FishingComplete"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="20"/>
+  <LowestPitch name="0.95"/>
+  <HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxRepeatRate value=".1"/> 
+</SoundDataNode>
+</append>
+
+</configs>

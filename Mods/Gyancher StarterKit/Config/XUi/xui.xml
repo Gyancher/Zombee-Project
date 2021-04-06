@@ -1,0 +1,38 @@
+<configs>
+
+<!-- Crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='crafting']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Campfire crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_campfire']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Cement mixer crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_cementMixer']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Workbench crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_workbench']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Chemistry station crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_chemistryStation']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+
+
+<!-- Forge input slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">S420windowForgeInput</set>
+	
+    <append xpath="/xui/ruleset">	
+		<window_group name="workstation_MiniPropaneStove" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>		
+	</append>
+	
+<!-- Combine -->	
+	<insertAfter xpath="/xui/ruleset/window_group[@name='workstation_cementMixer']">
+		<window_group name="workstation_workbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+			<window name="windowCombine"/>
+		</window_group>
+	</insertAfter>
+</configs>

@@ -1,0 +1,208 @@
+<configs>
+    <append xpath="/blocks">
+
+		<block name="DeadBladeSpinner">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="BladeTrap"/>
+			 <property name="CustomIcon" value="DeadBlade" />  
+			<property name="UnlockedBy" value="perkAdvancedEngineering,bladeTrapSchematic"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Damage" value="20"/>
+			<property name="DamageReceived" value="4"/>
+			<property name="BreakingPercentage" value="0.5"/>
+			<property name="BrokenPercentage" value="0.25"/>
+			<property name="ImpactSound" value="bladetrap_impact"/>
+			<property name="StartSound" value="bladetrap_startup"/>
+			<property name="StopSound" value="bladetrap_stop"/>
+			<property name="RunningSound" value="bladetrap_fire_lp"/>
+			<property name="RunningSoundBreaking" value="bladetrap_dm1_lp"/>
+			<property name="RunningSoundBroken" value="bladetrap_dm2_lp"/>
+			<property name="MaxDamage" value="2000"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Model" value="#@modfolder:Resources/DeadBlade.unity3d?DeadBlade"/> <property name="HandleFace" value="Bottom"/>
+			<property name="MultiBlockDim" value="2,1,2"/><property name="DisplayType" value="blockElectricalHardenedMulti"/>
+			<property name="ImposterExchange" value="imposterPlate" param1="111"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="RequiredPower" value="5"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Group" value="Tools/Traps,Science"/>
+			<property name="ActivationDistance" value="6"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="5"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapIron" count="20,100" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="FilterTags" value="fdecor,felectrical,ftraps"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>	
+
+	<!-- Bridges-->
+	
+	<block name="FrontGateBridge"> <!-- rotate to use as corridore -->
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="DoorSecure"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="DescriptionKey" value="FrontGateBridgeDesc"/>
+			<property name="CustomIcon" value="FrontGateBridge" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/FrontGateBridge.unity3d?FrontGateBridge"/>
+			<!-- <property name="ModelOffset" value="1,0,1"/> -->
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,1,4"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Place" value="Door"/>
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+		
+		<block name="DrawBridgeSmall"> <!-- rotate to use as corridore -->
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="DoorSecure"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="DescriptionKey" value="DrawBridgeSmallDesc"/>
+			<property name="CustomIcon" value="FrontGateBridge" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/DrawBridgeSmall.unity3d?DrawBridgeSmall"/>
+			<!-- <property name="ModelOffset" value="1,0,1"/> -->
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,1,3"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Place" value="Door"/>
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+		
+		<block name="Wip"> <!-- rotate to use as corridore -->
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="DoorSecure"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="DescriptionKey" value="DrawBridgeSmallDesc"/>
+			<property name="CustomIcon" value="Wip" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/Wip.unity3d?Wip"/>
+			<!-- <property name="ModelOffset" value="1,0,1"/> -->
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Place" value="Door"/>
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+		
+	<block name="FrontGateBridgePowered">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="Material" value="Mconcrete"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="DescriptionKey" value="FrontGateBridgeDesc"/>
+			<property name="CustomIcon" value="FrontGateBridge" />
+			<property name="Collide" value="movement,melee,rocket,bullet" />
+			<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="#@modfolder:Resources/FrontGateBridge.unity3d?FrontGateBridge"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,1,4"/>
+			<!-- <property name="ModelOffset" value="0,2,0"/> -->
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="Tag" value="Door"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<!-- <property name="Place" value="TowardsPlacerInverted"/> -->
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+			<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="FilterTags" value="fdecor,fdoors"/>
+			<property name="MaxDamage" value="1500"/>
+		</block>
+		
+		<block name="DrawBridgeSmallPowered">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="Material" value="Mconcrete"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="DescriptionKey" value="DrawBridgeSmallDesc"/>
+			<property name="CustomIcon" value="FrontGateBridge" />
+			<property name="Collide" value="movement,melee,rocket,bullet" />
+			<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="#@modfolder:Resources/DrawBridgeSmall.unity3d?DrawBridgeSmall"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,1,3"/>
+			<!-- <property name="ModelOffset" value="0,2,0"/> -->
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="Tag" value="Door"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<!-- <property name="Place" value="TowardsPlacerInverted"/> -->
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+			<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="FilterTags" value="fdecor,fdoors"/>
+			<property name="MaxDamage" value="1500"/>
+		</block>	
+
+	<block name="WipPowered">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="Material" value="Mconcrete"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="DescriptionKey" value="DrawBridgeSmallDesc"/>
+			<property name="CustomIcon" value="Wip" />
+			<property name="Collide" value="movement,melee,rocket,bullet" />
+			<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="#@modfolder:Resources/Wip.unity3d?Wip"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<!-- <property name="ModelOffset" value="0,2,0"/> -->
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="Tag" value="Door"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<!-- <property name="Place" value="TowardsPlacerInverted"/> -->
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+			<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="FilterTags" value="fdecor,fdoors"/>
+			<property name="MaxDamage" value="1500"/>
+		</block>		
+    </append>   
+</configs>

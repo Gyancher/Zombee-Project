@@ -1,0 +1,167 @@
+<configs>
+	<append xpath="/blocks">
+
+
+
+<block name="Music_BlueRain">
+			<property name="CustomIcon" value="music" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Music_BlueRain.unity3d?Music_BlueRain.prefab" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Music_BlueRain" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Music_BlueRain" count="1" />
+		</block>
+		
+		
+<block name="Music_Cave">
+			<property name="CustomIcon" value="music" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Music_Cave.unity3d?Music_Cave.prefab" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Music_Cave" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Music_Cave" count="1" />
+		</block>
+			
+<block name="Music_MentalHospital">
+			<property name="CustomIcon" value="music" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Music_MentalHospital.unity3d?Music_MentalHospital.prefab" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Music_MentalHospital" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Music_MentalHospital" count="1" />
+		</block>
+	
+	
+<block name="Music_Tunnel">
+			<property name="CustomIcon" value="music" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Music_Tunnel.unity3d?Music_Tunnel.prefab" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Music_Tunnel" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Music_Tunnel" count="1" />
+		</block>
+	
+	
+<block name="Music_MusicBox">
+			<property name="CustomIcon" value="music" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/MusicBox.unity3d?MusicBoxBig.prefab" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Music_MusicBox" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Music_MusicBox" count="1" />
+		</block>	
+		
+<block name="Sound_Bowl">
+			<property name="CustomIcon" value="sound" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Sound_Bowl.unity3d?Sound_Bowl.prefab" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Sound_Bowl" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Sound_Bowl" count="1" />
+		</block>
+		
+		<block name="Sound_Farm">
+			<property name="CustomIcon" value="sound" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Sound_Farm.unity3d?Sound_Farm.prefab" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Sound_Farm" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Sound_Farm" count="1" />
+		</block>
+		
+		
+		
+<block name="Sound_Pigs">
+			<property name="CustomIcon" value="sound" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Sound_Pigs.unity3d?Sound_Pigs.prefab" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Sound_Pigs" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Sound_Pigs" count="1" />
+		</block>
+		
+			<block name="Sound_Ring">
+			<property name="CustomIcon" value="sound" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Sound_Ring.unity3d?Sound_Ring" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Sound_Ring" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Sound_Ring" count="1" />
+		</block>
+		
+				<block name="Sounds_SeaWater">
+			<property name="CustomIcon" value="sound" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Sounds_SeaWater.unity3d?Sounds_SeaWater" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Sounds_SeaWater" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Sounds_SeaWater" count="1" />
+		</block>
+		
+				<block name="Sound_WindStorm">
+			<property name="CustomIcon" value="sound" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Sound_WindStorm.unity3d?Sound_WindStorm" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Sound_WindStorm" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Sound_WindStorm" count="1" />
+		</block>
+		
+				<block name="Sounds_ForestNight">
+			<property name="CustomIcon" value="sound" />
+			<property name="Material" value="Mmetal" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Sounds_ForestNight.unity3d?Sounds_ForestNight" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Sounds_ForestNight" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Sounds_ForestNight" count="1" />
+		</block>
+</append>
+</configs>

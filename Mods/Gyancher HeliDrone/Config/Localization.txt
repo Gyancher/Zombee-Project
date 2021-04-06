@@ -1,0 +1,10 @@
+Key,Source,Context,Changes,English
+vehicleVertibirdchassis,items,Part,EnChanged,Vertibird Chassis,,,,,
+vehicleVertibirdchassisDesc,items,Part,EnChanged,Parts needed to craft the Vertibird. Grease Monkey level 5 required.,,,,,
+vehicleVertibirdengines,items,Part,EnChanged,Vertibird Engines,,,,,
+vehicleVertibirdenginesDesc,items,Part,EnChanged,Parts needed to craft the Vertibird. Grease Monkey level 5 required.,,,,,
+vehicleVertibird,vehicles,vehicle,new,Vertibird,,,,,
+vehicleVertibirdplaceable,vehicles,item,EnChanged,Vertibird,,,,,
+vehicleVertibirdplaceableDesc,vehicles,item,EnChanged,Old military transport chopper. Can hold up to 6 people.,,,,,
+vehicleVertibirdchassisSchematic,items,Part,EnChanged,Vertibird Chassis Schematic
+vehicleVertibirdenginesSchematic,items,Part,EnChanged,Vertibird Engines Schematic

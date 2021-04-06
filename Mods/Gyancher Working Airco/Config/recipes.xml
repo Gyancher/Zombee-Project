@@ -1,0 +1,23 @@
+<configs>
+	<append xpath="/recipes">
+	
+			
+		<recipe name="WorkingAirConditioner" count="1" craft_area="workbench" craft_time="1200">
+			<ingredient name="resourceMetalPipe" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+			<recipe name="WorkingAirConditionVentFan" count="1" craft_area="workbench" craft_time="1200">
+			<ingredient name="resourceMetalPipe" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+			<recipe name="WorkingaAirConditionVentFanDouble" count="1" craft_area="workbench" craft_time="1200">
+			<ingredient name="resourceMetalPipe" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+		
+	</append>
+	
+</configs>

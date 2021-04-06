@@ -1,0 +1,147 @@
+<configs>
+	<append xpath="/blocks">
+		
+		
+		<block name="HedgeArch">
+			<property name="Material" value="Mmetal"/>
+			<property name="DisplayType" value="blockMulti" />
+			<property name="MultiBlockDim" value="1,3,1"/>
+			<!-- <property name="ModelOffset" value="0,-.5,0"/> -->
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="OnlySimpleRotations" value="true"/> 
+			<property name="CanPickup" value="false" /> 
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>		
+			<property name="DescriptionKey" value="decorativeBlockGroupDesc"/> 
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/HedgeArch.unity3d?HedgeArch" />
+		<property name="CustomIcon" value="HedgeArch" />
+		</block>
+	
+	<block name="HedgeSlide">
+		<property name="Class" value="DoorSecure"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="HedgeSlide" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/HedgeSlide.unity3d?HedgeSlide.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+			<property name="MultiBlockDim" value="2,2,1"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+	
+	<block name="HedgeSlideBig">
+		<property name="Class" value="DoorSecure"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="HedgeSlideBig" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/HedgeSlideBig.unity3d?HedgeSlideBig.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+			<property name="MultiBlockDim" value="2,3,1"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+	
+		<block name="HedgeSlidePowered">
+			<property name="Class" value="PoweredDoor"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="HedgeSlide" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<property name="Tag" value="Door"/>
+		<property name="Place" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/HedgeSlide.unity3d?HedgeSlide.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+			<property name="MultiBlockDim" value="2,2,1"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+	
+	<block name="HedgeSlideBigPowered">
+			<property name="Class" value="PoweredDoor"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="HedgeSlideBig" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<property name="Tag" value="Door"/>
+		<property name="Place" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/HedgeSlideBig.unity3d?HedgeSlideBig.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+			<property name="MultiBlockDim" value="2,3,1"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+	
+	
+	
+		<block name="HedgeBig">
+			<property name="Material" value="Mmetal"/>
+			<property name="DisplayType" value="blockMulti" />
+			<property name="MultiBlockDim" value="1,3,1"/>
+			<!-- <property name="ModelOffset" value="0,-.5,0"/> -->
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="OnlySimpleRotations" value="true"/> 
+			<property name="CanPickup" value="false" /> 
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>		
+			<property name="DescriptionKey" value="decorativeBlockGroupDesc"/> 
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/HedgeBig.unity3d?HedgeBig" />
+		<property name="CustomIcon" value="HedgeBig" />
+		</block>
+		
+		
+	</append>
+</configs>

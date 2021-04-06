@@ -1,0 +1,7 @@
+Key,Source,Context,Changes,English
+DeadBladeSpinner,Trap,,,Small Dead Blade Spinner
+DeadBladeSpinnerDesc,Trap,,,This small spinner blade will shred up zombies fast.
+DrawBridgeSmall,Trap,,,Small Drawbridge
+DrawBridgeSmallDesc,Trap,,,Small Drawbridge 2x1x3.
+FrontGateBridge,Trap,,,Trap Bridge 
+FrontGateBridgeDesc,Trap,,,Trap bridge 2x1x4.

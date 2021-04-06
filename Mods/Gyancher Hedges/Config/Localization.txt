@@ -1,0 +1,9 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+HedgeArch,blocks,Block,New,Sliding Door,,,,
+HedgeArchDesc,blocks,Block,New,Sliding door?,,,,
+HedgeSlide,blocks,Door,New,Powered Sliding Door,,Elektrische Gefängnistür,,,
+HedgeSlidePoweredDesc,blocks,Block,New,Electrical controlled slidingdoors!,,,,
+HedgeSlidePowered,blocks,Block,New,Sliding Door,,,,
+HedgeSlide,blocks,Block,New,Sliding door?,,,,
+HedgeSlidePoweredDesc,blocks,Door,New,Powered Sliding Door,,Elektrische Gefängnistür,,,
+HedgeSlidePowered,blocks,Block,New,Electrical controlled slidingdoors!,,,,

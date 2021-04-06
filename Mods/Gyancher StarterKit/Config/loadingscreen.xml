@@ -1,0 +1,32 @@
+<Config>
+
+
+	<set xpath="/doc/backgrounds/tex[@file='GUI/loading_screen_1']/@file">@modfolder:UIAtlases/ItemIconAtlas/loading1.jpg</set>
+	<set xpath="/doc/backgrounds/tex[@file='GUI/loading_screen_2']/@file">@modfolder:UIAtlases/ItemIconAtlas/loading2.jpg</set>
+	<set xpath="/doc/backgrounds/tex[@file='GUI/loading_screen_3']/@file">@modfolder:UIAtlases/ItemIconAtlas/loading3.jpg</set>
+	<set xpath="/doc/backgrounds/tex[@file='GUI/loading_screen_4']/@file">@modfolder:UIAtlases/ItemIconAtlas/loading4.jpg</set>
+
+	<remove xpath="/doc/tips/tip[@key='loadingTipAxes']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipCraftingBetterQL']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipStoneAxe']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipWrenches']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipUsingIronTools']"/>
+
+	<set xpath="/doc/tips/tip[@key='loadingTipProperTools']/@key">loadingTipProperToolsRH</set>
+	<set xpath="/doc/tips/tip[@key='loadingTipEncumbrance']/@key">loadingTipEncumbranceRH</set>
+	<set xpath="/doc/tips/tip[@key='loadingTipGlue']/@key">loadingTipIngredientsRH</set>
+	<set xpath="/doc/tips/tip[@key='loadingTipPickaxes']/@key">loadingTipVehiclesRH</set>
+
+	<insertAfter xpath="/doc/tips/tip[@key='loadingTipBuffs']">
+		<tip key="loadingTipStoves"/>
+		<tip key="loadingTipLooting"/>
+		<tip key="loadingTipZombies"/>
+		<!-- <tip key="loadingTipSpoilage"/> -->
+		<tip key="loadingTipWFU"/>
+		<tip key="loadingTipPWB"/>
+		<tip key="loadingTipIrrigation"/>
+		<tip key="loadingTipQuality"/>
+		<tip key="loadingTipRepairs"/>
+		<tip key="loadingTipRadiationRH"/>
+	</insertAfter>
+</Config>

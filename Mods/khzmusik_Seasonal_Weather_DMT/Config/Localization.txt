@@ -1,0 +1,7 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+weatherSpringSeason,,,,,spring season,,Frühlingssaison,temporada de primavera,saison de printemps,stagione primaverile,春の季節,봄 시즌,sezon wiosenny,primavera,весенний сезон,ilkbahar sezonu,春季,春季,temporada de primavera
+weatherSummerSeason,,,,,summer season,,Sommersaison,temporada de verano,saison d'été,stagione estiva,夏の季節,여름 시즌,sezon letni,verão,летний сезон,yaz sezonu,夏季,夏季,temporada de verano
+weatherFallSeason,,,,,fall season,,Herbstsaison,temporada de otoño,saison d'automne,stagione autunnale,秋の季節,가을 시즌,sezon jesienny,outono,осенний сезон,sonbahar sezonu,秋季,秋季,temporada de otoño
+weatherWinterSeason,,,,,winter season,,Wintersaison,temporada de invierno,saison d'hiver,stagione invernale,冬の季節,겨울 시즌,sezon zimowy,inverno,зимний сезон,kış sezonu,冬季,冬季,temporada de invierno
+weatherSeasonStart,,,,,The {0} is starting,,Die {0} beginnt,Comienza la {0},La {0} commence,Inizia la {0},{0}が始まります,{0} 시작 ,Zaczyna się {0},A temporada de {0} está começando,{0} начинается,{0} başlıyor,{0}开始,{0}開始,Comienza la {0}
+weatherChatName,,,,,Weather news,,Wetterbericht,Noticias del tiempo,Actualités météo,Notizie meteorologiche,天気ニュース,날씨 뉴스,Wiadomości pogodowe,Notícias do tempo,Новости погоды,Hava Durumu,天气新闻,天氣新聞,Noticias del tiempo

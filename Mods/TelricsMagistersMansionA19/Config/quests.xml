@@ -1,0 +1,450 @@
+<configs>
+<append xpath="/quests">
+<!-- Magisters Mansion -->	
+<quest id="MagistersMansionMainQuest">
+		<property name="name_key" value="MagistersMansionMainQuest"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest_offer"/>
+		<property name="difficulty" value="medium"/>
+				
+		<objective type="Craft">
+			<property name="phase" value="1"/>
+			<property name="item" value="meleeToolRepairT0StoneAxe"/>
+			<property name="count" value="1"/>
+		</objective>
+
+		<reward type="Quest" id="MagistersMansionMainQuest2"/>
+		<reward type="Quest" id="MagistersMansionEssenceQuest"/>
+		<reward type="Quest" id="MagistersMansionFoodQuest"/>
+		
+		<reward type="Item" id="keyMagistersMansionEntrance" value="1"/>
+	</quest>
+<quest id="MagistersMansionMainQuest2">
+		<property name="name_key" value="MagistersMansionMainQuest2"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest2_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest2_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest2_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest2_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="BlockUpgrade" id="MansionDoorEntrance" value="1" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest3"/>
+	</quest>
+<quest id="MagistersMansionMainQuest3">
+		<property name="name_key" value="MagistersMansionMainQuest3"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest3_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest3_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest3_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest3_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="ZombieKill" id="zombieTheButcher" value="1" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest4"/>
+	</quest>
+<quest id="MagistersMansionMainQuest4">
+		<property name="name_key" value="MagistersMansionMainQuest4"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest4_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest4_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest4_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest4_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="BlockUpgrade" id="SieraNightstalkerFallenIdle" value="1" phase="1"/>
+
+		<reward type="Item" id="keyMagistersMansionButcher" value="1"/>
+		<reward type="Quest" id="MagistersMansionMainQuest5"/>
+	</quest>
+<quest id="MagistersMansionMainQuest5">
+		<property name="name_key" value="MagistersMansionMainQuest5"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest5_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest5_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest5_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest5_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="BlockUpgrade" id="MansionDoorB" value="1" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest6"/>
+	</quest>
+<quest id="MagistersMansionMainQuest6">
+		<property name="name_key" value="MagistersMansionMainQuest6"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest6_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest6_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest6_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest6_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="FetchKeep" id="keyMagistersMansionLibrary" value="1" phase="1"/>
+
+		<reward type="Item" id="keyMagistersMansionLibrary" value="1"/>
+		<reward type="Quest" id="MagistersMansionMainQuest7"/>
+	</quest>
+<quest id="MagistersMansionMainQuest7">
+		<property name="name_key" value="MagistersMansionMainQuest7"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest7_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest7_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest7_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest7_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="BlockUpgrade" id="MansionDoorC" value="2" phase="1"/>
+		<objective type="ZombieKill" id="zombieTheLibrarian" value="1" phase="2"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest8"/>
+	</quest>
+<quest id="MagistersMansionMainQuest8">
+		<property name="name_key" value="MagistersMansionMainQuest8"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest8_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest8_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest8_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest8_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="FetchKeep" id="keyMagistersMansionBoiler" value="1" phase="1"/>
+
+		<reward type="Item" id="keyMagistersMansionBoiler" value="1"/>
+		<reward type="Quest" id="MagistersMansionMainQuest9"/>
+	</quest>
+<quest id="MagistersMansionMainQuest9">
+		<property name="name_key" value="MagistersMansionMainQuest9"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest9_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest9_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest9_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest9_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="BlockUpgrade" id="MansionDoorD" value="2" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest10"/>
+		<reward type="Item" id="BoilerRoomFuel" value="1"/>
+	</quest>
+<quest id="MagistersMansionMainQuest10">
+		<property name="name_key" value="MagistersMansionMainQuest10"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest10_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest10_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest10_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest10_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="BlockUpgrade" id="BoilerBodyYellow" value="1" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest11"/>
+	</quest>
+<quest id="MagistersMansionMainQuest11">
+		<property name="name_key" value="MagistersMansionMainQuest11"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest11_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest11_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest11_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest11_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="FetchKeep" id="keyMagistersMansionBoiler2" value="1" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest12"/>
+	</quest>
+<quest id="MagistersMansionMainQuest12">
+		<property name="name_key" value="MagistersMansionMainQuest12"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest12_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest12_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest12_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest12_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="BlockUpgrade" id="MansionDoorE" value="1" phase="1"/>
+
+		<reward type="Item" id="keyMagistersMansionBoiler2" value="1"/>
+		<reward type="Quest" id="MagistersMansionMainQuest13"/>
+	</quest>
+<quest id="MagistersMansionMainQuest13">
+		<property name="name_key" value="MagistersMansionMainQuest13"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest13_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest13_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest13_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest13_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="BlockUpgrade" id="MansionDoorE" value="1" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest14"/>
+	</quest>
+<quest id="MagistersMansionMainQuest14">
+		<property name="name_key" value="MagistersMansionMainQuest14"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest14_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest14_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest14_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest14_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="ZombieKill" id="zombieTheBoiler" value="1" phase="1"/>
+
+		<reward type="Item" id="keySieraLockpick" value="1"/>
+		<reward type="Quest" id="MagistersMansionMainQuest15"/>
+	</quest>
+<quest id="MagistersMansionMainQuest15">
+		<property name="name_key" value="MagistersMansionMainQuest15"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest15_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest15_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest15_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest15_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="BlockUpgrade" id="MansionDoorF" value="1" phase="1"/>
+
+		<reward type="Item" id="keyMagistersMansionLillian" value="1"/>
+		<reward type="Quest" id="MagistersMansionMainQuest16"/>
+	</quest>
+<quest id="MagistersMansionMainQuest16">
+		<property name="name_key" value="MagistersMansionMainQuest16"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest16_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest16_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest16_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest16_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="BlockUpgrade" id="MansionDoorG" value="1" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest17"/>
+	</quest>
+<quest id="MagistersMansionMainQuest17">
+		<property name="name_key" value="MagistersMansionMainQuest17"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest17_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest17_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest17_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest17_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="ZombieKill" id="zombieLillian" value="1" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest18"/>
+	</quest>
+<quest id="MagistersMansionMainQuest18">
+		<property name="name_key" value="MagistersMansionMainQuest18"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest18_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest18_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest18_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest18_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="FetchKeep" id="LillianEssence" value="1" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest19"/>
+	</quest>
+<quest id="MagistersMansionMainQuest19">
+		<property name="name_key" value="MagistersMansionMainQuest19"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest19_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest19_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest19_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest19_offer">
+			<property name="delay" value="3"/>
+		</action>
+		
+		<objective type="BlockUpgrade" id="LillianFire" value="1" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest20"/>
+	</quest>
+<quest id="MagistersMansionMainQuest20">
+		<property name="name_key" value="MagistersMansionMainQuest20"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest20_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest20_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest20_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest20_offer">
+			<property name="delay" value="12"/>
+		</action>
+		
+		<objective type="FetchKeep" id="apparelWhitesongPendant" value="1" phase="1"/>
+
+		<reward type="Quest" id="MagistersMansionMainQuest21"/>
+	</quest>
+<quest id="MagistersMansionMainQuest21">
+		<property name="name_key" value="MagistersMansionMainQuest21"/>
+		<property name="subtitle_key" value="MagistersMansionMainQuest21_title"/>
+		<property name="description_key" value="MagistersMansionMainQuest21_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionMainQuest21_offer"/>
+		<property name="difficulty" value="medium"/>
+		<property name="login_rally_reset" value="true"/>
+
+		
+		<action type="ShowTip" value="MagistersMansionMainQuest21_offer">
+			<property name="delay" value="4"/>
+		</action>
+		
+		<objective type="Wear" id="apparelWhitesongPendant" />
+		<reward type="Exp" value="10000"/>
+	</quest>
+<!-- side quests / achievements -->
+<quest id="MagistersMansionEssenceQuest">
+		<property name="name_key" value="MagistersMansionEssenceQuest"/>
+		<property name="subtitle_key" value="MagistersMansionEssenceQuest_title"/>
+		<property name="description_key" value="MagistersMansionEssenceQuest_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionEssenceQuest_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		
+		<objective type="FetchKeep" id="GhostlyOrb" value="1" phase="1"/>
+		<objective type="FetchKeep" id="GhostlyOrb2" value="1" phase="1"/>
+		<objective type="FetchKeep" id="GhostlyOrb3" value="1" phase="1"/>
+		
+		<objective type="Craft">
+			<property name="phase" value="2"/>
+			<property name="item" value="GhostlyOrb4"/>
+			<property name="count" value="1"/>
+		</objective>
+		
+		<objective type="BlockUpgrade" id="BurialRites" value="1" phase="3"/>
+
+
+		<reward type="Item" id="RewardOrb" value="1"/>
+		<reward type="LootItem" id="groupQuestWeapons" ischosen="false"  value="1"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="false"  value="1"/>
+		<reward type="Exp" value="3000"/>
+	</quest>
+<quest id="MagistersMansionFoodQuest">
+		<property name="name_key" value="MagistersMansionFoodQuest"/>
+		<property name="subtitle_key" value="MagistersMansionFoodQuest_title"/>
+		<property name="description_key" value="MagistersMansionFoodQuest_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="offer_key" value="MagistersMansionFoodQuest_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		
+		<objective type="BlockUpgrade" id="DinnerPlate" value="20" phase="1"/>
+
+		<reward type="Exp" value="1500"/>
+		<reward type="Item" id="foodGhostPizzaSchematic" value="1"/>
+	</quest>
+</append>
+
+
+
+
+
+
+
+
+</configs>

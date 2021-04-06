@@ -1,0 +1,86 @@
+<configs>
+	<append xpath="/recipes">
+	
+		<recipe name="foodHoney" count="1" craft_area="Farm Table" craft_time="10"> 
+				<ingredient name="honeycomb" count="5"/>
+					<ingredient name="drinkJarEmpty" count="1"/>
+		</recipe>
+		
+		<recipe name="rawBeesBread" count="1" craft_area="beeHive1" craft_time="5"> 
+				<ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+		</recipe>
+		
+		<recipe name="rawHoneycomb" count="1" craft_area="beeHive1" craft_time="5"> 
+				<ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+		</recipe>
+				
+		<recipe name="rawRoyalJelly" count="1" craft_area="beeHive1" craft_time="5"> 
+				<ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+		</recipe>
+		
+		<recipe name="rawPropolis" count="1" craft_area="beeHive1" craft_time="5"> 
+				<ingredient name="Sunflower" count="5"/>
+		</recipe>
+		
+		<recipe name="honeycomb" count="2" craft_area="Farm Table" craft_time="10">
+			<ingredient name="rawHoneycomb" count="1" />
+		</recipe>
+		
+		<recipe name="royalJelly" count="1" craft_area="Farm Table" craft_time="10">
+		<ingredient name="rawRoyalJelly" count="4" />
+		<ingredient name="drinkJarEmpty" count="1" />
+	</recipe>
+	
+	<recipe name="beeswax" count="1" craft_area="Farm Table" craft_time="10">
+		<ingredient name="rawHoneycomb" count="3" />
+	</recipe>
+	
+	<recipe name="beesBread" count="1" craft_area="Farm Table" craft_time="10">
+		<ingredient name="rawBeesBread" count="4" />
+	</recipe>
+	
+	<recipe name="royalJellyCapsules" count="5" craft_area="Farm Table" craft_time="10">
+		<ingredient name="royalJelly" count="1" />
+		<ingredient name="beeswax" count="1" />
+	</recipe>
+	
+	<recipe name="propolisSerum" count="1" craft_area="Farm Table" craft_time="10">
+		<ingredient name="rawPropolis" count="3" />
+		<ingredient name="drinkJarEmpty" count="1" />
+	</recipe>
+	
+	<recipe name="honeyButter" count="5" craft_area="Farm Table" craft_time="10">
+		<ingredient name="foodHoney" count="1" />
+		<ingredient name="drinkJarEmpty" count="1" />
+	</recipe>
+	
+	<recipe name="honeyMead" count="1" craft_area="Farm Table" craft_time="10">
+		<ingredient name="foodHoney" count="1" />
+		<ingredient name="beesBread" count="1" />
+	</recipe>
+	<recipe name="waxCandle" count="1" craft_area="Farm Table" craft_time="10">
+		<ingredient name="beeswax" count="3" />
+	</recipe>
+	<recipe name="beeKeepingJacket" count="1" craft_area="Farm Table" craft_time="10">
+		<ingredient name="apparelHazmatJacket" count="1" />
+		<ingredient name="resourceDuctTape" count="1" />
+	</recipe>
+	<recipe name="beeKeepingBoots" count="1" craft_area="Farm Table" craft_time="10">
+		<ingredient name="apparelHazmatBoots" count="1" />
+		<ingredient name="resourceDuctTape" count="1" />
+	</recipe>
+	<recipe name="beeKeepingPants" count="1" craft_area="Farm Table" craft_time="10">
+		<ingredient name="apparelHazmatPants" count="1" />
+		<ingredient name="resourceDuctTape" count="2" />
+	</recipe>
+	<recipe name="beeKeepingGloves" count="1" craft_area="Farm Table" craft_time="10">
+		<ingredient name="apparelHazmatGloves" count="1" />
+		<ingredient name="resourceDuctTape" count="1" />
+	</recipe>
+	<recipe name="beeKeepingMask" count="1" craft_area="Farm Table" craft_time="10">
+		<ingredient name="apparelHazmatMask" count="1" />
+		<ingredient name="resourceDuctTape" count="2" />
+	</recipe>
+	</append>
+	
+</configs>

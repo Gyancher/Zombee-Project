@@ -1,0 +1,23 @@
+<configs>
+	<append xpath="/recipes">
+
+
+		<recipe name="GrainMill" count="1" craft_time="15" craft_area="Workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="250"/>
+			<ingredient name="resourceWood" count="200"/>
+		</recipe>
+		
+		
+		
+	
+		<recipe name="Flour" count="1" craft_time="5" craft_area="GrainMill">
+			<ingredient name="foodCornMeal" count="2"/>
+		</recipe>
+		
+		<recipe name="Flour" count="1" craft_time="5" craft_area="GrainMill">
+			<ingredient name="foodCornMeal" count="2"/>
+		</recipe>
+		
+	
+	</append>
+</configs>

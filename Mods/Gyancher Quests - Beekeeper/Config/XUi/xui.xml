@@ -1,0 +1,14 @@
+<configs>
+    <append xpath="/xui/ruleset">	
+		<window_group name="workstation_beeHive1" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<window name="windowCombine" />
+		</window_group>		
+		
+		
+	</append>
+</configs>

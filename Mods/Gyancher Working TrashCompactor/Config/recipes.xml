@@ -1,0 +1,20 @@
+<configs>
+	<append xpath="/recipes">
+	
+		 <recipe name="resourceFertilizer" count="10" craft_area="WorkingTrashCompactor" craft_time="120"> 
+				<ingredient name="foodRottingFlesh" count="2"/>
+		</recipe>
+	
+		<recipe name="resourceBioFuel" count="10" craft_area="WorkingTrashCompactor" craft_time="120"> 
+				<ingredient name="foodRottingFlesh" count="5"/>
+		</recipe>
+		
+		<recipe name="WorkingTrashCompactor" count="1" craft_area="workbench" craft_time="1200">
+			<ingredient name="resourceMetalPipe" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+		
+	</append>
+	
+</configs>

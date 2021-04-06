@@ -1,0 +1,37 @@
+<configs>
+	<append xpath="/items">
+		
+		<!-- Vehicles -->
+		<item name="vehicleVertibirdchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="vehicleVertibirdchassis"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleVertibirdchassisSchematic"/>
+			<property name="DescriptionKey" value="vehicleVertibirdchassisDesc"/>
+			<property name="EconomicValue" value="17000"/>
+		</item>
+		<item name="vehicleVertibirdengines">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="vehicleVertibirdengines"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleVertibirdenginesSchematic"/>
+			<property name="DescriptionKey" value="vehicleVertibirdenginesDesc"/>
+			<property name="EconomicValue" value="17000"/>
+		</item>
+		<item name="vehicleVertibirdplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="vehicleVertibird"/>
+			<property name="DescriptionKey" value="vehicleVertibirdplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/VB1.unity3d?Vertibird.prefab"/>
+			<property name="EconomicValue" value="30000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleVertibird"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+			</effect_group>
+		</item>	
+					
+	 </append>
+ </configs>

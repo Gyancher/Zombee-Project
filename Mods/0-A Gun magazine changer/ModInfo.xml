@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<ModInfo>
+		<Name value="Change round capacity"/>
+		<Description value="Changing the values will increase the Capacity of the ammo in a clip"/>
+		<Author value="Donorcap"/>
+		<Version value="1.0"/>
+	</ModInfo>
+</xml>

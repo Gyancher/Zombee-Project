@@ -1,0 +1,7 @@
+<Riles-BackpackPlus>
+
+  <set xpath="progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity']/@value">9,18,27,36,45</set>
+  <set xpath="progression/perks/perk[@name='perkFiremansAlmanacComplete']/effect_group/passive_effect[@name='CarryCapacity']/@value">90</set>
+  <set xpath="progression/perks/perk[@name='perkNightStalkerThiefAdrenaline']/effect_group/passive_effect[@name='CarryCapacity']/@value">90</set>
+
+</Riles-BackpackPlus>

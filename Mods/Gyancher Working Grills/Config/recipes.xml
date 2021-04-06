@@ -1,0 +1,20 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="WorkingCharcoalGrill" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="25"/>
+			<ingredient name="unit_clay" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+				</effect_group>
+		</recipe>
+		
+		<recipe name="WorkingGassGrill" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="25"/>
+			<ingredient name="unit_clay" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+				</effect_group>
+		</recipe>
+	</append>
+	
+</configs>

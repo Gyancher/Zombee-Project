@@ -1,0 +1,231 @@
+Key,english,japanese
+
+------------------Entities---------------------------
+
+vehicleBrownHorse,"[e7a729]Tamed Brown Horse[-]","[e7a729]テイム済みの馬(茶)[-]"
+vehicleBlackHorse,"[e7a729]Tamed Black Horse[-]","[e7a729]テイム済みの馬(黒)[-]"
+vehicleYellowHorse,"[e7a729]Tamed Yellow Horse[-]","[e7a729]テイム済みの馬(黄)[-]"
+vehicleAlbinoHorse,"[e7a729]Tamed Albino Horse[-]","[e7a729]テイム済みの馬(アルビノ)[-]"
+vehicleCreamHorse,"[e7a729]Tamed Cream Horse[-]","[e7a729]テイム済みの馬(クリーム)[-]"
+vehicleMidnightHorse,"[e7a729]Tamed Midnight Horse[-]","[e7a729]テイム済みの馬(ミッドナイト)[-]"
+vehicleGrayHorse,"[e7a729]Tamed Gray Horse[-]","[e7a729]テイム済みの馬(灰)[-]"
+
+vehicleT2BrownHorse,"[e7a729]Tamed Brown Horse[-]","[e7a729]テイム済みの馬(茶)[-]"
+vehicleT2BlackHorse,"[e7a729]Tamed Black Horse[-]","[e7a729]テイム済みの馬(黒)[-]"
+vehicleT2YellowHorse,"[e7a729]Tamed Yellow Horse[-]","[e7a729]テイム済みの馬(黄)[-]"
+vehicleT2AlbinoHorse,"[e7a729]Tamed Albino Horse[-]","[e7a729]テイム済みの馬(アルビノ)[-]"
+vehicleT2CreamHorse,"[e7a729]Tamed Cream Horse[-]","[e7a729]テイム済みの馬(クリーム)[-]"
+vehicleT2MidnightHorse,"[e7a729]Tamed Midnight Horse[-]","[e7a729]テイム済みの馬(ミッドナイト)[-]"
+vehicleT2GrayHorse,"[e7a729]Tamed Gray Horse[-]","[e7a729]テイム済みの馬(灰)[-]"
+
+animalBrownHorse,"Wild Brown Horse","野生の馬(茶)"
+animalBlackHorse,"Wild Black Horse","野生の馬(黒)"
+animalYellowHorse,"Wild Yellow Horse","野生の馬(黄)"
+animalAlbinoHorse,"Wild Albino Horse","野生の馬(アルビノ)"
+animalCreamHorse,"Wild Cream Horse","野生の馬(クリーム)"
+animalMidnightHorse,"Wild Midnight Horse","野生の馬(ミッドナイト)"
+animalGrayHorse,"Wild Gray Horse","野生の馬(灰)"
+
+----------------Blocks ----------------------
+spawnMaybellTrader,"[e7a729]Maybell[-]","[e7a729]メイベル[-]"
+spawnAbbyTrader,"[e7a729]Abby[-]","[e7a729]アビー[-]"
+spawnLeahTrader,"[e7a729]Leah[-]","[e7a729]リア[-]"
+spawnVincentTrader,"[e7a729]Vincent[-]","[e7a729]ヴィンセント[-]"
+
+spawnStabledBrownHorse,"[e7a729]Stabled Brown Horse[-]","[e7a729]馬小屋の馬(茶)[-]"
+spawnStabledBlackHorse,"[e7a729]Stabled Black Horse[-]","[e7a729]馬小屋の馬(黒)[-]"
+spawnStabledAlbinoHorse,"[e7a729]Stabled Albino Horse[-]","[e7a729]馬小屋の馬(アルビノ)[-]"
+spawnStabledMidnightHorse,"[e7a729]Stabled Midnight Horse[-]","[e7a729]馬小屋の馬(ミッドナイト)[-]"
+spawnStabledYellowHorse,"[e7a729]Stabled Yellow Horse[-]","[e7a729]馬小屋の馬(黄)[-]"
+spawnStabledCreamHorse,"[e7a729]Stabled Cream Horse[-]","[e7a729]馬小屋の馬(クリーム)[-]"
+spawnStabledGrayHorse,"[e7a729]Stabled Gray Horse[-]","[e7a729]馬小屋の馬(灰)[-]"
+
+----------------Buffs---------------------
+buffHorseRanchUnlockNotify
+buffHorseRanchUnlockNotifyName,"[e7a729]New Unlocks![-]","[e7a729]レシピ習得！[-]"
+buffHorseRanchUnlockNotifyDesc,"[e7a729]You've hit a milestone in reputation with the Maybell Ranch. Type Unlock in your recipes to see what you've unlocked.[-]","[e7a729]あなたの評判が上がったため、新しいレシピを習得しました。\n\n何が作れるようになったか、クラフト一覧で確認してみましょう。[-]"
+
+buffHorseCourseStartName,"[e7a729]Minigame: Horse Course[-]","[e7a729]ミニゲーム： 乗馬コース[-]"
+buffHorseCourseStartDesc,"[e7a729]Playing a minigame. Ride through 4 check points and the finish line within the time limit to win![-]","[e7a729]馬に乗り、時間内に4つのチェックポイントとゴールを通過するとクリアです！[-]"
+
+buffHorseCourseScoreName,"[e7a729]Horse Course Score[-]","[e7a729]乗馬コースのスコア[-]"
+buffHorseCourseStartDesc,"[e7a729]This amount is added to your horses points. At 500 points, you're able to unlock new saddles.[-]","[e7a729]この数値があなたの馬のポイントへと加算されます。\n\n500ポイント貯まると、馬をアップグレードするために必要な新しいサドルのレシピを習得します。[-]"
+buffHorseCourseScoreDisplayName,"[e7a729]Horse Course Score[-]","[e7a729]乗馬コースのスコア[-]"
+buffHorseCourseScoreDisplayDesc,"[e7a729]This is your time trial score. Completing with more time on the clock will add more to your score. Get 100 points and you'll unlock something fun![-]","[e7a729]これはあなたのタイムトライアルのスコアです。\n\n残り時間が多ければ多いほど、多くのポイントがもらえます。\n\n100ポイント貯まると、面白いレシピがアンロックされます。[-]"
+
+buffSimonSaysStartName,"[e7a729]Minigame: Simon Says[-]","[e7a729]ミニゲーム：　船長さんの命令(Simon Says)[-]"
+buffSimonSaysStartDesc,"[e7a729]You're playing Simon Says with Abby. Every few seconds, she will call out a color or shape. Quickly get to the correct block to gain a point. Keep an eye on your buff icons. This will let you know which block to go to. Get 10 points in a row and you'll get +1 reputation![-]","[e7a729]アビーと船長さんの命令というミニゲームをして遊びましょう。\n数秒ごとに、アビーが色か形を指定します。\n素早く、指定された色や形のブロックを見つけて上げてください。\n自分のバフを見ると、指定された色か形が分かるようになっています。\n\n10回連続で正解すると、評判が1ポイント上がります。[-]"
+buffSimonSaysCallOutName,"[e7a729]Simon Says...[-]","[e7a729]船長さんの命令で...[-]"
+buffSimonSaysCallOutDesc,"[e7a729]!!![-]","[e7a729]!!![-]"
+buffSimonSaysScoreDisplayName,"[e7a729]Simon Says Score[-]","[e7a729]船長さんの命令スコア[-]"
+buffSimonSaysScoreDisplayDesc,"[e7a729]This is your simon says score. Correctly choosing the color or shape that Abby calls out will add 1 to your score. At 10 points you'll gain +1 reputation![-]","[e7a729]船長さんの命令ミニゲームで入手したスコアです。\n\n正解すると1ポイントずつ貯まります。\n10ポイント貯まると評判が1上がります。[-]"
+
+buffReputationDisplayName,"[e7a729]Ranch Reputation[-]","[e7a729]牧場での評判[-]"
+buffReputationDisplayDesc,"[e7a729]This is your current reputation standing with Maybell, Leah, Vincent, and Abby. Complete quests for these NPCs to gain reputation. You can unlock new recipes and events based on your reputation.\n\nUnlocks:\nA Deal with Vincent (Quest): Requires Reputation 25[-]","[e7a729]牧場でのあなたの評判の数値です。\n牧場にいるNPCたち(メイベル、ヴィンセント、リア、アビー)の依頼をクリアする事で評判を上げることが出来ます。\n\n評判を上げると、新しいレシピやイベントがアンロックされます。\n\nアンロック:\nヴィンセントとの取引 (クエスト): 必要評判ポイント 25[-]"
+buffReputationAddDisplayName,"[e7a729]Ranch Reputation[-]","[e7a729]牧場での評判[-]"
+buffReputationAddDisplayDesc,"[e7a729]This is your current reputation standing with Maybell, Leah, Vincent, and Abby. Complete quests for these NPCs to gain reputation. You can unlock new recipes and events based on your reputation.[-]","[e7a729]牧場でのあなたの評判の数値です。\n牧場にいるNPCたち(メイベル、ヴィンセント、リア、アビー)の依頼をクリアする事で評判を上げることが出来ます。\n\n評判を上げると、新しいレシピやイベントがアンロックされます。[-]"
+
+----------------Items----------------------
+
+resourceBrownHorseSaddle,"[e7a729]Horse Saddle: (Brown)[-]","[e7a729]馬用サドル： (茶)[-]"
+resourceBrownHorseSaddleDesc,"[e7a729]This saddle can be used on a brown horse, once you have gained favor with Maybell's Ranch. Left click with this in your hands and you'll get a horse! Vincent will teach you how to care for your horse.[-]","[e7a729]メイベルの牧場での評判が上がると、このサドルを茶色の馬に使用することが出来るようになります。\nこのサドルを手に持った状態で馬に向かって左クリックをすると、インベントリ内に設置可能な馬が入ります。\n\n馬の世話に関しては、ヴィンセントに聞いてみましょう。[-]"
+vehicleBrownHorsePlaceable,"[e7a729]Tamed Brown Horse[-]","[e7a729]テイム済みの馬(茶)[-]"
+vehicleBrownHorsePlaceableDesc,"[e7a729]Place to ride. Horses use stamina to sprint. They can carry more weight for you. Horses will get hungry over time, losing health. Find apples and feed the horse to replenish health.[-]","[e7a729]設置して乗ります。\nダッシュすると、プレイヤーのスタミナが消費されます。\nインベントリ内にアイテムを入れることが出来ます。\n\n馬は時間が経過するとお腹が空くため、体力が減少してしまいます。\nリンゴを見つけ、馬に食べさせることで、体力を回復する事が出来ます。[-]"
+vehicleT2BrownHorsePlaceable,"[e7a729]Tamed Brown Horse[-]","[e7a729]テイム済みの馬(茶)[-]"
+vehicleT2BrownHorsePlaceableDesc,"[e7a729]This horse has been trained in the obstacle course in Maybells ranch. It's now faster and can carry much more weight. It will get hungry slower.[-]","[e7a729]この馬はメイベルの牧場で訓練したため、アップグレードされました。\n\n以前より速く走れ、より多くのアイテムを持つことが出来、お腹が空きにくくなりました。[-]"
+
+resourceBlackHorseSaddle,"[e7a729]Horse Saddle: (Black)[-]","[e7a729]馬用サドル： (黒)[-]"
+resourceBlackHorseSaddleDesc,"[e7a729]This saddle can be used on a black horse, once you have gained favor with Maybell's Ranch. Left click with this in your hands and you'll get a horse! Vincent will teach you how to care for your horse.[-]","[e7a729]メイベルの牧場での評判が上がると、このサドルを黒色の馬に使用することが出来るようになります。\nこのサドルを手に持った状態で馬に向かって左クリックをすると、インベントリ内に設置可能な馬が入ります。\n\n馬の世話に関しては、ヴィンセントに聞いてみましょう。[-]"
+vehicleBlackHorsePlaceable,"[e7a729]Tamed Black Horse[-]","[e7a729]テイム済みの馬(黒)[-]"
+vehicleBlackHorsePlaceableDesc,"[e7a729]Place to ride. Horses use stamina to sprint. They can carry more weight for you. Horses will get hungry over time, losing health. Find apples and feed the horse to replenish health.[-]","[e7a729]設置して乗ります。\nダッシュすると、プレイヤーのスタミナが消費されます。\nインベントリ内にアイテムを入れることが出来ます。\n\n馬は時間が経過するとお腹が空くため、体力が減少してしまいます。\nリンゴを見つけ、馬に食べさせることで、体力を回復する事が出来ます。[-]"
+vehicleT2BlackHorsePlaceable,"[e7a729]Tamed Black Horse[-]","[e7a729]テイム済みの馬(黒)[-]"
+vehicleT2BlackHorsePlaceableDesc,"[e7a729]This horse has been trained in the obstacle course in Maybells ranch. It's now faster and can carry much more weight. It will get hungry slower.[-]","[e7a729]この馬はメイベルの牧場で訓練したため、アップグレードされました。\n\n以前より速く走れ、より多くのアイテムを持つことが出来、お腹が空きにくくなりました。[-]"
+
+resourceYellowHorseSaddle,"[e7a729]Horse Saddle: (Yellow)[-]","[e7a729]馬用サドル： (黄)[-]"
+resourceYellowHorseSaddleDesc,"[e7a729]This saddle can be used on a Yellow horse, once you have gained favor with Maybell's Ranch. Left click with this in your hands and you'll get a horse! Vincent will teach you how to care for your horse.[-]","[e7a729]メイベルの牧場での評判が上がると、このサドルを黄色の馬に使用することが出来るようになります。\nこのサドルを手に持った状態で馬に向かって左クリックをすると、インベントリ内に設置可能な馬が入ります。\n\n馬の世話に関しては、ヴィンセントに聞いてみましょう。[-]"
+vehicleYellowHorsePlaceable,"[e7a729]Tamed Yellow Horse[-]","[e7a729]テイム済みの馬(黄)[-]"
+vehicleYellowHorsePlaceableDesc,"[e7a729]Place to ride. Horses use stamina to sprint. They can carry more weight for you. Horses will get hungry over time, losing health. Find apples and feed the horse to replenish health.[-]","[e7a729]設置して乗ります。\nダッシュすると、プレイヤーのスタミナが消費されます。\nインベントリ内にアイテムを入れることが出来ます。\n\n馬は時間が経過するとお腹が空くため、体力が減少してしまいます。\nリンゴを見つけ、馬に食べさせることで、体力を回復する事が出来ます。[-]"
+vehicleT2YellowHorsePlaceable,"[e7a729]Tamed Yellow Horse[-]","[e7a729]テイム済みの馬(黒)[-]"
+vehicleT2YellowHorsePlaceableDesc,"[e7a729]This horse has been trained in the obstacle course in Maybells ranch. It's now faster and can carry much more weight. It will get hungry slower.[-]","[e7a729]この馬はメイベルの牧場で訓練したため、アップグレードされました。\n\n以前より速く走れ、より多くのアイテムを持つことが出来、お腹が空きにくくなりました。[-]"
+
+resourceAlbinoHorseSaddle,"[e7a729]Horse Saddle: (Albino)[-]","[e7a729]馬用サドル： (アルビノ)[-]"
+resourceAlbinoHorseSaddleDesc,"[e7a729]This saddle can be used on an albino horse, once you have gained favor with Maybell's Ranch. Left click with this in your hands and you'll get a horse! Vincent will teach you how to care for your horse.[-]","[e7a729]メイベルの牧場での評判が上がると、このサドルをアルビノの馬に使用することが出来るようになります。\nこのサドルを手に持った状態で馬に向かって左クリックをすると、インベントリ内に設置可能な馬が入ります。\n\n馬の世話に関しては、ヴィンセントに聞いてみましょう。[-]"
+vehicleAlbinoHorsePlaceable,"[e7a729]Tamed Albino Horse[-]","[e7a729]テイム済みの馬(アルビノ)[-]"
+vehicleAlbinoHorsePlaceableDesc,"[e7a729]Place to ride. Horses use stamina to sprint. They can carry more weight for you. Horses will get hungry over time, losing health. Find apples and feed the horse to replenish health.[-]","[e7a729]設置して乗ります。\nダッシュすると、プレイヤーのスタミナが消費されます。\nインベントリ内にアイテムを入れることが出来ます。\n\n馬は時間が経過するとお腹が空くため、体力が減少してしまいます。\nリンゴを見つけ、馬に食べさせることで、体力を回復する事が出来ます。[-]"
+vehicleT2AlbinoHorsePlaceable,"[e7a729]Tamed Albino Horse[-]","[e7a729]テイム済みの馬(アルビノ)[-]"
+vehicleT2AlbinoHorsePlaceableDesc,"[e7a729]This horse has been trained in the obstacle course in Maybells ranch. It's now faster and can carry much more weight. It will get hungry slower.[-]","[e7a729]この馬はメイベルの牧場で訓練したため、アップグレードされました。\n\n以前より速く走れ、より多くのアイテムを持つことが出来、お腹が空きにくくなりました。[-]"
+
+resourceCreamHorseSaddle,"[e7a729]Horse Saddle: (Cream)[-]","[e7a729]馬用サドル： (クリーム)[-]"
+resourceCreamHorseSaddleDesc,"[e7a729]This saddle can be used on a cream horse, once you have gained favor with Maybell's Ranch. Left click with this in your hands and you'll get a horse! Vincent will teach you how to care for your horse.[-]","[e7a729]メイベルの牧場での評判が上がると、このサドルをクリーム色の馬に使用することが出来るようになります。\nこのサドルを手に持った状態で馬に向かって左クリックをすると、インベントリ内に設置可能な馬が入ります。\n\n馬の世話に関しては、ヴィンセントに聞いてみましょう。[-]"
+vehicleCreamHorsePlaceable,"[e7a729]Tamed Cream Horse[-]","[e7a729]テイム済みの馬(クリーム)[-]"
+vehicleCreamHorsePlaceableDesc,"[e7a729]Place to ride. Horses use stamina to sprint. They can carry more weight for you. Horses will get hungry over time, losing health. Find apples and feed the horse to replenish health.[-]","[e7a729]設置して乗ります。\nダッシュすると、プレイヤーのスタミナが消費されます。\nインベントリ内にアイテムを入れることが出来ます。\n\n馬は時間が経過するとお腹が空くため、体力が減少してしまいます。\nリンゴを見つけ、馬に食べさせることで、体力を回復する事が出来ます。[-]"
+vehicleT2CreamHorsePlaceable,"[e7a729]Tamed Cream Horse[-]","[e7a729]テイム済みの馬(クリーム)[-]"
+vehicleT2CreamHorsePlaceableDesc,"[e7a729]This horse has been trained in the obstacle course in Maybells ranch. It's now faster and can carry much more weight. It will get hungry slower.[-]","[e7a729]この馬はメイベルの牧場で訓練したため、アップグレードされました。\n\n以前より速く走れ、より多くのアイテムを持つことが出来、お腹が空きにくくなりました。[-]"
+
+resourceMidnightHorseSaddle,"[e7a729]Horse Saddle: (Midnight)[-]","[e7a729]馬用サドル： (ミッドナイト)[-]"
+resourceMidnightHorseSaddleDesc,"[e7a729]This saddle can be used on a midnight horse, once you have gained favor with Maybell's Ranch. Left click with this in your hands and you'll get a horse! Vincent will teach you how to care for your horse.[-]","[e7a729]メイベルの牧場での評判が上がると、このサドルをミッドナイト色の馬に使用することが出来るようになります。\nこのサドルを手に持った状態で馬に向かって左クリックをすると、インベントリ内に設置可能な馬が入ります。\n\n馬の世話に関しては、ヴィンセントに聞いてみましょう。[-]"
+vehicleMidnightHorsePlaceable,"[e7a729]Tamed Midnight Horse[-]","[e7a729]テイム済みの馬(ミッドナイト)[-]"
+vehicleMidnightHorsePlaceableDesc,"[e7a729]Place to ride. Horses use stamina to sprint. They can carry more weight for you. Horses will get hungry over time, losing health. Find apples and feed the horse to replenish health.[-]","[e7a729]設置して乗ります。\nダッシュすると、プレイヤーのスタミナが消費されます。\nインベントリ内にアイテムを入れることが出来ます。\n\n馬は時間が経過するとお腹が空くため、体力が減少してしまいます。\nリンゴを見つけ、馬に食べさせることで、体力を回復する事が出来ます。[-]"
+vehicleT2MidnightHorsePlaceable,"[e7a729]Tamed Midnight Horse[-]","[e7a729]テイム済みの馬(ミッドナイト)[-]"
+vehicleT2MidnightHorsePlaceableDesc,"[e7a729]This horse has been trained in the obstacle course in Maybells ranch. It's now faster and can carry much more weight. It will get hungry slower.[-]","[e7a729]この馬はメイベルの牧場で訓練したため、アップグレードされました。\n\n以前より速く走れ、より多くのアイテムを持つことが出来、お腹が空きにくくなりました。[-]"
+
+resourceGrayHorseSaddle,"[e7a729]Horse Saddle: (Gray)[-]","[e7a729]馬用サドル： (灰)[-]"
+resourceGrayHorseSaddleDesc,"[e7a729]This saddle can be used on a gray horse, once you have gained favor with Maybell's Ranch. Left click with this in your hands and you'll get a horse! Vincent will teach you how to care for your horse.[-]","[e7a729]メイベルの牧場での評判が上がると、このサドルを灰色の馬に使用することが出来るようになります。\nこのサドルを手に持った状態で馬に向かって左クリックをすると、インベントリ内に設置可能な馬が入ります。\n\n馬の世話に関しては、ヴィンセントに聞いてみましょう。[-]"
+vehicleGrayHorsePlaceable,"[e7a729]Tamed Gray Horse[-]","[e7a729]テイム済みの馬(灰)[-]"
+vehicleGrayHorsePlaceableDesc,"[e7a729]Place to ride. Horses use stamina to sprint. They can carry more weight for you. Horses will get hungry over time, losing health. Find apples and feed the horse to replenish health.[-]","[e7a729]設置して乗ります。\nダッシュすると、プレイヤーのスタミナが消費されます。\nインベントリ内にアイテムを入れることが出来ます。\n\n馬は時間が経過するとお腹が空くため、体力が減少してしまいます。\nリンゴを見つけ、馬に食べさせることで、体力を回復する事が出来ます。[-]"
+vehicleT2GrayHorsePlaceable,"[e7a729]Tamed Gray Horse[-]","[e7a729]馬用サドル： (灰)[-]"
+vehicleT2GrayHorsePlaceableDesc,"[e7a729]This horse has been trained in the obstacle course in Maybells ranch. It's now faster and can carry much more weight. It will get hungry slower.[-]","[e7a729]この馬はメイベルの牧場で訓練したため、アップグレードされました。\n\n以前より速く走れ、より多くのアイテムを持つことが出来、お腹が空きにくくなりました。[-]"
+
+foodApple,"[e7a729]Apple[-]","[e7a729]リンゴ[-]"
+foodAppleDesc,"[e7a729]Apples are used to feed tamed horses. As your horse takes damage, you'll need apples to keep it fed. Each apple will refill 1000 health. Keep an eye on your horses health while riding and take good care of it![-]","[e7a729]飼いならされた馬の体力を回復させるために使用するリンゴ。\n\nリンゴ一つで馬の体力が1000回復します。\n\n馬の体力に気を付けて、大切にしてあげてくださいね！[-]"
+
+
+resourceHorseRanchReputation1,"[e7a729]Reputation: Maybell's Ranch[-]","[e7a729]メイベルの牧場[-]"
+resourceHorseRanchReputation1Desc,"[e7a729]Using this item will grant +1 reputation for Maybell's Ranch. New items and recipes will unlock, depending on your reputation standing with the ranch.[-]","[e7a729]このアイテムを使用するとメイベルの牧場での評判が1ポイント上がります。\n\n評判を上げると、クラフトレシピがアンロックされたり、クエストを受けることが出来るようになります。[-]"
+
+resourceAbbyGameToken,"[e7a729]Game Token: Simon Says[-]","[e7a729]ゲームトークン：　船長さんの命令[-]"
+resourceAbbyGameTokenDesc,"[e7a729]Use this item on Abby to start a game of Simon Says. Getting 10 correct answers in a row will award +1 reputation. This can be repeated as often as you wish, just requiring a new game token to be crafted.[-]","[e7a729]このトークンをアビーに使用するとゲームが開始します。\n\n10回連続で正解すると評判ポイントが1上がります。\n\nトークンは消費アイテムです。\nゲームはトークンがあれば、何度でも繰り返しプレイすることが出来ます。[-]"
+resourceAbbyGameTokenUsed,"[e7a729]Used Game Token[-]","[e7a729]使用済みのゲームトークン[-]"
+resourceAbbyGameTokenUsedDesc,"[e7a729]A used game token that can be smelted to return the amount of brass used from crafting.[-]","[e7a729]使用済みのゲームトークン。\n\nフォージで溶かす事により、トークンのクラフトに必要な真鍮が入手出来ます。[-]"
+resourceAbbysLocket,"[e7a729]Abby's Locket[-]","[e7a729]アビーのロケットペンダント[-]"
+resourceAbbysLocketDesc,"[e7a729]She calls this a hair loom. Aren't kids the cutest...[-]","[e7a729]カホーのペンダントらしいです。\n\nアビーちゃん、家宝って言いたいのですね。[-]"
+resourceDustBunny,"[e7a729]Dust Bunny[-]","[e7a729]綿埃(ダストバニー)[-]"
+resourceDustBunnyDesc,"[e7a729]Wait.. They are actual bunnies?!?! No one ever told me that...[-]","[e7a729]綿埃(ダストバニー)って本当にバニー(ウサギさん)だったのですか...[-]"
+
+horseSaddleSchematic,"[e7a729]Horse Saddle Schematic[-]","[e7a729]馬のサドルの図[-]"
+horseSaddleSchematicDesc,"[e7a729]Learn how to craft your very own saddles for your very own horses![-]","[e7a729]あなたの馬につけるサドルをクラフトしてみましょう！[-]"
+SimonSaysSchematic,"[e7a729]Unlock Simon Says Minigame[-]","[e7a729]船長さんの命令ミニゲームをアンロックします[-]"
+SimonSaysSchematicDesc,"[e7a729]Read this book to unlock the recipe to create game tokens to play Simon Says with Abby.[-]","[e7a729]船長さんの命令ミニゲームを開始するために必要なゲームトークンがクラフト可能になります。[-]"
+
+resourceHorseCourseTicket,"[e7a729]Obstacle Course Ticket","[e7a729]乗馬コースチケット[-]"
+resourceHorseCourseTicketDesc,"[e7a729]This ticket is used to complete the horse obstacle course. Run the course until you have 100 points, then bring the ticket to Vincent to exchange for a ribbon.[-]","[e7a729]乗馬コースで100ポイント貯まった状態で、乗馬コースチケットをヴィンセントにわたします。\n\n条件が満たされていれば、ヴィンセントから報酬のリボンを受け取ることが出来ます。[-]"
+resourceHorseCourseRibbon,"[e7a729]Obstacle Course Ribbon","[e7a729]乗馬コース報酬リボン[-]"
+resourceHorseCourseRibbonDesc,"[e7a729]1st place! You've completed the horse course and may now use this in a recipe to upgrade your horse. This is a single use item, so after using it, you will need to complete the obstacle course again to upgrade a different horse.[-]","[e7a729]1位おめでとうございます！\n乗馬コースをクリアしたため、このリボンを材料に、馬のアップグレードが出来るようになりました。\n\nこのアイテムは消耗品なため、別の馬をアップグレードするためには、もう一度乗馬コースをクリアし、リボンを入手する必要があります。[-]"
+
+meleeToolBroom,"[e7a729]Broom[-]","[e7a729]ほうき[-]"
+meleeToolBroomDesc,"[e7a729]A simple broom. Useful for knocking down spider webs and brutally murdering some dust bunnies.[-]","[e7a729]ただのほうきです。\n\n蜘蛛の巣や綿埃(ダストバニー)をはらうために使用します。[-]"
+---------------Talk Tos ---------------------
+resourceTalkToMaybell,"[e7a729]Talk to: Maybell[-]","[e7a729]話しかける：　メイベル[-]"
+resourceTalkToMaybellDesc,"[e7a729]Purchase this item to talk to Maybell (used in quests).[-]","[e7a729]メイベルと話すために使用します。(クエストアイテム)[-]"
+resourceTalkToAbby,"[e7a729]Talk to: Abby[-]","[e7a729]話しかける：　アビー[-]"
+resourceTalkToAbbyDesc,"[e7a729]Purchase this item to talk to Abby (used in quests).[-]","[e7a729]アビーと話すために使用します。(クエストアイテム)[-]"
+resourceTalkToLeah,"[e7a729]Talk to: Leah[-]","[e7a729]話しかける：　リア[-]"
+resourceTalkToLeahDesc,"[e7a729]Purchase this item to talk to Leah (used in quests).[-]","[e7a729]リアと話すために使用します。(クエストアイテム)[-]"
+resourceTalkToVincent,"[e7a729]Talk to: Vincent[-]","[e7a729]話しかける：　ヴィンセント[-]"
+resourceTalkToVincentDesc,"[e7a729]Purchase this item to talk to Vincent (used in quests).[-]","[e7a729]ヴィンセントと話すために使用します。(クエストアイテム)[-]"
+
+---------------Quests--------------------------
+questHorseRanchGroupDesc,"[e7a729]Completing this quest will reward you with Reputation with Maybell's Ranch.[-]","[e7a729]このクエストを完了するとメイベルの牧場での評判が上がります。[-]"
+
+---------------Leah------------------
+questHorseRanchLeah1,"[e7a729]More Potato Seeds[-]","[e7a729]じゃがいもの種[-]"
+questHorseRanchLeah1_offer,"[e7a729]Hey there! Are you able to help me out? I'm in need of some seeds to plant in the garden. If you could bring 5 potato seeds, I'd be most grateful.[-]","[e7a729]こんにちは！\n私の庭に植えるためのじゃがいもの種が足りなくて困ってるの。\n手を貸してもらえますか？\n\nじゃがいもの種を5つクラフトしてくれたら嬉しいな。[-]"
+
+questHorseRanchLeah2,"[e7a729]More Blueberry Seeds[-]","[e7a729]ブルーベリーの種[-]"
+questHorseRanchLeah2_offer,"[e7a729]Come to help out? I'm a little low on blueberry plants in this garden. If you come across any, I'll be glad to get 5 more planted this season.[-]","[e7a729]手伝いに来てくれたのですか？\n\nブルーベリーが足りないので、ブルーベリーの種を5つクラフトしてもらえたら、嬉しいな。[-]"
+
+--------------------Abby-----------------------
+questHorseRanchAbby1,"[e7a729]Arts and Crafts[-]","[e7a729]芸術とクラフト[-]"
+questHorseRanchAbby1_offer,"[e7a729]Oh! Umm. Hi! Today I want to paint a picture of a horse! My favorite color horse is white! Mom won't let me play with paint unless someone helps me. Will you help me? I need a paintbrush and some paper to paint on.[-]","[e7a729]あ、こんにちは！\n今日はねー、馬の絵を描きたい！\nアビーはね、白い馬が好きなの。\n\n絵を描くために必要なペンキブラシ(はけ)をクラフトして、紙を見つけて来てくれる？[-]"
+
+questHorseRanchAbby2,"[e7a729]Happy Halloween[-]","[e7a729]ハッピーハロウィン[-]"
+questHorseRanchAbby2_offer,"[e7a729]Do you feel that? The weather is starting to get colder! It's almost time for halloween! My favorite! Do you think you can make me a jack o lantern to decorate my playground with?[-]","[e7a729]ねぇねぇ！最近涼しくなってきたねー！\nということは...もうすぐハロウィン！\nハロウィン大好き！\n\nジャックオーランタンの作り方知ってる？\n私の遊び場を飾るために欲しいんだ、お願い、作って！[-]"
+
+questHorseRanchAbby3,"[e7a729]A Family Hair Loom[-]","[e7a729]カホーってなんだろ[-]"
+questHorseRanchAbby3_offer,"[e7a729]*Abby tears up and starts sniffling* Granny Maybell.. *sniff*.. is going to be mad.. *sniff*.. at me. She gave me a locket *sniff* and said it was a *sniff* family hair loom. I don't know what a hair loom is but *sniff* it seemed really important to Granny. I lost it somewhere on the farm. *sniff* Do you know where it is?[-]","[e7a729]ふぇ...メイベルおばあちゃん...きっと怒る...だって...大事なペンダント...大事なカホーだって言ってたもん... カホーって何かしらないけど...本当に大事そうにしてたもん...\nグスン...どっかいっちゃったの、牧場から出てないからどこかにあるんだけど...どこかわかんないの...\nおねがい、見つけるのたすけて！\n(ペンダントを見つけたら、破壊して回収してください。)[-]"
+
+--------------------Maybell----------------
+questHorseRanchMaybell1,"[e7a729]A Simple Dinner[-]","[e7a729]シンプルなディナー[-]"
+questHorseRanchMaybell1_offer,"[e7a729]Oh good, someone's here so I don't have to get up. I've got a real craving for a baked potato. Surely a strong adventurer like you would know how to cook one up for an old lady? I'll be here waiting![-]","[e7a729]あ、ちょうど良い所に、これで私が立ち上がる必要がなくなったわ！\n私ベークドポテトが欲しいの。\nあなたほどの強い冒険者さんなら、お婆ちゃんのための焼き芋くらい作れるわよね？\n\nここで待ってるからね！[-]"
+
+questHorseRanchMaybell2,"[e7a729]Vincent's Favorite[-]","[e7a729]ヴィンセントの好物[-]"
+questHorseRanchMaybell2_offer,"[e7a729]Vincent was complaining earlier about how hard he's been working. As the best Mother in Law, it is my duty to provide a delicious meal for him. But with my bad knees, I'm going to need help. I'll whip up a nice honey glazed ham if you bring me some fresh honey and grill up some meat. I'm sure he'd love that.[-]","[e7a729]ヴィンセントが頑張って働いているようなので、彼のために美味しいご飯を用意して上げようと思うの。\nでも、膝が痛くて、食材を調達しに行けなくて困ってます。\n\n蜂蜜を見つけて、グリルド肉(焼肉)をクラフトしてくれれば、美味しいハニーグレイズハムが作れるわ。\nきっとヴィンセントも喜ぶわ。[-]"
+
+questHorseRanchMaybell3,"[e7a729]Cleaning Day[-]","[e7a729]大掃除[-]"
+questHorseRanchMaybell3_offer,"[e7a729]Tsk tsk tsk. This house is just a mess. That's the problem with living on a ranch. Things get very dirty and dusty. See if you can find a broom in the barn. Clear out some of the dust bunnies in the house. They can be just about anywhere, so keep an eye out for when they appear![-]","[e7a729]はぁ...家が汚いわねぇ。\n牧場住まいだと、何でもすぐにホコリまみれになって困るわ。\n納屋の中にほうきがあるはずだから、見つけて来てくれないかしら?\n\n見つけたら、家の中の綿埃(ダストバニー)を見つけてはらってきて。\n\nホコリは家のどこにでも現れる可能性があるから、しっかり注意して見つけるのよ。\n(ほうきを見つけたら、破壊して回収してください。)[-]"
+
+------------------Vincent-------------------
+questHorseRanchVincent1,"[e7a729]Basic Defenses[-]","[e7a729]防衛の基本[-]"
+questHorseRanchVincent1_offer,"[e7a729]Hello! Looks like horde night is getting closer. We're a little short on defenses, specifically iron arrows. If you have any spare, we definitly could use some. Bring some by next time you're in the area.[-]","[e7a729]こんにちは！\nホード日のための防衛準備を手伝ってくれるかい？\n鉄の矢が不足してるから、いくつかクラフトしてくれると助かる。[-]"
+
+questHorseRanchVincent2,"[e7a729]Maybell's Defenses[-]","[e7a729]メイベルの防衛[-]"
+questHorseRanchVincent2_offer,"[e7a729]Old Maybell has taken a liking to the crossbow. She never stands and runs, so reloading is no problem for her. But she's run out of bolts. Mostly due to her not being able to aim. If you could restock us with, say, 35 iron crossbow bolts, she might be able to take one or two zombies down on horde night.[-]","[e7a729]メイベルはクロスボウがお気に入りですが、エイムが酷すぎて、すぐボルトを切らしてしまいます。\n\n彼女のために鉄のクロスボウボルトを35本クラフトしてくれるかな？\nそれだけあれば、ゾンビ1体くらいは倒せるはずだ。[-]"
+
+questHorseRanchVincent3,"[e7a729]A Slight Trap[-]","[e7a729]ちょっとした罠[-]"
+questHorseRanchVincent3_offer,"[e7a729]Hey, friend. Last night I was scouting out a new area and came across a pretty horrific sight. It seems the undead are learning to ambush humans. Maybe they aren't as undead as we think. Since you seem to have a handle on protecting yourself, why don't you check it out for me? Here's the coordinates. Be careful and be ready. Let me know what happens.[-]","[e7a729]こんにちは。\n未探索エリアへ昨日行っていたんだけど、かなり酷い光景を目の当たりにした。\nゾンビたちがずいぶんと強化されたようなので、奴らとの闘いに慣れている君に頼みがある。\n\nこの場所の様子を見てくれないか?\n戻ったら、報告を頼む。[-]"
+
+-------------------Unlocks------------------
+questHorseRanchUnlockItem2,"[e7a729]A Deal with Vincent Pt. 7[-]","[e7a729]ヴィンセントとの取引Pt. 7[-]"
+questHorseRanchUnlockItem2Desc,"[e7a729]Unlocked at Reputation: 50.\n\nCraft this and bring it back to Vincent to continue the quest line.[-]","[e7a729]必要な評判ポイント：　50\n\nこれをクラフトし、ヴィンセントに話しかけるとクエストを進行させることが出来ます。[-]"
+
+questHorseRanchUnlock1,"[e7a729]A Deal with Vincent Pt. 1[-]","[e7a729]ヴィンセントとの取引Pt. 1[-]"
+questHorseRanchUnlock1Desc,"[e7a729]Unlocked at Reputation: 25.\n\nCraft and read this quest to begin learning how to care for a horse, as Vincent teaches you just what to do.[-]","[e7a729]必要な評判ポイント：　25\n\nこのクエストをクラフトして読むと、ヴィンセントから馬の扱い方を教わることが出来ます。[-]"
+questHorseRanchUnlock1_offer,"[e7a729]*After you became acquainted with everyone at Maybell's Ranch, Vincent comes up to you to have a word* Hey adventurer! I've been talking to Maybell. She says you've been helping us out around the ranch quite a bit. She told me to make a deal with you. If you bring me the materials and a bit of coin, I will teach you how to care for a horse of your own. First we'll get you set up with a saddle. Gather a bit of leather, cloth, some iron, and some duct tape. Bring it to me and we'll continue.[-]","[e7a729]こんにちは冒険者さん！\nメイベルと話していたんだが、牧場の皆が本当にお世話になっているようだね。\n君と1つ取引をしたいと思っているんだけど、良いかな？\n必要な材料とコインを引き換えに馬の扱い方を教えてあげよう。\n\nまずはサドルが必要だ。\n皮、布、鉄、そしてダクトテープを持って来てくれたら次のステップを教えるよ。[-]"
+
+questHorseRanchUnlock2,"[e7a729]A Deal with Vincent Pt. 2[-]","[e7a729]ヴィンセントとの取引Pt. 2[-]"
+questHorseRanchUnlock2Desc,"[e7a729]Craft and read this quest to begin learning how to care for a horse, as Vincent teaches you just what to do.[-]","[e7a729]このクエストをクラフトして読むと、ヴィンセントから馬の扱い方を教わることが出来ます。[-]"
+questHorseRanchUnlock2_offer,"[e7a729]Excellent! Here are some plans for several saddle types. You'll need to be sure to use the correct color saddle for the specific color horse. Go ahead and choose one to get from the stable. You can take one from this stable or find another Maybells Farm and take one from there. Simply craft a saddle, walk up to a horse and left click. This will give you your own horse! Next step is finding a way to feed it. Instead of just repairing a horse like a vehicle, you can also feed it an apple to regenerate health. Keep an eye on the health while riding. Once you read the schematic for saddles, you are able to find apples from chopping any tree. So go find some apples and report back![-]","[e7a729]素晴らしい!\nいくつかのサドルのレシピ解放に必要な図をあげましょう。\nサドルの色と馬の色を合わせる必要があるので、間違えないでくださいね。\nここにいる馬の中から好きな色のを選んで良いですよ。\n欲しい馬と同じ色のサドルをクラフトし、サドルを手に持った状態で、馬に向かって左クリックを行います。\n\n馬は乗っていると徐々に体力が減るので、回復させるためには、リンゴを食べさせる必要があります。\nサドルの図を読むと、伐採時にリンゴがたまに入手出来るようになります。\n早速そこら辺の木を切り倒してリンゴを手に入れてみてください。[-]"
+
+questHorseRanchUnlock3,"[e7a729]A Deal with Vincent Pt. 3[-]","[e7a729]ヴィンセントとの取引Pt. 3[-]"
+questHorseRanchUnlock3Desc,"[e7a729]Craft and read this quest to begin learning how to care for a horse, as Vincent teaches you just what to do.[-]","[e7a729]このクエストをクラフトして読むと、ヴィンセントから馬の扱い方を教わることが出来ます。[-]"
+questHorseRanchUnlock3_offer,"[e7a729]Nicely done. If your horse ever needs some health, just give it an apple. Remember, apples restore 1000 health each. Our daughter Abby has taken a liking to you. She said she wants to play with you, but is too shy to ask. Would you go play a game with her? It would make her very happy. Go talk to her and see what she wants to play. If I know her, it's a minigame. Good luck! There's no telling what her imagination will have in store for this minigame.[-]","[e7a729]いいね！\nリンゴを馬に食べさせると体力を1000回復させることが出来るからね。\n\nうちの娘のアビーが君とあそびたがってたよ。\nでも恥ずかしがり屋なので、話しかけることが出来ないらしい。\n本当に喜ぶと思うので、君の方から話しかけてやってくれないか？ \n多分、いつものミニゲームだとは思うけど、何して遊びたいか聞いて見てあげてくれ。[-]"
+
+questHorseRanchUnlock4,"[e7a729]A Deal with Vincent Pt. 4[-]","[e7a729]ヴィンセントとの取引Pt. 4[-]"
+questHorseRanchUnlock4Desc,"[e7a729]Craft and read this quest to begin learning how to care for a horse, as Vincent teaches you just what to do.[-]","[e7a729]このクエストをクラフトして読むと、ヴィンセントから馬の扱い方を教わることが出来ます。[-]"
+questHorseRanchUnlock4_offer,"[e7a729]Oh... Hey! Um... did you come to play with me?? *Abby looks very excited as you tell her yes* Yay! Can we play Simon Says? That sounds like fun! But... I want to be the game leader. We can play it like we're at a faire! *Abby clears her throat* Ladiessss and gentlemennn! Come one, come all, to Abby Says! It's like Simon Says but all about ME! *Abby giggles, then looks at you* Oh.. umm you're missing a game token! No faire minigame just gives you a free play. Here, I'll help you out. *Abby digs around her pockets and pulls out a tiny piece of paper with nothing on it* This is a recipe for crafting a game token. Go make one and we'll be able to play![-]","[e7a729]えっと...こんにちは！\nえっと...もしかしてアビーとあそんでくれるの？\n<<とても嬉しそうなアビーに向けて頷きます>>\nわーい！　船長さんの命令しよー！　楽しいよ、ほんとに楽しいよ！\n私がリーダーでいい？\nそれじゃ、皆集まってー！　皆でアビーの命令ゲームするよー！\n<<私一人しかいないのに...ｗ>>\n\nあ、ゲームトークン持ってないのね、ゲームに参加するにwはトークンが必要なのよ。\n<<アビーがポケットの中からボロボロになった紙切れを取り出してあなたにわたします>>\nそれがトークンを作るために必要な図！　それを読んで、トークンをクラフトしてね！[-]"
+
+questHorseRanchUnlock5,"[e7a729]A Deal with Vincent Pt. 5[-]","[e7a729]ヴィンセントとの取引Pt. 5[-]"
+questHorseRanchUnlock5Desc,"[e7a729]Craft and read this quest to begin learning how to care for a horse, as Vincent teaches you just what to do.[-]","[e7a729]このクエストをクラフトして読むと、ヴィンセントから馬の扱い方を教わることが出来ます。[-]"
+questHorseRanchUnlock5_offer,"[e7a729]You're back! Did you get a token? We can play now yay! Ok ok, gimme the token and I'll call out shapes or colors after about 10 seconds (Look at your buff stack to see the icon of what's being called out). You'll have only 5 seconds to run and stand on that block. If you get it right, we'll keep playing. If you get it wrong, you'll need another token to play. Get 10 points in a row and you'll get a +1 reputation.[-]","[e7a729]おかえりなさい！\n良かった、これで遊べるね！\nそれじゃ、私が10秒後くらいに形か色を言うからね。(指定された形や色は、あなたのバフのアイコンをご覧ください)\n5秒以内に、アビーが言った形とか色のブロックの上に立ってね！\n正解したら次のを言うね、でも失敗したら、またトークンを使わなきゃ遊べないよ。\n\n10回連続で成功すると評判が1上がります。[-]"
+
+questHorseRanchUnlock6,"[e7a729]A Deal with Vincent Pt. 6[-]","[e7a729]ヴィンセントとの取引Pt. 6[-]"
+questHorseRanchUnlock6Desc,"[e7a729]Craft and read this quest to begin learning how to care for a horse, as Vincent teaches you just what to do.[-]","[e7a729]このクエストをクラフトして読むと、ヴィンセントから馬の扱い方を教わることが出来ます。[-]"
+questHorseRanchUnlock6_offer,"[e7a729]Did you play with Abby? She's a creative little girl isn't she? Well, if you will, keep her company a while. I need to talk with Maybell and Leah about something. I'll find you when we're ready for you again.[-]","[e7a729]アビーと遊んでくれたかい？\n本当に想像力豊かな子だよね。\n私はメイベルやリアと話があるから、君はもう少しの間アビーの相手をしてやってくれ。\n\n時が来たらまた話しかけるよ[-]"
+
+questHorseRanchUnlock7,"[e7a729]A Deal with Vincent Pt. 7[-]","[e7a729]ヴィンセントとの取引Pt. 7[-]"
+questHorseRanchUnlock7Desc,"[e7a729]Craft and read this quest to begin learning how to care for a horse, as Vincent teaches you just what to do.[-]","[e7a729]このクエストをクラフトして読むと、ヴィンセントから馬の扱い方を教わることが出来ます。[-]"
+questHorseRanchUnlock7_offer,"[e7a729]Ah there you are. I've been meaning to talk to you. Maybell and Leah agree that we should allow you to train your horse on the obstacle course. Here, I'll give you the first ticket for free. Keep this with you and when you get 100 points in the obstacle course, bring it back to me.[-]","[e7a729]あ、いたいた、君に話があるんだ\nメイベルとリアと話していたんだが、ここの乗馬コースで君の馬の訓練をする事を許可する事になった。\n最初のチケットは無料であげるね。\n乗馬コースのポイントが100貯まったら、このチケットを持って、もう一度私に話しかけてくれ。[-]"
+
+questHorseRanchUnlock8,"[e7a729]A Deal with Vincent Pt. 8[-]","[e7a729]ヴィンセントとの取引Pt. 8[-]"
+questHorseRanchUnlock8Desc,"[e7a729]Craft and read this quest to begin learning how to care for a horse, as Vincent teaches you just what to do.[-]","[e7a729]このクエストをクラフトして読むと、ヴィンセントから馬の扱い方を教わることが出来ます。[-]"
+questHorseRanchUnlock8_offer,"[e7a729]Wow you completed the course?? You seem like a natural to be able to control your horse that well. That ribbon can be used along with a horse of your choice to upgrade it to a tier 2 horse. This will consume the ribbon. You will need to craft a new ticket and complete the course again if you want to upgrade a different horse. You're off to be a real great horse trainer. You'd make us all proud. We're very grateful for you to come help us like you have. A special thank you from Maybell, Leah, Abby, and myself. Keep those horses in shape and we'll see you in another mod![-]","[e7a729]え、クリアしたの？\n素晴らしい手綱捌きだったよ。\nそのリボンと自分の馬を組み合わせると馬をグレードアップさせることが出来るよ。\nリボンは消耗品だから、別の馬をアップグレードするためには、またチケットをクラフトして、乗馬コースをクリアする必要があるからね。\n\n本当に素晴らしいトレーナーになりそうだ。\n牧場の手助けをたくさんしてくれてありがとう。\n\nメイベル、リア、アビー、そして私、皆本当に感謝してるよ、また次のModでお会いしましょう！[-]"

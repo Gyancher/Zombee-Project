@@ -1,0 +1,106 @@
+<configs>
+<append xpath="/buffs">
+<!-- fishing -->
+<buff name="buffFishableWaterReady" hidden="true">
+		<stack_type value="duration"/>
+		<duration value="2"/>
+		<effect_group name="Empty to Allow Cast">
+		
+		</effect_group>
+	</buff>
+
+<buff name="buffFishingPoleWoodCast" name_key="buffFishingPoleWoodCastName" description_key="buffFishingPoleWoodCastDesc" icon="ui_game_symbol_NotificationFishingIcon">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		<update_rate value="1" />
+		<display_value value="FishingCastTimer"/>
+		<display_value_key value="{0}"/>
+		<effect_group name="Set CVars">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCastTimer" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="FishingCastTimer" operation="subtract" value="1"/>
+		</effect_group>
+		<effect_group name="Attaches">
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsFishing.unity3d?FishBobberPrefab" local_offset="0,0,2.25" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="FishBobberPrefab"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="FishBobberPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="FishBobberPrefab"/>
+		</effect_group>
+		<effect_group name="Chance to Catch Fish">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="7"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFishingPoleWoodCatch" target="self"/>
+		</effect_group>
+		<effect_group name="Remove if 0 Cvar">
+				<requirement name="CVarCompare" cvar="FishingCastTimer" operation="LT" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffFishingPoleWoodCast" target="self"/>
+		</effect_group>
+	</buff>
+<buff name="buffFishingPoleWoodCatch" name_key="buffFishingPoleWoodCatchName" description_key="buffFishingPoleWoodCatchDesc" icon="ui_game_symbol_FishCaughtIcon">
+		<stack_type value="ignore"/>
+		<duration value="5"/>
+		<display_value value="FishingCatchTrigger"/>
+		<display_value_key value="{0}"/>
+		<update_rate value=".1" />
+		<effect_group name="Set CVars">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchTrigger" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="FishingCatchTrigger" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="FishingCatchTrigger" operation="set" value="0"/>
+		</effect_group>
+		<effect_group name="Add Fish Caught Buff">
+			<requirement name="CVarCompare" cvar="FishingCatchTrigger" operation="GTE" value="100"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFishingPoleWoodComplete" target="self"/>
+		</effect_group>
+		<effect_group name="Play Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="FishingPoleCatch"/>
+		</effect_group>
+		<effect_group name="Shake Camera">
+			<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="0.75" shake_amplitude="40" shake_time="5"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="1"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="1"/>
+		</effect_group>
+		<effect_group name="Remove All Prefabs if Finished or Removed.">
+			<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="FishingCatch" prefab="#@modfolder:Resources/TelricsFishing.unity3d?FishCatchPrefab" localPos=".3,0,1.3" localRot="0,0,0" parentTransform="Camera"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="FishReelIn" prefab="#@modfolder:Resources/TelricsFishing.unity3d?FishReelInPrefab" localPos="0,0,1.3" localRot="0,0,0" parentTransform="Camera"/>
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="RemovePart" part="FishingCatch"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="FishingCatch"/>
+			<triggered_effect trigger="onSelfDied" action="RemovePart" part="FishingCatch"/>
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="RemovePart" part="FishReelIn"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="FishReelIn"/>
+			<triggered_effect trigger="onSelfDied" action="RemovePart" part="FishReelIn"/>
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="FishBobberPrefab"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="FishBobberPrefab"/>
+			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="FishBobberPrefab"/>
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffFishingPoleWoodCast" target="self"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffFishingPoleWoodCast" target="self"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffFishingPoleWoodCast" target="self"/>
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffFishingPoleWoodCatch" target="self"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffFishingPoleWoodCatch" target="self"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffFishingPoleWoodCatch" target="self"/>
+		</effect_group>
+	</buff>
+<buff name="buffFishingPoleWoodComplete" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="10"/>
+		<effect_group name="Play Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="FishingComplete"/>
+		</effect_group>		
+		<effect_group name="Remove Fishing">
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffFishingPoleWoodCatch" target="self"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="FishCaught" prefab="#@modfolder:Resources/TelricsFishing.unity3d?FishCaughtPrefab" localPos=".3,0,1.3" localRot="0,0,0" parentTransform="Camera"/>
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="RemovePart" part="FishCaught"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="FishCaught"/>
+			<triggered_effect trigger="onSelfDied" action="RemovePart" part="FishCaught"/>
+		</effect_group>
+	</buff>
+
+</append>
+
+</configs>

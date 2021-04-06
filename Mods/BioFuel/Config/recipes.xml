@@ -1,0 +1,23 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="ammoGasCan" count="1000" craft_time="100" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+			<ingredient name="resourceBioFuel" count="3"/>
+			<ingredient name="drinkJarGrainAlcohol" count="1"/>
+		</recipe>
+		<recipe name="resourceBioFuel" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="resourceAnimalFat" count="1"/>
+		</recipe>
+		<recipe name="resourceBioFuel" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="resourceTurd" count="1"/>
+		</recipe>
+		<recipe name="farmPlotBlockPlayer" count="1" tags="perkLivingOffTheLandCrafting" craft_time="20">
+			<ingredient name="resourceWood" count="4"/>
+			<ingredient name="resourceTurd" count="1"/>
+			<ingredient name="resourceClayLump" count="100"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,3,4,5" operation="perc_add" value="-.3,-.5,-.5,-.5" tags="resourceClayLump"/>
+			</effect_group>
+		</recipe>
+
+	</append>
+</configs>

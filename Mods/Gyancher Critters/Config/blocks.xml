@@ -1,0 +1,112 @@
+<configs>
+	<append xpath="/blocks">
+
+
+		<block name="oriole">
+			<property name="CustomIcon" value="oriole" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/oriole.unity3d?oriole" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="oriole" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="oriole" count="1" />
+		</block>
+
+
+		<block name="dragonfly">
+			<property name="CustomIcon" value="dragonfly" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/dragonfly.unity3d?dragonfly" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="dragonfly" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="dragonfly" count="1" />
+		</block>
+		
+		<block name="turtle">
+			<property name="CustomIcon" value="turtle" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/turtle.unity3d?turtle" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="turtle" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="turtle" count="1" />
+		</block>		
+		
+		<block name="bumblebee">
+			<property name="CustomIcon" value="bumblebee" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/bumblebee.unity3d?bumblebee" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="bumblebee" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="bumblebee" count="1" />
+		</block>
+		
+		<block name="squirrel">
+			<property name="CustomIcon" value="squirrel" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/squirrel.unity3d?squirrel" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="squirrel" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="squirrel" count="1" />
+		</block>
+		
+		<block name="snail">
+			<property name="CustomIcon" value="snail" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/snail.unity3d?snail" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="snail" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="snail" count="1" />
+		</block>
+		
+
+		<block name="rat">
+			<property name="CustomIcon" value="sound" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/rat.unity3d?RatRunning.prefab" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="rat" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="rat" count="1" />
+		</block>
+		
+		
+		<block name="frog">
+			<property name="CustomIcon" value="sound" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/frog.unity3d?frog.prefab" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="+music frog" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="frog" count="1" />
+		</block>	
+</append>
+</configs>

@@ -1,0 +1,16 @@
+<config>
+    <append xpath="worldglobal/environment">
+        <!--
+            Optional properties to enable and configure seasonal weather.
+            To disable, remove DaysPerMeteorologicalYear, or set to a number less than 1.
+        -->
+        <!-- Each meteorological season is 3 weeks game time -->
+        <property name="DaysPerMeteorologicalYear" value="84" />
+        <!-- Temperature variation of 31 degrees Fahrenheit, the hard-coded maximum -->
+        <property name="TemperatureVariation" value="31" />
+        <!-- Start in the middle of the spring meteorological season -->
+        <property name="StartingSeason" value="spring" />
+        <!-- Whether to alert players when the seasons start -->
+        <property name="SeasonStartAlerts" value="true" />
+    </append>
+</config>

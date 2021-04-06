@@ -1,0 +1,31 @@
+<Claymore>
+<append xpath="/recipes">
+<recipe name="HedgeArch" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+<recipe name="HedgeSlide" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+<recipe name="HedgeSlidePowered" count="1" craft_area="workbench">
+	<ingredient name="SlidingDoor" count="1"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+
+<recipe name="HedgeSlideBig" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+<recipe name="HedgeSlideBigPowered" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+</append>
+</Claymore>

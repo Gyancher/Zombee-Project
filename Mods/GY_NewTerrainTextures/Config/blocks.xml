@@ -1,0 +1,756 @@
+<configs>
+	<append xpath="/blocks">
+		
+	
+    <block name="GY_Cracked_Mud_001">
+      <property name="Material" value="Mstone"/>
+	  <property name="CustomIcon" value="Cracked_Mud_001"/>
+      <property name="NoScrapping" value="true"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="604"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+      <drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+      <property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0j0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>
+    </block>
+	
+     <block name="GY_Jungle_Floor_001">
+      <property name="Material" value="Mstone"/>
+	    <property name="CustomIcon" value="Jungle_Floor_001"/>
+      <property name="NoScrapping" value="true"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="605"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+      <drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+      <property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0j0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>
+    </block>
+	
+	<block name="GY_Pebbles_007">
+      <property name="Material" value="Mstone"/>
+	    <property name="CustomIcon" value="Pebbles_007"/>
+      <property name="NoScrapping" value="true"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="606"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+      <drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+      <property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0j0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>
+    </block>
+   
+   <block name="GY_Stone_Floor_002">
+      <property name="Material" value="Mstone"/>
+	    <property name="CustomIcon" value="Stone_Floor_002"/>
+      <property name="NoScrapping" value="true"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="607"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+      <drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+      <property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0j0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>
+    </block>
+
+    <block name="GY_Stone_Path_004">
+      <property name="Material" value="Mstone"/>
+	    <property name="CustomIcon" value="Stone_Path_004"/>
+      <property name="NoScrapping" value="true"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="608"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+      <drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+      <property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0j0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>
+    </block>
+
+    <block name="GY_Grunge Panel 04">
+      <property name="Material" value="Mstone"/>
+	  <property name="CustomIcon" value="Grunge Panel 04"/>
+      <property name="NoScrapping" value="true"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="609"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+      <drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+      <property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0j0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>
+    </block>
+
+    <block name="GY_Lava">
+      <property name="Material" value="Mlava"/>
+	  <property name="CustomIcon" value="Lava"/>
+      <property name="NoScrapping" value="true"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="610"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+		<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+		<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+		<property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+		<property name="EconomicValue" value="5"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="FilterTags" value="fterrain"/>
+		<property name="SortOrder1" value="d0j0"/>
+		<property name="SortOrder2" value="0050"/>
+		<property name="HeatMapStrength" value="5"/>
+		<property name="HeatMapTime" value="5000"/>
+		<property name="HeatMapFrequency" value="1000"/>
+		<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+		<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+      <property name="DisplayType" value="blockTerrain"/>
+    </block>
+
+    <block name="GY_Volcanic Ash">
+      <property name="Material" value="Mstone"/>
+	  <property name="CustomIcon" value="Volcanic Ash 01"/>
+      <property name="NoScrapping" value="true"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="614"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+      <drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+      <property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0j0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>
+	    		<property name="HeatMapStrength" value="5"/>
+		<property name="HeatMapTime" value="5000"/>
+		<property name="HeatMapFrequency" value="1000"/>
+		<property name="BuffsWhenWalkedOn" value="buffElementSweltering"/>
+		<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+    </block>
+
+    <block name="GY_Radioactive Volcanic Ash">
+      <property name="Material" value="Mstone"/>
+	  <property name="CustomIcon" value="Volcanic Ash 02"/>
+      <property name="NoScrapping" value="true"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="615"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+      <drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+      <property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0j0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>
+	      		<property name="HeatMapStrength" value="3"/>
+		<property name="HeatMapTime" value="50"/>
+		<property name="HeatMapFrequency" value="100"/>
+		<property name="BuffsWhenWalkedOn" value="buffRadiation03"/>
+		<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	  
+    </block>
+
+      <block name="GY_Rusted Metal 10">
+      <property name="Material" value="Mstone"/>
+      <property name="NoScrapping" value="true"/>
+	  <property name="CustomIcon" value="Rusted Metal 10"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="613"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+      <drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+      <property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0j0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>
+    </block>
+
+  <block name="GY_Sand 002">
+      <property name="Material" value="Mstone"/>
+	   <property name="CustomIcon" value="Sand 002"/>
+      <property name="NoScrapping" value="true"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="612"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+      <drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+      <property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0j0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>
+	  	<property name="HeatMapStrength" value="5"/>
+		<property name="HeatMapTime" value="10"/>
+		<property name="HeatMapFrequency" value="100"/>
+		<property name="BuffsWhenWalkedOn" value="buffEncumberedInv"/>
+		<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+    </block>
+
+    <block name="GY_Metal Panel 08">
+      <property name="Material" value="Mstone"/>
+	   <property name="CustomIcon" value="Metal Panel 08"/>
+      <property name="NoScrapping" value="true"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="611"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Weight" value="125"/>
+      <property name="Map.Color" value="100,100,200"/>
+      <property class="RepairItems">
+        <property name="resourceCobblestones" value="6"/>
+      </property>
+      <!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+      <drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+      <!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+      <!-- <drop event="Fall" name="resourceScrapIron" count="20" prob="0.23" stick_chance="0"/> -->
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+      <!-- Better to have fewer stacks with higher numbers for performance reasons. -->
+      <!-- With a stick chance fallen resources just get buried and fall off the earth. -->
+      <!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. -->
+      <property name="CanMobsSpawnOn" value="true"/>
+      <!-- BM and horde AI can ONLY spawn on these blocks, the minimum distance to any player is 30m -->
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0j0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>	
+    </block>
+
+
+ <!-- Liquid Tools for the new terrain -->
+		<block name="LiquidCracked_Mud">
+			<property name="Extends" value="GY_Cracked_Mud_001"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Cracked_Mud_001"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>
+		
+		<block name="LiquidJungle_Floor">
+			<property name="Extends" value="GY_Jungle_Floor_001"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Jungle_Floor_001"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>
+		
+		<block name="LiquidPebbles">
+			<property name="Extends" value="GY_Pebbles_007"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Pebbles_007"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>
+			
+		<block name="LiquidStone_Floor_002">
+			<property name="Extends" value="GY_Stone_Floor_002"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Stone_Floor_002"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>		
+		
+		<block name="LiquidStone_Path_004">
+			<property name="Extends" value="GY_Stone_Path_004"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Stone_Path_004"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>		
+		
+		<block name="LiquidGrunge Panel 04">
+			<property name="Extends" value="GY_Grunge Panel 04"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Grunge Panel 04"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>		
+		
+		<block name="LiquidLava">
+			<property name="Extends" value="GY_Lava"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Lava"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>		
+		
+		<block name="LiquidMetal Panel 08">
+			<property name="Extends" value="GY_Metal Panel 08"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Metal Panel 08"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>
+		
+		<block name="LiquidSand 002">
+			<property name="Extends" value="GY_Sand 002"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Sand 002"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>
+		
+		<block name="LiquidRusted Metal 10">
+			<property name="Extends" value="GY_Rusted Metal 10"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Rusted Metal 10"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>
+		
+		<block name="LiquidVolcanic Ash">
+			<property name="Extends" value="GY_Volcanic Ash"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Volcanic Ash"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>		
+		
+		<block name="LiquidRadioactiveVolcanic Ash">
+			<property name="Extends" value="GY_Radioactive Volcanic Ash"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="GY_Radioactive Volcanic Ash2"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>
+	<block name="liquidWater_terrLiquidStone">
+			<property name="Extends" value="terrStone"/>
+			<property name="Weight" value="0"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrConcrete"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="Map.Color" value="20,20,120"/>
+			<drop event="Harvest" name="resourceRockSmall" count="0" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceIronFragment" count="0" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceRockSmall" count="0"/>
+			<drop event="Fall" name="resourceIronFragment" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="0"/>
+		</block>
+		
+		<block name="liquidWater_terrLiquidStoneStatic">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="terrStone"/>
+			<property name="Weight" value="0"/>
+			<property name="Class" value="UpgradeRated"/>
+			<property name="UpgradeRated.ToBlock" value="waterStaticBucket"/>
+			<property name="UpgradeRated.Rate" value="2"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="Map.Color" value="20,20,120"/>
+			<drop event="Harvest" name="resourceRockSmall" count="0" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceIronFragment" count="0" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceRockSmall" count="0"/>
+			<drop event="Fall" name="resourceIronFragment" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="0"/>
+			<drop event="Fall" name="waterStaticBucket" count="1" stick_chance="1"/>
+		</block>
+		<block name="liquidWater_waterLiquidPOI">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="CustomIconTint" value="0031c6"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrWaterPOI"/>
+			<property name="Material" value="Mwater"/>
+			<property name="Shape" value="Water"/>
+			<property name="Mesh" value="water"/>
+			<property name="Model" value="water_full"/>
+			<property name="Texture" value="223"/>
+			<property name="Map.Color" value="20,20,120"/>
+			<property name="Map.Color" value="119,136,204"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="FilterTags" value="fterrain"/>
+		</block>
+		<block name="liquidWater_waterLiquid">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="CustomIconTint" value="7a8aba"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="water"/>
+			<property name="Count" value="1000"/>
+			<property name="Material" value="Mwater"/>
+			<property name="Shape" value="Water"/>
+			<property name="Mesh" value="water"/>
+			<property name="Model" value="water_full"/>
+			<property name="Texture" value="223"/>
+			<property name="Map.Color" value="20,20,120"/>
+			<property name="Map.Color" value="119,136,204"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="FilterTags" value="fterrain"/>
+		</block>
+		
+		<block name="LiquidTopSoil">
+			<property name="Extends" value="terrTopSoil"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrTopSoil"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+		</block>
+			
+		<block name="LiquidStone">
+			<property name="Extends" value="terrStone"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrStone"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>			
+			<property name="Map.Color" value="100,100,100"/>			
+			<property name="DisplayType" value="blockTerrain"/>
+		</block>
+		
+		<block name="LiquidSnow">
+			<property name="Extends" value="terrSnow"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrSnow"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="Map.Color" value="230,230,255"/>
+			<property name="DisplayType" value="blockTerrainFertile"/>
+			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		</block>
+		
+		<block name="LiquidDirt">
+			<property name="Extends" value="terrDirt"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrDirt"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="Map.Color" value="20,50,21"/>
+			<property name="DisplayType" value="blockTerrainFertile"/>
+		</block>		
+				
+		<block name="LiquidForestGround">
+			<property name="Extends" value="terrForestGround"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrForestGround"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="Map.Color" value="35,80,45"/>			
+			<property name="DisplayType" value="blockTerrainFertile"/>
+			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		</block>	
+		
+		<block name="LiquidBurntForestGround">
+			<property name="Extends" value="terrBurntForestGround"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrBurntForestGround"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="ItemTypeIcon" value="triangle"/>		
+			<property name="Map.Color" value="55,55,50"/>
+			<property name="DisplayType" value="blockTerrainFertile"/>
+			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		</block>
+		
+		<block name="LiquidDesertGround">
+			<property name="Extends" value="terrDesertGround"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrDesertGround"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="ItemTypeIcon" value="triangle"/>		
+			<property name="Map.Color" value="255,221,153"/>
+			<property name="DisplayType" value="blockTerrainFertile"/>
+			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		</block>
+		
+		<block name="LiquidSand">
+			<property name="Extends" value="terrDesertGround"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrSand"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="ItemTypeIcon" value="triangle"/>			
+			<property name="Map.Color" value="167,136,107"/>
+		</block>
+		
+		<block name="LiquidSandStone">
+			<property name="Extends" value="terrSandStone"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrSandStone"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="ItemTypeIcon" value="triangle"/>			
+			<property name="Map.Color" value="107,78,57"/>
+			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		</block>
+		
+		<block name="LiquidGravel">
+			<property name="Extends" value="terrGravel"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrGravel"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="Map.Color" value="158,139,124"/>
+			<property name="DisplayType" value="blockTerrainFertile"/>
+		</block>
+		
+		<block name="LiquidAsphalt">
+			<property name="Extends" value="terrAsphalt"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrAsphalt"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="Map.Color" value="204,177,131"/>
+			<property name="DisplayType" value="blockTerrainHardened"/>
+			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		</block>			
+			
+		<block name="LiquidFertileGrass">
+			<property name="Extends" value="terrFertileGrass"/>
+			<property name="Class" value="LiquidMoving"/>
+			<property name="LiquidStatic" value="terrFertileGrass"/>
+			<property name="CustomIconTint" value="5e4545"/>
+			<property name="CustomIcon" value="bucketRiverWater"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+		</block>
+		
+  </append>
+</configs>

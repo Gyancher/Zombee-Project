@@ -1,0 +1,282 @@
+<stallionsden>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  lantern2  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<append xpath="/blockplaceholders/placeholder[@name='cntForestRandomLootHelper']">
+
+<block name="lantern2" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntWastelandRandomLootHelper']">
+
+<block name="lantern2" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntDesertRandomLootHelper']">
+
+<block name="lantern2" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBurntForestRandomLootHelper']">
+
+<block name="lantern2" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntHouseRandomLootHelper']">
+
+<block name="lantern2" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntStreetRandomLootHelper']">
+
+<block name="lantern2" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntYardRandomLootHelper']">
+
+<block name="lantern2" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntGarageRandomLootHelper']">
+
+<block name="lantern2" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBagsRandomLootHelper']">
+
+<block name="lantern2" prob="0.6"/>
+</append>
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  lantern3  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<append xpath="/blockplaceholders/placeholder[@name='cntForestRandomLootHelper']">
+
+<block name="lantern3" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntWastelandRandomLootHelper']">
+
+<block name="lantern3" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntDesertRandomLootHelper']">
+
+<block name="lantern3" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBurntForestRandomLootHelper']">
+
+<block name="lantern3" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntHouseRandomLootHelper']">
+
+<block name="lantern3" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntStreetRandomLootHelper']">
+
+<block name="lantern3" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntYardRandomLootHelper']">
+
+<block name="lantern3" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntGarageRandomLootHelper']">
+
+<block name="lantern3" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBagsRandomLootHelper']">
+
+<block name="lantern3" prob="0.6"/>
+</append>
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  lantern4  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+<append xpath="/blockplaceholders/placeholder[@name='cntForestRandomLootHelper']">
+
+<block name="lantern4" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntWastelandRandomLootHelper']">
+
+<block name="lantern4" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntDesertRandomLootHelper']">
+
+<block name="lantern4" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBurntForestRandomLootHelper']">
+
+<block name="lantern4" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntHouseRandomLootHelper']">
+
+<block name="lantern4" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntStreetRandomLootHelper']">
+
+<block name="lantern4" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntYardRandomLootHelper']">
+
+<block name="lantern4" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntGarageRandomLootHelper']">
+
+<block name="lantern4" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBagsRandomLootHelper']">
+
+<block name="lantern4" prob="0.6"/>
+</append>
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  lantern5  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+<append xpath="/blockplaceholders/placeholder[@name='cntForestRandomLootHelper']">
+
+<block name="lantern5" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntWastelandRandomLootHelper']">
+
+<block name="lantern5" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntDesertRandomLootHelper']">
+
+<block name="lantern5" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBurntForestRandomLootHelper']">
+
+<block name="lantern5" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntHouseRandomLootHelper']">
+
+<block name="lantern5" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntStreetRandomLootHelper']">
+
+<block name="lantern5" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntYardRandomLootHelper']">
+
+<block name="lantern5" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntGarageRandomLootHelper']">
+
+<block name="lantern5" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBagsRandomLootHelper']">
+
+<block name="lantern5" prob="0.6"/>
+</append>
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  lantern6  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<append xpath="/blockplaceholders/placeholder[@name='cntForestRandomLootHelper']">
+
+<block name="lantern6" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntWastelandRandomLootHelper']">
+
+<block name="lantern6" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntDesertRandomLootHelper']">
+
+<block name="lantern6" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBurntForestRandomLootHelper']">
+
+<block name="lantern6" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntHouseRandomLootHelper']">
+
+<block name="lantern6" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntStreetRandomLootHelper']">
+
+<block name="lantern6" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntYardRandomLootHelper']">
+
+<block name="lantern6" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntGarageRandomLootHelper']">
+
+<block name="lantern6" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBagsRandomLootHelper']">
+
+<block name="lantern6" prob="0.6"/>
+</append>
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  lantern7  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+<append xpath="/blockplaceholders/placeholder[@name='cntForestRandomLootHelper']">
+
+<block name="lantern7" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntWastelandRandomLootHelper']">
+
+<block name="lantern7" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntDesertRandomLootHelper']">
+
+<block name="lantern7" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBurntForestRandomLootHelper']">
+
+<block name="lantern7" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntHouseRandomLootHelper']">
+
+<block name="lantern7" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntStreetRandomLootHelper']">
+
+<block name="lantern7" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntYardRandomLootHelper']">
+
+<block name="lantern7" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntGarageRandomLootHelper']">
+
+<block name="lantern7" prob="0.6"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntBagsRandomLootHelper']">
+
+<block name="lantern7" prob="0.6"/>
+</append>
+
+
+</stallionsden>

@@ -1,0 +1,37 @@
+<configs>
+	<append xpath="/blocks">
+	
+	
+<block name="WebTrap">
+		<property name="Extends" value="barbedWireSheet" param1="SortOrder1,SortOrder2"/>
+        <property name="Material" value="Mcloth"/>
+        <property name="Shape" value="ModelEntity"/>
+     			<property name="CustomIcon" value="pressureplate"/>
+			<property name="Model" value="Entities/Electrical/pressure_platePrefab"/> <property name="HandleFace" value="Bottom"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+       <property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterExchange" value="imposterPlate" param1="143"/>
+			<property name="CanPickup" value="true"/>
+			<property name="TakeDelay" value="5"/>    
+			<property name="RequiredPower" value="0"/>
+			<property name="Damage" value="5" />
+			<property name="Damage_received" value="5" />
+			<property name="Group" value="Science"/>
+			<property class="RepairItems">
+				<property name="forgedIron" value="8"/>
+				<property name="resourceMechanicalParts" value="1"/>
+				<property name="resourceElectricParts" value="1"/>
+			</property>
+		
+		<property name="BuffsWhenWalkedOn" value="buffWebTrap"/>
+        <property name="MaxDamage" value="350"/>
+	<drop event="Destroy"  count="0"/>
+</block>
+	
+	</append>
+	
+	
+	
+</configs>

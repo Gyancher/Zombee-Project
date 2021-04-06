@@ -1,0 +1,48 @@
+<configs>
+	<append xpath="/blocks">
+
+
+ <block name="GrainMill">
+	<property name="CreativeMode" value="Player"/>	
+	<property name="CustomIcon" value="grainmill" />
+	<property name="StabilitySupport" value="False"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/Grainmill.unity3d?Windmill.prefab" />  <property name="HandleFace" value="Bottom"/>
+	<property name="ModelOffset" value="0,1.5,0"/>		
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,5,3"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Class" value="Workstation"/>
+			<property name="Material" value="Mwood"/>
+			<property name="MaxDamage" value="500"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="HeatMapStrength" value="0"/>
+			<property name="HeatMapTime" value="1200"/>
+			<property name="HeatMapFrequency" value="25"/>
+			<property name="Stacknumber" value="1"/>
+			<property class="Workstation">
+				<property name="Modules" value="output"/>
+				<property name="CraftingAreaRecipes" value="GrainMill"/></property>
+			<property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+			<property name="OpenSound" value="chem_station_open"/>
+			<property name="CloseSound" value="chem_station_close"/>
+			<property name="CraftSound" value="chem_station_mix_click"/>
+			<property name="CraftCompleteSound" value="chem_station_complete_item"/>
+
+			<property name="WorkstationJournalTip" value="workbenchTip" />
+			<property class="RepairItems">
+				<property name="resourceWood" value="5"/>
+				</property>
+			<drop event="Harvest" name="resourceWood" count="1" prob="0.3" tag="allHarvest"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="DescriptionKey" value="Use the Grain Mill for all your grain recipies."/>
+			<property name="EconomicValue" value="776"/>
+			<property name="Group" value="Workbenches,All"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>		
+		
+</append>
+</configs>

@@ -1,0 +1,60 @@
+<configs>
+	<append xpath="/recipes">
+	
+		 <recipe name="Fresh Milk" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>
+				
+		<recipe name="drinkJarPureMineralWater" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>		
+		
+		<recipe name="drinkJarYuccaJuice" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>		
+		
+		<recipe name="drinkJarGoldenRodTea" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>		
+		
+		<recipe name="drinkJarRedTea" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>		
+		
+		<recipe name="drinkJarYuccaCocktail" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>
+		
+		<recipe name="drinkYuccaJuiceSmoothie" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>		
+		
+		<recipe name="drinkCanMegaCrush" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>		
+		
+		<recipe name="drinkJarBeer" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>		
+		
+		<recipe name="drinkJarGrainAlcohol" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>		
+		
+		<recipe name="drinkJarGrandpasMoonshine" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>		
+		
+		<recipe name="drinkJarGrandpasAwesomeSauce" count="10" craft_area="WorkingSodaMachine" craft_time="1"> 
+				<ingredient name="casinoCoin" count="1"/>
+		</recipe>
+	
+		<recipe name="WorkingSodaMachine" count="1" craft_area="workbench" craft_time="1200">
+			<ingredient name="resourceMetalPipe" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+		
+	</append>
+	
+</configs>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+	<configs>
+
+		<append xpath="/recipes">
+
+			<recipe name="catapultTrap1" count="1" craft_area="workbench" tags="">
+				<ingredient name="resourceForgedIron" count="10"/>
+				<ingredient name="resourceMechanicalParts" count="2"/>
+				<ingredient name="resourceElectricParts" count="2"/>
+					<effect_group>
+						<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedIron,resourceMechanicalParts,resourceElectricParts"/>
+					</effect_group>	
+			</recipe>
+
+			<recipe name="catapultTrap2" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+				<ingredient name="resourceForgedIron" count="50"/>
+				<ingredient name="resourceMechanicalParts" count="8"/>
+				<ingredient name="resourceElectricParts" count="6"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedIron,resourceMechanicalParts,resourceElectricParts"/>
+				</effect_group>
+			</recipe>
+
+		</append>
+
+	</configs>

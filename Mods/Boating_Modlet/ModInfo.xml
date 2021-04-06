@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<ModInfo>
+		<Name value="Boating_Modlet"/>
+		<Description value="Adds a Wooden Flat Bottomed Boat and Dinghy to the Game "/>
+		<Author value="Ragsy2145,Guppycur"/>
+		<Version value="19.0.1.0" compat="A19e, A18.4"/>
+		<Website value="https://community.7daystodie.com/topic/14070-community-watercraft-projects/"/>
+	</ModInfo>
+</xml>

@@ -1,0 +1,590 @@
+<configs>
+	
+<append xpath="/items">
+		
+		<item name="backpackGY">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="backpackMedium"/>
+			<property name="DescriptionKey" value="backpackGYDesc"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="perkBackpack"/>
+			</property>
+			<property name="Stacknumber" value="1"/>
+		</item>
+		
+		<!-- Starter Kit - Books -->
+	
+		<item name="starterPackBook">
+			<property name="Extends" value="blankNoteMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="starterPackBookDesc"/>
+			<property name="CustomIcon" value="questMaster"/>
+		</item>
+		
+		<item name="BookOfExperience">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="BookOfExperiencedesc"/>
+			<property name="CustomIcon" value="questMaster"/>	
+			<property name="Stacknumber" value="50"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterBooks" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="350000"/>
+			</effect_group>
+		</item>		
+		
+		<item name="bookBundleFiremansAlmanac">
+			<property name="CustomIcon" value="bookFiremansAlmanacHeat"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="bookBundleGroupDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/> <!-- STK ammobundle -->
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="10000"/>
+			<property name="Group" value="Books"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookFiremansAlmanacHeat,bookFiremansAlmanacAxes,bookFiremansAlmanacSpeed,bookFiremansAlmanacMolotov,bookFiremansAlmanacPrevention,bookFiremansAlmanacHarvest,bookFiremansAlmanacEquipment"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		<item name="bookBundleNightStalker">
+			<property name="CustomIcon" value="bookNightStalkerStealthDamage"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookNightStalkerStealthDamage,bookNightStalkerSilentNight,bookNightStalkerBlades,bookNightStalkerThiefAdrenaline,bookNightStalkerArchery,bookNightStalkerTwilightThief,bookNightStalkerSlumberParty"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		<item name="bookBundleLuckyLooter">
+			<property name="CustomIcon" value="bookLuckyLooterDukes"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookLuckyLooterDukes,bookLuckyLooterAmmunition,bookLuckyLooterBrass,bookLuckyLooterLead,bookLuckyLooterBooks,bookLuckyLooterFood,bookLuckyLooterMedical"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		<item name="bookBundleEnforcer">
+			<property name="CustomIcon" value="bookEnforcerDamage"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookEnforcerDamage,bookEnforcerApparel,bookEnforcerPunks,bookEnforcerIntimidation,bookEnforcerAPAmmo,bookEnforcerHPAmmo,bookEnforcerCriminalPursuit"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundleBatterUp">
+			<property name="CustomIcon" value="bookBatterUpBigHits"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookBatterUpBigHits,bookBatterUpConditioning,bookBatterUpGear,bookBatterUpSlowPitch,bookBatterUpKnockdown,bookBatterUpMaintenance,bookBatterUpBaseballBats"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundleGreatHeist">
+			<property name="CustomIcon" value="bookTheGreatHeistSafes"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookGreatHeistSafes,bookGreatHeistGems,bookGreatHeistTimedCharge,bookGreatHeistClaimed,bookGreatHeistAdrenalineFall,bookGreatHeistSprintSneak,bookGreatHeistMotionDetection"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundleWasteTreasures">
+			<property name="CustomIcon" value="bookWasteTreasuresHoney"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookWasteTreasuresHoney,bookWasteTreasuresCoffins,bookWasteTreasuresAcid,bookWasteTreasuresWater,bookWasteTreasuresDoors,bookWasteTreasuresCloth,bookWasteTreasuresSinks"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundleNeedleAndThread">
+			<property name="CustomIcon" value="bookNeedleAndThreadWinterWear"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookNeedleAndThreadWinterWear,bookNeedleAndThreadLegwear,bookNeedleAndThreadFootwear,bookNeedleAndThreadDesertWear,bookNeedleAndThreadDusters,bookNeedleAndThreadPufferCoats,bookNeedleAndThreadPockets"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundleHuntingJournal">
+			<property name="CustomIcon" value="bookHuntingJournalBears"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookHuntingJournalBears,bookHuntingJournalWolves,bookHuntingJournalCoyotes,bookHuntingJournalMountainLions,bookHuntingJournalDeer,bookHuntingJournalVultures,bookHuntingJournalSelfDefense"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundleArtOfMining">
+			<property name="CustomIcon" value="bookArtOfMiningLuckyStrike"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookArtOfMiningLuckyStrike,bookArtOfMiningDiamondTools,bookArtOfMiningPallets,bookArtOfMiningCoffee,bookArtOfMiningBlackStrap,bookArtOfMiningAvalanche,bookArtOfMiningLantern"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundleRangers">
+			<property name="CustomIcon" value="bookRangersArrowRecovery"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookRangersArrowRecovery,bookRangersExplodingBolts,bookRangersCripplingShot,bookRangersAPAmmo,bookRangersFlamingArrows,bookRangersForestGuide,bookRangersKnockdown"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundlePistolPete">
+			<property name="CustomIcon" value="bookPistolPeteTakeAim"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookPistolPeteTakeAim,bookPistolPeteSwissKnees,bookPistolPeteSteadyHand,bookPistolPeteMaintenance,bookPistolPeteHPAmmo,bookPistolPeteAPAmmo,bookPistolPeteDamage"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundleShotgunMessiah">
+			<property name="CustomIcon" value="bookShotgunMessiahDamage"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookShotgunMessiahDamage,bookShotgunMessiahBreachingSlugs,bookShotgunMessiahLimbShot,bookShotgunMessiahSlugs,bookShotgunMessiahMaintenance,bookShotgunMessiahMagazine,bookShotgunMessiahPartyStarter"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundleSniper">
+			<property name="CustomIcon" value="bookSniperDamage"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookSniperDamage,bookSniperCripplingShot,bookSniperHeadShot,bookSniperGhost,bookSniperControlledBreathing,bookSniperAPAmmo,bookSniperHPAmmo"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundleAutoWeapons">
+			<property name="CustomIcon" value="bookAutoWeaponsDamage"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookAutoWeaponsDamage,bookAutoWeaponsUncontrolledBurst,bookAutoWeaponsMaintenance,bookAutoWeaponsDrumMag,bookAutoWeaponsRecoil,bookAutoWeaponsRagdoll,bookAutoWeaponsMachineGuns"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="bookBundleUrbanCombat">
+			<property name="CustomIcon" value="bookUrbanCombatLanding"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="Extends" value="bookBundleFiremansAlmanac"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="bookUrbanCombatLanding,bookUrbanCombatControlledBreathing,bookUrbanCombatSneaking,bookUrbanCombatJumping,bookUrbanCombatLandMines,bookUrbanCombatAdrenalineRush,bookUrbanCombatRoomClearing"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="backpackStartKit">
+			<property name="CustomIcon" value="BackPack"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="backpackStartKitDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Backpack.unity3d?Backpack"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/Backpack.unity3d?Backpack"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="Group" value="Basics"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="meleeToolWireTool,meleeWpnBladeT1HuntingKnife,medicalFirstAidBandage,Canteen,FishingRod,DomeTent,MiniPropaneStove,Propane,PortableWaterGenerator,MobileSolarCase"/>
+				<property name="Create_item_count" value="1,1,5,1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+		<item name="backpackBattleKit">
+			<property name="CustomIcon" value="BackPack"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="backpackStartKitDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Backpack.unity3d?Backpack"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/Backpack.unity3d?Backpack"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="Group" value="Basics"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="gunPistolGyancher,GyancherAutoShotgun,SwordSaw,StealthChest,StealthGloves,StealthLegs,StealthBoots,StealthHelmet,LeatherCoatSpecial,mod_ChipAI,mod_ChipAIarmor,BrightVisionGoggles,ScoutDrone"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1,1,1,2,10,1,1"/>
+			</property>
+		</item>
+		
+		<item name="backpackBuildKit">
+			<property name="CustomIcon" value="BackPack"/><property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="backpackStartKitDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Backpack.unity3d?Backpack"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/Backpack.unity3d?Backpack"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="Group" value="Basics"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="meleeToolPaintToolAdmin,meleeToolSalvageWrenchAdmin,gunToolDiggerAdmin,ringOfFireAdmin,noteTestersElectricityAdmin,toolTerrainModelerAdmin,UnlimitedWater,Unlimited_bucketEmptyLiquidWater,woodMaster,concreteMaster,steelMaster,awningMaster"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1,1,1,1,1,1,1"/>
+			</property>
+		</item>
+		
+	<!-- Starter Kit - Items -->
+		
+	<item name="Propane">
+		<property name="Tags" value="gasoline"/>
+		<property name="HoldType" value="45"/>
+		<property name="CustomIcon" value="Propane"/>
+		<property name="Meshfile" value="#@modfolder:Resources/Propane.unity3d?Propane"/>
+		<property name="DropMeshfile" value="#@modfolder:Resources/Propane.unity3d?Propane"/>
+		<property name="Material" value="MFuelBarrelMetal"/>
+		<property name="Stacknumber" value="10000"/> <!-- STK resource -->
+		<property name="FuelValue" value="2"/>
+		<property name="EconomicValue" value="10"/> <!-- oil barrel 500 -->
+		<property name="EconomicBundleSize" value="100"/>
+		<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+		<property name="UnlockedBy" value="perkGreaseMonkey,ammoGasCanSchematic"/>
+		<property name="CraftingIngredientTime" value=".05"/>
+	</item>
+	
+	<item name="Canteen">	
+		<property name="HoldType" value="3"/>
+		<property name="DisplayType" value="waterCoffee"/>
+		<property name="CustomIcon" value="Canteen"/>
+		<property name="Meshfile" value="#@modfolder:Resources/Canteen.unity3d?Canteen.prefab"/>
+		<property name="DropMeshfile" value="#@modfolder:Resources/Canteen.unity3d?Canteen.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="Weight" value="10"/>
+		<property name="Stacknumber" value="1"/> <!-- STK drink -->
+		<property name="EconomicValue" value="96"/>
+		<property name="UnlockedBy" value="perkMasterChef,drinkJarCoffeeSchematic"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Use_time" value="..."/>
+			<property name="Sound_start" value="player_drinking"/>
+			<property name="Create_item" value="Canteen"/>
+		</property>
+		<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+		<effect_group tiered="false">
+			<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="24"/>
+			<display_value name="dStaminaRegen" value=".25"/>
+			<display_value name="dHypothermalResist" value="5"/>
+			<display_value name="dDuration" value="183"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="183"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="543">
+				<requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="543"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,"/>
+		</effect_group>
+
+		<effect_group tiered="false">
+			<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+		</effect_group>
+	</item>
+	
+	<!-- Starter Kit - Fishing -->
+    <item name="FishingRod">
+      <property name="Meshfile" value="#@modfolder:Resources/FishingRod.unity3d?FishingRod.prefab"/>
+      <property name="Material" value="Mplastics"/>
+      <property name="HoldType" value="78"/>
+	  <property name="CustomIcon" value="FishingRod"/>
+      <property name="EconomicValue" value="2"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="UnlockedBy" value="perkLivingOffTheLand,fishingRodSchematic"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="Stacknumber" value="1"/>
+	  <property class="Action0">
+			<property name="Class" value="DynamicMelee"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="Sphere" value=".15"/>
+		<property name="Sound_start" value="spear_fire"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+
+		<property name="UseGrazingHits" value="true"/>
+		<property name="GrazeStart" value=".25"/>
+		<property name="GrazeEnd" value=".32"/>
+		<property name="SwingDegrees" value="10"/>
+		<property name="SwingAngle" value="20"/>
+		</property>
+      <property class="Action1">
+        <property name="Class" value="ExchangeItem"/>
+        <property name="Delay" value="1.8"/>
+        <property name="Range" value="2.4"/>
+        <property name="Sphere" value="0.2"/>
+        <property name="Change_item_to" value="FishingRodwithFish"/>
+        <property name="Focused_blockname_1" value="water"/>
+        <property name="Focused_blockname_2" value="waterMoving"/>
+        <property name="Focused_blockname_3" value="terrWaterPOI"/>
+        <property name="Sound_start" value="SlowSwoosh"/>
+      </property>
+      <property name="Group" value="Tools/Traps,Food/Cooking"/>
+      <property name="DescriptionKey" value="FishingRodDesc"/>
+	     <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="fishingSpearCaught">
+          <requirement name="NotHasBuff" buff="fishingSpearCaught"/>
+          <requirement name="NotHasBuff" buff="fishingSpearCaughtClear"/>
+		   <triggered_effect trigger="onSelfSecondaryActionEnd" action="ShowToolbeltMessage" message="[94f7e5]You might have cought something...[-]"/>
+        </triggered_effect>
+      </effect_group>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfSecondaryActionStart" action="RemoveBuff" buff="fishingSpearCaught"/>
+        <triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" buff="fishingSpearCaughtClear"/>
+        <triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" buff="fishingSpearCaught"/>
+        <triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="fishingSpearCaughtClear"/>
+      </effect_group>
+    </item>
+  
+    
+    <item name="FishingRodwithFish">
+      <property name="CreativeMode" value="None"/>
+      <property name="Meshfile" value="#@modfolder:Resources/FishingRodwithFish.unity3d?FishingRodwithFish.prefab"/>
+       <property name="HoldType" value="78"/>
+	      <property name="Material" value="Mplastics"/>
+	  <property name="CustomIcon" value="FishingRodwithFish"/>
+      <property name="EconomicValue" value="2"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="UnlockedBy" value="perkLivingOffTheLand,fishingRodSchematic"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="Stacknumber" value="1"/>
+      <property class="Action1">
+        <property name="Class" value="PlaceAsBlock"/>
+        <property name="Delay" value="0.5"/>
+        <property name="Blockname" value="FishCache"/>
+        <property name="Sound_start" value="bucketplace_water"/>
+        <property name="Change_item_to" value="FishingRod"/>
+      </property>
+      <property name="Smell" value="ExLargeSmell"/>
+      <property name="Group" value="Tools/Traps,Food/Cooking"/>
+      <property name="DescriptionKey" value="fishingRodFullDesc"/>
+    </item>
+		
+	<item name="Fish">
+		<property name="Tags" value="perkAdvancedEngineering"/>
+		<property name="DescriptionKey" value="Fish_desc"/>
+		<property name="HoldType" value="7"/>
+		<property name="CustomIcon" value="Fish"/>
+		<property name="HoldingItemHidden" value="false"/>
+		<property name="Meshfile" value="#@modfolder:Resources/Fish.unity3d?Fish"/>
+		<property name="HandMeshfile" value="#@modfolder:Resources/Fish.unity3d?Fish"/>
+		<property name="DropMeshfile" value="#@modfolder:Resources/Fish.unity3d?Fish"/>
+		<property name="Material" value="MfoodRawMeat"/>
+		<property name="CanPickup" value="true"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="60"/>
+		<property name="Smell" value="ExLargeSmell"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="Group" value="Science"/>
+		 <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="0.4"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_eating"/>
+      </property>
+      <property name="DescriptionKey" value="FishDesc"/>
+      <property name="Smell" value="mediumSmell"/>
+      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="7"/><display_value name="dFoodPoisoningRisk" value="0.07"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+        </triggered_effect>
+      </effect_group>
+    </item>	
+	
+	<item name="Charred Fish">
+      <property name="Tags" value="food"/>
+      <property name="HoldType" value="31"/>
+      <property name="DisplayType" value="food"/>
+	  <property name="CustomIcon" value="Charred Fish"/>
+      <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+      <property name="Material" value="Morganic"/>
+      <property name="Stacknumber" value="15"/>
+      <property name="EconomicValue" value="5"/>
+      <property name="SellableToTrader" value="false"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="2.1"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_eating"/>
+      </property>
+      <property name="DescriptionKey" value="charredFishDesc"/>
+      <property name="Smell" value="largeSmell"/>
+      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value="0.04"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+        </triggered_effect>
+      </effect_group>
+    </item>    
+	
+    <item name="Boiled Fish">
+      <property name="Tags" value="food"/>
+      <property name="HoldType" value="31"/>
+      <property name="DisplayType" value="food"/>
+	   <property name="CustomIcon" value="Boiled Fish"/>
+       <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+      <property name="Material" value="Morganic"/>
+      <property name="Stacknumber" value="15"/>
+      <property name="EconomicValue" value="12"/>
+      <property name="UnlockedBy" value="perkMasterChef"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="2.1"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_eating"/>
+      </property>
+      <property name="DescriptionKey" value="boiledFishDesc"/>
+      <property name="Smell" value="mediumSmell"/>
+      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="6"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="4"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value="0.04"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+    
+    <item name="Grilled Fish">
+      <property name="Tags" value="food"/>
+      <property name="HoldType" value="31"/>
+      <property name="DisplayType" value="food"/>
+	    <property name="CustomIcon" value="Grilled Fish"/>
+     <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+      <property name="DescriptionKey" value="grilledFishDesc"/>
+      <property name="Material" value="Morganic"/>
+      <property name="Stacknumber" value="15"/>
+      <property name="EconomicValue" value="24"/>
+      <property name="UnlockedBy" value="perkMasterChef"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="2.1"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_eating"/>
+      </property>
+      <property name="Smell" value="mediumSmell"/>
+      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="8"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="4"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value="0.04"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+	
+	<item name="FishingRodSchematic">
+      <property name="Extends" value="schematicNoQualityRecipeMaster"/>
+      <property name="EconomicValue" value="600"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="FishingRod"/>
+      <property name="Unlocks" value="FishingRod"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="FishingRod" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+      </effect_group>
+    </item>
+	
+</append>
+
+</configs>

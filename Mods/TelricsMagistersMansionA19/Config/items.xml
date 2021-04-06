@@ -1,0 +1,386 @@
+<configs>
+<append xpath="/items">
+<!-- Magisters Mansion -->
+<!-- quests -->
+<item name="MagistersMansionQuestTemplate">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mpaper"/>
+	<property name="CustomIcon" value="questMaster"/>
+	<property name="Stacknumber" value="50"/> <!-- STK book -->
+	<property name="EconomicValue" value="1600"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="DescriptionKey" value="noteDuke01Desc"/>
+	<property class="Action0">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="q_basicSurvival"/>
+		<property name="Delay" value="0.5"/>
+		<property name="UseAnimation" value="false"/>
+		<property name="Use_time" value="..."/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
+</item>
+<item name="MagistersMansionQuestStart">
+	<property name="Extends" value="MagistersMansionQuestTemplate"/>
+	<property name="DescriptionKey" value="MagistersMansionQuestStartDesc"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="MagistersMansionMainQuest"/>
+	</property>
+</item>
+<!-- keys -->
+<item name="keyMagistersMansionEntrance">
+	<property name="CustomIcon" value="MansionKeyIcon" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="10"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<item name="keyMagistersMansionButcher">
+	<property name="CustomIcon" value="MansionKeyIcon" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="10"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<item name="keyMagistersMansionLibrary">
+	<property name="CustomIcon" value="MansionKeyIcon" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="10"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<item name="keyMagistersMansionBoiler">
+	<property name="CustomIcon" value="MansionKeyIcon" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="10"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<item name="keyMagistersMansionBoiler2">
+	<property name="CustomIcon" value="MansionKeyIcon" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="10"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<item name="keyMagistersMansionLillian">
+	<property name="CustomIcon" value="MansionKeyIcon" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="10"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<item name="BoilerRoomFuel">
+	<property name="CustomIcon" value="ammoGasCan" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="10"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<item name="keySieraLockpick">
+	<property name="CustomIcon" value="resourceLockPick" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="10"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<item name="LillianEssence">
+	<property name="CustomIcon" value="GhostlyOrbIcon" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="10"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<!-- foods -->
+<item name="foodGhostPizza">
+	<property name="Tags" value="food"/>
+	<property name="HoldType" value="31"/>
+	<property name="CustomIcon" value="PizzaFoodIcon" />
+	<property name="DisplayType" value="foodWaterNegative"/>
+	<property name="Meshfile" value="#@modfolder:Resources/MagistersMansion.unity3d?PizzaFoodPrefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="20"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-5"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		<display_value name="$waterAmountAdd" value="-5"/>
+	</effect_group>
+</item>
+<!-- hands -->
+<item name="meleeHandGhost">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="35"/>
+		<property name="Buff" value="buffCursedDebuff"/>
+	</property>
+	<effect_group name="meleeHandZombie01" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="10"/> <!-- this passive is ignored so using the old notation! -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="1" tags="buffCursedDebuff"/>
+	</effect_group>
+</item>
+<item name="ammoLillianFire">
+	<property name="Meshfile" value="#@modfolder:Resources/MagistersMansion.unity3d?LillianFireAmmoPrefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="120"/>
+		<property name="Explosion.ParticleIndex" value="7"/>
+		<property name="Velocity" value="18"/>
+		<property name="FlyTime" value="2"/>
+		<property name="LifeTime" value="4"/>
+		<property name="CollisionRadius" value="2.5"/>
+		<property name="DamageBonus.earth" value="0"/>
+	</property>
+	<effect_group name="ammoProjectileZombieVomit" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0.5" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
+	</effect_group>
+</item>
+<item name="meleeHandLillian">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="100"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Delay" value=".3"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="200"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="ammoLillianFire"/>
+		<property name="Sound_warning" value="hulkvomitwarning"/>
+		<property name="Sound_start" value="hulkvomitattack"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="buffCursedDebuff"/>
+	</property>
+	<effect_group name="meleeHandZombieCop" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="2"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+	</effect_group>
+</item><!-- collectibles -->
+<item name="GhostlyOrb">
+	<property name="CustomIcon" value="GhostlyOrbIcon" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<item name="GhostlyOrb2">
+	<property name="CustomIcon" value="GhostlyOrbIcon" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<item name="GhostlyOrb3">
+	<property name="CustomIcon" value="GhostlyOrbIcon" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<item name="GhostlyOrb4">
+	<property name="CustomIcon" value="GhostlyOrbIcon" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceForgedIron"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+<!-- equipment -->
+<item name="apparelWhitesongPendant"> 
+	<property name="Tags" value="head,clothing,canHaveCosmetic"/>
+	<property name="CustomIcon" value="PendantIcon" />
+	<property name="DisplayType" value="clothing"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="Weight" value="15"/>
+	<property name="FuelValue" value="4"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="Encumbrance" value="0"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="DescriptionKey" value="apparelWhitesongPendantDesc"/>
+	<property name="Group" value="Clothing"/>
+	<property name="EquipSlot" value="Face"/>
+	<property class="UMA">
+		<property name="Mesh" value=""/>
+		<property name="Overlay0" value=""/>
+		<property name="Layer" value="1"/>
+		<property name="UISlot" value="Face"/>
+		<property name="Mask0" value="Face" param1="base"/>
+	</property>
+	<effect_group tiered="false">
+		<!-- attach prefab -->
+		<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/MagistersMansion.unity3d?PendantLightPrefab" parent_transform="Hips"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="PendantLightPrefab" parent_transform="Hips"/>
+		
+		<!-- remove ghost buff -->
+		<triggered_effect trigger="onSelfDamagedOther" action="RemoveBuff" buff="buffGhostStatusBuff" target="other"/>
+		
+		<!-- immunity to ground -->
+		<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffHauntedMansionStart,buffHauntedMansionWarning"/>
+		<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" buff="buffHauntedMansionWarning" target="self"/>
+		<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" buff="buffHauntedMansionStart" target="self"/>
+		
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+	</effect_group>
+	<effect_group>
+			<requirement name="IsNight"/>	
+		<passive_effect name="HealthMax" operation="perc_add" value=".20"/>
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffSpecterAttackBuff" target="other"/>
+		<passive_effect name="WalkSpeed" operation="perc_add" value=".15"/>
+		<passive_effect name="RunSpeed" operation="perc_add" value=".15"/>
+	</effect_group>
+</item>
+<!-- schematics -->
+<item name="foodGhostPizzaSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="PizzaFoodIcon"/>
+	<property name="Unlocks" value="foodGhostPizza"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodGhostPizza" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+<!-- ammo / weapons -->
+<!-- testing -->
+</append>
+
+
+<append xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,keyMagistersMansionEntrance,keyMagistersMansionButcher,keyMagistersMansionLibrary,keyMagistersMansionBoiler,keyMagistersMansionBoiler2,BoilerRoomFuel,keySieraLockpick,keyMagistersMansionLillian,LillianEssence,GhostlyOrb4,foodRawMeat,medicalBandage</append>
+
+
+
+</configs>

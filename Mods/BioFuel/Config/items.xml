@@ -1,0 +1,64 @@
+<configs>
+	<append xpath="/items">
+		<item name="resourceTurd">
+			<property name="HoldType" value="40"/>
+			<property name="Meshfile" value="#Other/Items?Crafting/rock_smallPrefab.prefab"/>
+			<property name="DropScale" value="4"/>
+			<property name="Material" value="MresourceClayLump"/>
+			<property name="Weight" value="5"/>
+			<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="150"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Class" value="ItemClassTimeBomb"/>
+			<property name="AlwaysActive" value="true"/>
+			<property name="Explosion.ParticleIndex" value="7"/>
+			<property name="Explosion.RadiusBlocks" value="1"/>
+			<property name="Explosion.RadiusEntities" value="1"/>
+			<property name="Explosion.BlastPower" value="35"/>
+			<property name="Explosion.DamageBonus.stone" value="0"/>
+			<property name="Explosion.DamageBonus.metal" value="0"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<property name="Explosion.DamageBonus.water" value="0"/>
+			<property name="Explosion.DamageBonus.wood" value="0"/>
+			<property name="FuseTime" value="20000"/> <!-- theoretically redundant but I don't want to experiment on this -->
+			<property name="ExplodeOnHit" value="true"/>
+			<property name="StickPercent" value=".5"/>
+			<property class="Action0">
+				<property name="Class" value="ThrowAway"/>
+				<property name="Delay" value="1.2"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Explosion.ParticleIndex" value="7"/>
+				<property name="Throw_strength_default" value="8"/>
+				<property name="Throw_strength_max" value="60"/>
+				<property name="Max_strain_time" value="1.25"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<property name="ThrowableDecoy" value="true"/>
+			<property name="DistractionTags" value="zombie,requires_contact"/>
+			<effect_group name="decoy" tiered="false">
+				<passive_effect name="DistractionRadius" operation="base_set" value="15"/>
+				<passive_effect name="DistractionLifetime" operation="base_set" value="1"/>
+				<passive_effect name="DistractionStrength" operation="base_set" value="80"/>
+			</effect_group>
+			<property name="Group" value="Resources"/>
+		</item>
+
+		<item name="resourceBioFuel">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="100"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Group" value="Resources"/>
+		</item>
+
+
+
+
+
+
+	</append>
+</configs>

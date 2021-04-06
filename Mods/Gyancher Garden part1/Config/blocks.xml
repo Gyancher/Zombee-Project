@@ -1,0 +1,56 @@
+<configs>
+	<append xpath="/blocks">
+<block name="Wind Chime">  
+    <property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="powerSourceDesc"/>
+	<property name="Light" value="1.5"/>
+	<property name="CustomIcon" value="chime" />
+	<property name="Material" value="Mmetal_thin"/>	
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/windchime.unity3d?WindChime.prefab"/>
+	<property name="ImposterDontBlock" value="false"/>
+		<property name="ModelOffset" value="0,1,0" />
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Weight" value="1"/>
+	<property name="CanPickup" value="true" param1="Wind Chime"/>
+	<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+</block>
+
+<block name="Bird Feeders">  
+    <property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="powerSourceDesc"/>
+	<property name="Light" value="1.5"/>
+	<property name="CustomIcon" value="bird" />
+	<property name="Material" value="Mmetal_thin"/>	
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/BirdFeeders.unity3d?BirdFeeders.prefab"/>
+	<property name="ImposterDontBlock" value="false"/>
+		<property name="ModelOffset" value="0,3,0" />
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Weight" value="1"/>
+	<property name="CanPickup" value="true" param1="Bird Feeders"/>
+	<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+</block>
+
+
+<block name="Fireflies">  
+    <property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="powerSourceDesc"/>
+	<property name="Light" value="1.5"/>
+	<property name="CustomIcon" value="bird" />
+	<property name="Material" value="Mmetal_thin"/>	
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Fireflies2.unity3d?Fireflies2.prefab"/>
+	<property name="ImposterDontBlock" value="false"/>
+		<property name="ModelOffset" value="0,3,0" />
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Weight" value="1"/>
+	<property name="CanPickup" value="true" param1="Fireflies"/>
+	<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+</block>
+
+</append>
+</configs>

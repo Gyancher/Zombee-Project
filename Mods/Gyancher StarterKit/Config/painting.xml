@@ -1,0 +1,3 @@
+<config>
+	<set xpath="/paints/paint/property[@name='Hidden']/@value">false</set>
+</config>

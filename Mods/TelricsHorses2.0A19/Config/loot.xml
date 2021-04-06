@@ -1,0 +1,19 @@
+<configs>
+<append xpath="/lootcontainers/lootgroup[@name='seeds']">
+	<item name="foodApple" prob=".5"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='coldfood']">
+	<item name="foodApple" prob=".5"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='farmCrops']">
+	<item name="foodApple" prob=".5"/>
+</append>
+
+
+
+
+
+
+</configs>

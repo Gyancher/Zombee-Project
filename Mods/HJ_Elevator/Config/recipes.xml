@@ -1,0 +1,12 @@
+<configs>
+		<append xpath="/recipes" >		
+			<recipe name="ElevatorV2_PR" count="1" craft_area="workbench">
+				<ingredient name="resourceForgedIron" count="50" />
+				<ingredient name="resourceMechanicalParts" count="10"/>				
+			</recipe>
+			<recipe name="ElevatorV2Camo_PR" count="1" craft_area="workbench">
+				<ingredient name="resourceForgedIron" count="50" />
+				<ingredient name="resourceMechanicalParts" count="10"/>				
+			</recipe>
+		</append> 
+</configs>

@@ -1,0 +1,12 @@
+<config>
+
+<append xpath="//biomes/biome[@name='pine_forest']//decorations" >
+<decoration type="block" blockname="gardenFlower01GY" prob="0.01" rotatemax="4" />
+<decoration type="block" blockname="gardenFlower02GY" prob="0.01" rotatemax="4" />
+<decoration type="block" blockname="gardenFlower03GY" prob="0.01" rotatemax="4" />
+<decoration type="block" blockname="gardenFlower04GY" prob="0.01" rotatemax="4" />
+<decoration type="block" blockname="gardenFlower05GY" prob="0.01" rotatemax="4" />
+</append>
+
+	
+</config>

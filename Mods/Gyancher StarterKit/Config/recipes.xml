@@ -1,0 +1,42 @@
+<configs>
+	<append xpath="/recipes">
+		
+    <recipe name="FishingRod" count="1" craft_area="workbench" tags="learnable">
+      <ingredient name="resourceScrapPolymers" count="5"/>
+      <ingredient name="resourceForgedIron" count="1"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+      <ingredient name="resourceSewingKit" count="1"/>   
+    </recipe>
+	
+	 <recipe name="Charred Fish" count="1" craft_time="8" craft_area="MiniPropaneStove">
+      <ingredient name="Fish" count="1"/>
+    </recipe>
+
+    <recipe name="Boiled Fish" count="1" craft_time="8" craft_area="MiniPropaneStove" craft_tool="toolCookingPot" tags="learnable">
+      <ingredient name="Fish" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="Grilled Fish" count="1" craft_time="8" craft_area="MiniPropaneStove" craft_tool="toolCookingGrill" tags="learnable">
+      <ingredient name="Fish" count="1"/>
+    </recipe>
+	
+	<recipe name="ElectricityPole" count="1" craft_area="workbench" craft_time="300">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="electricfencerelay" count="1" craft_area="workbench" craft_time="200">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+	</append> 
+	
+</configs>

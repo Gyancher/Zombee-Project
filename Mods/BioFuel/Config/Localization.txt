@@ -1,0 +1,7 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+resourceBioFuel,,items,Item,Bio Fuel,,,,,
+resourceBioFuelDesc,,items,Item,Bio Fuel is an item created by cooking Animal Fat in a Beaker at a Campfire or at a Chemistry Station. It is used to craft Gas Cans. It does not currently have a smell radius and thus can be carried around without the risk of attracting any attention.,,,,,
+resourceTurd,,items,Item,Human Turd,,,,,
+resourceTurdDesc,,items,Item,Human Turd can be found in Toilets. Like Small Stones, Human Turds can be thrown at enemies, but it is unlikely to do any damage. Once thrown they can be picked up again.,,,,,
+
+

@@ -1,0 +1,10 @@
+
+<!-- PitMonks_Better_Ramps_Modlet -->
+<xml>
+	<ModInfo>
+		<Name value="PitMonks_Better_Ramps_Modlet"/>
+		<Description value="Allows the player to craft a 1 in 4 drop ramp."/>
+		<Author value="PitMonk"/>
+		<Version value="1.0"/>
+	</ModInfo>
+</xml>

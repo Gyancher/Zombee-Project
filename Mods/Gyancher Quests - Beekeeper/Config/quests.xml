@@ -1,0 +1,244 @@
+<configs>
+<append xpath="/quests">
+
+	<quest_list id="beeKeeper_quests">
+		<quest id="quest_BeeKeeper"/>
+		<quest id="quest_SaveTheQueen"/>
+		<quest id="quest_FindTheBeeKeeper"/>
+		<quest id="quest_SuitUp"/>
+		<quest id="quest_CreateBeeHive"/>
+		<quest id="quest_LetsGetSticky"/>
+		<quest id="quest_CookingTime"/>
+		<quest id="quest_FindTheCure"/>
+		<quest id="quest_theCure1"/>
+		<quest id="quest_theCure2"/>
+		<quest id="quest_LightInTheDark"/>
+	</quest_list>
+	
+	<quest id="quest_BeeKeeper" group_name_key="beeKeeper_quests">
+		<property name="name_key" value="Bee Keeper - Intro" />
+		<property name="description_key" value="QuestBeeKeeperDesc" />
+		<property name="icon" value="ui_game_symbol_perk"/>
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="Dear Friend,\nAs you know the wasteland can be an unforgiving place for animals and insects, and from our observations you look like you could offer some help. Here’s a little guide to help to become a bee keeper.  Think of it as your way of helping nature and helping me out. If you follow these steps, you will be able to craft and use all their resources to your liking.\n\n Good Luck and thank you, Gail" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false"/>		
+		
+		<objective type="FetchKeep" id="resourceCropGoldenrodPlant" value="20" phase="1"/>
+		<objective type="Craft">
+			<property name="phase" value="2"/>
+			<property name="item" value="foodHoney"/>
+			<property name="count" value="10"/>
+		</objective>
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+		<reward type="Exp" value="50"/>
+		<reward type="Item" id="QuestBeeKeeper2" value="1"/>
+	</quest>	
+	
+	<quest id="quest_SaveTheQueen" group_name_key="beeKeeper_quests">	
+		<property name="name_key" value="Bee Keeper - Save the Queen"/>		
+		<property name="description_key" value="Find a Queen Bee for Bee Hive"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value="In order to have a bee hive, you will need to find yourself a Queen Bee. But be carefull, the queen is always protected by it's guards."/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="RandomGoto" value="500-800" phase="1">
+			<property name="completion_distance" value="50"/>
+		</objective>
+		
+		<action type="SpawnEnemy" id="mechBee" value="5" phase="2"/>
+		<action type="SpawnEnemy" id="zombieFarmer" value="2" phase="2"/>
+		<objective type="ZombieKill" id="zombieFarmer" value="2" phase="2"/>
+		
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+		<reward type="Exp" value="100"/>
+		<reward type="Item" id="beeQueen" value="1"/>
+		<reward type="Item" id="QuestBeeKeeper3" value="1"/>
+	</quest>
+	
+	<quest id="quest_FindTheBeeKeeper" group_name_key="beeKeeper_quests">
+		<property name="name_key" value="Bee Keeper - Find the BeeKeeper"/>		
+		<property name="description_key" value="Find the beekeeper for Bee Hive parts."/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value="In order to have a bee hive, you will need to find the beekeeper. He is wondering arround in the wastland somewhere trying to sell his honey."/>
+		<property name="shareable" value="false"/>		
+		
+		<objective type="RandomGoto" value="500-800" phase="1">
+			<property name="completion_distance" value="50"/>
+		</objective>	
+		
+		<action type="SpawnEnemy" id="beeKeeper" value="1" phase="2"/>
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="3"/>
+		</objective>
+		<reward type="Exp" value="100"/>		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Item" id="QuestBeeKeeper4" value="1"/>
+	</quest>
+	
+	<quest id="quest_SuitUp" group_name_key="beeKeeper_quests">
+		<property name="name_key" value="Bee Keeper - Suit Up!"/>			
+		<property name="description_key" value="Get your Bee Suit ready."/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value="In order to protect yourself from getting stinged by the bees you will need to get some gear!"/>
+		<property name="shareable" value="false"/>
+	
+		<objective type="FetchKeep" id="beeKeepingMask" value="1" phase="1"/>
+		<objective type="FetchKeep" id="beeKeepingGloves" value="1" phase="2"/>
+		<objective type="FetchKeep" id="beeKeepingJacket" value="1" phase="3"/>
+		<objective type="FetchKeep" id="beeKeepingPants" value="1" phase="4"/>
+		<objective type="FetchKeep" id="beeKeepingBoots" value="1" phase="5"/>
+		<reward type="SkillPoints" value="5" />
+		<reward type="Exp" value="100"/>
+		<reward type="Item" id="QuestBeeKeeper5" value="1"/>
+	</quest>
+			
+	<quest id="quest_CreateBeeHive" group_name_key="beeKeeper_quests">
+		<property name="name_key" value="Bee Keeper - Make a beehive."/>			
+		<property name="description_key" value="In order to keep bees we will need a beehive."/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value="To make honey products we will need to provide our little workers with a nice beeHive to live in."/>
+		<property name="shareable" value="false"/>
+	
+		<objective type="FetchKeep" id="beeHiveSchematic" value="1" phase="1"/>
+		<objective type="FetchKeep" id="bees" value="10" phase="2"/>
+		<objective type="Craft">
+			<property name="phase" value="3"/>
+			<property name="item" value="beeHive1"/>
+			<property name="count" value="1"/>
+		</objective>
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="100"/>
+		<reward type="Item" id="QuestBeeKeeper6" value="1"/>
+	</quest>
+	
+	<quest id="quest_LetsGetSticky" group_name_key="beeKeeper_quests">
+		<property name="name_key" value="Bee Keeper - Lets get Sticky."/>			
+		<property name="description_key" value="Time to gather some raw honey resources."/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value="It's time to get gather ray honey resources from your beehive in order to make some of your honey recipies."/>
+		<property name="shareable" value="false"/>
+	
+		<objective type="FetchKeep" id="rawBeesBread" value="10" phase="1"/>
+		<objective type="FetchKeep" id="rawHoneycomb" value="10" phase="2"/>
+		<objective type="FetchKeep" id="rawRoyalJelly" value="10" phase="3"/>
+		<objective type="FetchKeep" id="rawPropolis" value="10" phase="4"/>
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="100"/>
+		<reward type="Item" id="QuestBeeKeeper7" value="1"/>
+	</quest>
+	
+	<quest id="quest_CookingTime" group_name_key="beeKeeper_quests">
+		<property name="name_key" value="Bee Keeper - Lets get Sticky."/>			
+		<property name="description_key" value="Time to gather some raw honey resources."/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value="It's time to get gather ray honey resources from your beehive in order to make some of your honey recipies."/>
+		<property name="shareable" value="false"/>
+	
+		<objective type="Craft" id="honeycomb" value="10" phase="1"/>
+		<objective type="Craft" id="royalJelly" value="10" phase="2"/>
+		<objective type="Craft" id="beesBread" value="10" phase="3"/>
+		<objective type="Craft" id="honeyButter" value="10" phase="4"/>
+		<objective type="Craft" id="honeyMead" value="10" phase="5"/>
+		<objective type="Craft" id="royalJellyCapsules" value="10" phase="6"/>
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="100"/>
+		<reward type="Item" id="QuestBeeKeeper8" value="1"/>
+	</quest>
+	
+	<quest id="quest_FindTheCure" group_name_key="beeKeeper_quests">
+		<property name="name_key" value="Bee Keeper - Find the cure!."/>			
+		<property name="description_key" value="We are in urgent need of a cure against the ."/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value=""/>
+		<property name="shareable" value="false"/>
+			
+		<objective type="Craft" id="propolis" value="1" phase="1"/>
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="100"/>
+		<reward type="Item" id="QuestBeeKeeper9" value="1"/>
+	</quest>
+	
+	<quest id="quest_theCure1" group_name_key="beeKeeper_quests">		
+		<property name="name_key" value="Bee Keeper - Is there a Cure? 1."/>			
+		<property name="description_key" value="We've recently sent a team to the outer radiated zones.\nWe suspected there may be something there that can help us...\nUnfortunately we lost contact with our team,\nand we fear for the worse.\nMy sister was one of the team members,\nand I was wondering if you could go look for him there.\n\nAnd... ermmm... If she's infected, please make sure you free her...\n\nOh and if she's carying any serum,\nmake sure you bring it back with you!"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value=""/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="RandomGoto" value="500-800" phase="1">
+			<property name="completion_distance" value="50"/>
+		</objective>
+		<action type="SpawnEnemy" id="zombieNurseFeral" value="4" phase="2"/>
+		<objective type="ZombieKill" id="zombieNurseFeral" value="4" phase="3"/>
+		
+		<reward type="Item" id="propolisSerum" value="1"/>
+		<reward type="Exp" value="100"/>	
+		<reward type="Item" id="QuestBeeKeeper10" value="1"/>		
+	</quest>
+	
+	<quest id="quest_theCure2" group_name_key="beeKeeper_quests">	
+		<property name="name_key" value="Bee Keeper - Is there a Cure? 2."/>			
+		<property name="description_key" value="Well, shit... That's unfortunate about my brother.\n\nHowever the syringe you brought back\nis VERY interesting! This cures almost any disease...\nCareful though, it's quite addictive!\n\nHere, you keep that one.\n\nBye now, i'll keep investigating a definite cure!!"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value=""/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="Craft" id="propolisSerum" value="1" />
+		<reward type="Item" id="propolisSyring" value="1" />
+		<reward type="SkillPoints" value="5" />
+		<reward type="Exp" value="100"/>
+		<reward type="Item" id="QuestBeeKeeper11" value="1"/>
+	</quest>
+	
+	<quest id="quest_LightInTheDark" group_name_key="beeKeeper_quests">
+		<property name="name_key" value="Bee Keeper - Show me the light"/>			
+		<property name="description_key" value="Everyone needs candles to light up the room in case your batteries die, or to make it gezellig."/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value="Make some bee wax candles to light up the room."/>
+		<property name="shareable" value="false"/>
+	
+		<objective type="Craft" id="waxCandle" value="5" phase="1"/>
+		<reward type="Exp" value="100"/>
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	
+	
+	
+</append>
+</configs>

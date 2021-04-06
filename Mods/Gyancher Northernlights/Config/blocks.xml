@@ -1,0 +1,21 @@
+<configs>
+	<append xpath="/blocks">
+
+<block name="+northernlight">
+	<property name="Material" value="Mmetal_thin"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+		<property name="CustomIcon" value="northernlights" />
+	<property name="Model" value="#@modfolder:Resources/northernlight.unity3d?Northern Lights Parent.prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Weight" value="24"/>
+
+	<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+</block>
+
+</append>
+</configs>

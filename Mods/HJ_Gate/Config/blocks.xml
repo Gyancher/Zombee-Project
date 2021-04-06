@@ -1,0 +1,35 @@
+<configs>
+	
+		<append xpath="/blocks">
+
+		<block name="HJ_Gate_PR">
+        <property name="Class" value="DoorSecure" />
+		<property name="CustomIcon" value="HJ_Gate_PR"/>
+		<property name="MaxDamage" value="5200"/>
+        <property name="Material" value="Mmetal" />
+        <property name="Shape" value="ModelEntity" />
+        <property name="Collide" value="movement,melee,rocket,bullet" />
+        <property name="Tag" value="Door" />
+        <property name="Place" value="Door" />
+        <property name="PlaceEverywhere" value="true" />
+        <property name="Model" value="#@modfolder:Resources/Gate.unity3d?HJ_Gate2_PR.prefab"/>
+        <property name="MultiBlockDim" value="5,3,1" />
+        <property name="PassThroughDamage" value="true" />
+        <property name="LightOpacity" value="1" />
+        <property name="Shape" value="ModelEntity" />    
+        <property name="FuelValue" value="300" />
+        <property name="ImposterExchange" value="imposterCTRPlate" param1="35" />
+		<property class="RepairItems">
+          <property name="resourceForgedIron" value="20" />
+        </property>
+        <property name="CustomUpgradeSound" value="place_block_wood" />
+        <drop event="Harvest" name="resourceForgedIron" count="6" tool_category="Disassemble"/>
+        <drop event="Destroy" count="0" />
+        <property name="Group" value="Building,Basics" />
+        <property name="EconomicValue" value="5" />
+        <property name="EconomicBundleSize" value="10" />
+		</block>
+		  
+		</append>
+		
+</configs>

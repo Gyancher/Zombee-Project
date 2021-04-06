@@ -1,0 +1,90 @@
+<Claymore>
+<append xpath="/recipes">
+<recipe name="SlidingDoor" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+<recipe name="SlidingDoorPowered" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+<recipe name="SlidingDoorPowered" count="1" craft_area="workbench">
+	<ingredient name="SlidingDoor" count="1"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+
+<recipe name="SlidingDoor2" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+<recipe name="SlidingDoor2Powered" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+<recipe name="SlidingDoor2Powered" count="1" craft_area="workbench">
+	<ingredient name="SlidingDoor2" count="1"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+
+<recipe name="SlidingDoor3" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+<recipe name="SlidingDoor3Powered" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+<recipe name="SlidingDoor3Powered" count="1" craft_area="workbench">
+	<ingredient name="SlidingDoor3" count="1"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+
+<recipe name="SlidingDoor4" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+<recipe name="SlidingDoor4Powered" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+<recipe name="SlidingDoor4Powered" count="1" craft_area="workbench">
+	<ingredient name="SlidingDoor4" count="1"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+
+<recipe name="SlidingDoor5" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+<recipe name="SlidingDoor5Powered" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+<recipe name="SlidingDoor5Powered" count="1" craft_area="workbench">
+	<ingredient name="SlidingDoor5" count="1"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+
+
+<recipe name="Crusher" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+</append>
+</Claymore>

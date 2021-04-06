@@ -1,0 +1,13 @@
+<config>
+
+<append xpath="//biomes/biome[@name='burnt_forest']//decorations" >
+<decoration type="block" blockname="GY_Lava" prob="0.03" rotatemax="4" />
+<decoration type="block" blockname="GY_Volcanic Ash" prob="0.03" rotatemax="4" />
+<decoration type="block" blockname="GY_Radioactive Volcanic Ash" prob="0.03" rotatemax="4" />
+</append>
+
+<append xpath="//biomes/biome[@name='desert']//decorations" >
+<decoration type="block" blockname="GY_Sand 002" prob="0.03" rotatemax="4" />
+</append>
+	
+</config>

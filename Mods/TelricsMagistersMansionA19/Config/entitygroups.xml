@@ -1,0 +1,28 @@
+<configs>
+<append xpath="/entitygroups">
+	<entitygroup name="TheButcher">
+		<entity name="zombieTheButcher"/>
+	</entitygroup>
+	<entitygroup name="TheLibrarian">
+		<entity name="zombieTheLibrarian"/>
+	</entitygroup>
+	<entitygroup name="TheBoiler">
+		<entity name="zombieTheBoiler"/>
+	</entitygroup>
+	<entitygroup name="Ghosts">
+		<entity name="zombieGhost"/>
+		<entity name="zombieGhost2"/>
+	</entitygroup>
+	<entitygroup name="Lillian">
+		<entity name="zombieLillian"/>
+	</entitygroup>
+</append>
+
+
+
+
+
+
+
+
+</configs>

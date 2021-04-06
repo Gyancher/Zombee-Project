@@ -1,0 +1,42 @@
+<configs>
+<!-- M60 --> 
+<set xpath="/items/item[@name='gunMGT3M60']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='60']/@value">60</set> <!-- Change this value to increase ammo capacity Note the closes value to the left is default and is not ment to be changed -->
+<!-- AR -->																														      <!--^^-->
+<set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='30']/@value">30</set>
+<!-- AK47 -->
+<set xpath="/items/item[@name='gunMGT1AK47']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='30']/@value">30</set>
+<!-- Snipter T3 -->
+<set xpath="/items/item[@name='gunRifleT3SniperRifle']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='12']/@value">12</set>
+<!-- Sniper Marksman -->
+<set xpath="/items/item[@name='gunRifleT2MarksmanRifle']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='5']/@value">5</set>
+<!-- Hunting Rifle -->
+<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='1']/@value">1</set>
+<!-- Auto Shotgun -->
+<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='16']/@value">16</set>
+<!-- Pump Shotgun -->
+<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='8']/@value">8</set>
+<!-- Doublebarrel Shotgun -->
+<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='2']/@value">2</set>
+<!-- Blunder Bust -->
+<set xpath="/items/item[@name='gunShotgunT0Blunderbuss']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='1']/@value">1</set>
+<!-- Desert Eagle -->
+<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='8.8']/@value">8.8</set>
+<!-- Magnum -->
+<set xpath="/items/item[@name='gunHandgunT2Magnum44']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='6']/@value">6</set>
+<!-- MP5 -->
+<set xpath="/items/item[@name='gunHandgunT3SMG5']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='30']/@value">30</set>
+<!-- Pistol 9mm -->
+<set xpath="/items/item[@name='gunHandgunT1Pistol']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='15']/@value">15</set>
+<!-- Rocket Launcher -->
+<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='1']/@value">1</set>
+<!-- T1 Bow -->
+<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='1']/@value">1</set>
+<!-- T2 Bow -->
+<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='1']/@value">1</set>
+<!-- T3 Bow -->
+<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='1']/@value">1</set>
+<!-- Iron Crossbow -->
+<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='1']/@value">1</set>
+<!-- Compound Crossbow -->
+<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group/passive_effect[@name='MagazineSize'][@operation='base_set'][@value='1']/@value">1</set>
+</configs>

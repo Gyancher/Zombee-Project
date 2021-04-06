@@ -1,0 +1,22 @@
+
+<configs>
+    <append xpath="/blocks">	
+       <block name="WorkingSodaMachine">
+			<property name="Class" value="Campfire" />
+			<property name="Extends" value="cntCoffeeMaker"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="Model" value="Entities/Electrical/sodaFountainPrefab"/> <property name="Place" value="TowardsPlacerInverted"/>
+			<property name="MultiBlockDim" value="2,2,1"/><property name="DisplayType" value="blockMulti"/>
+				<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+				<drop event="Harvest" name="resourceScrapIron" count="15,30" tag="allHarvest"/>
+				<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="CustomIcon" value="cntSodaFountain" />      
+		</block>	
+        
+     
+		
+    </append>
+   
+</configs>

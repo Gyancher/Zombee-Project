@@ -1,0 +1,24 @@
+<configs>
+	<append xpath="/items"> 
+ 
+
+<item name="resourceBamboo"> <!-- scrap material -->
+	<property name="HoldType" value="16"/>
+	<!-- <property name="Meshfile" value="#Other/Items?Crafting/plant_fibers.fbx"/> -->
+	<property name="Meshfile" value="#@modfolder:Resources/BambooPlant.unity3d?BambooPlant" />
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Weight" value="1"/>
+	<property name="CustomIcon" value="Bamboo" />
+	<property name="Material" value="MresourceYuccaFibers"/>
+	<property name="RepairTime" value="1"/>
+	<property name="RepairAmount" value="30"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="FuelValue" value="1"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Resources"/>
+</item>
+    
+   </append>
+</configs>

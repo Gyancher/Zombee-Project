@@ -1,0 +1,23 @@
+
+<configs>
+    <append xpath="/blocks">	
+       <block name="WorkingIceMachine">
+			<property name="Class" value="Campfire" />
+			<property name="Extends" value="decoEntityMetalMaster"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="Model" value="Entities/OutdoorDecor/iceMachinePrefab"/> <property name="Place" value="TowardsPlacerInverted"/>
+			<property name="MultiBlockDim" value="2,2,1"/><property name="DisplayType" value="blockMulti"/>
+				<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+				<drop event="Harvest" name="resourceScrapIron" count="15,30" tag="allHarvest"/>
+				<drop event="Harvest" name="resourceSnowBall" count="11" tag="allHarvest"/>
+				<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="CustomIcon" value="cntIceMachine" />      
+		</block>	
+        
+     
+		
+    </append>
+   
+</configs>

@@ -1,0 +1,619 @@
+<configs>
+
+
+
+
+<!-- Allow Spikes to be picked up-->
+ <append xpath="/blocks/block[@name='trapSpikesWoodMaster']">
+    <property name="CanPickup" value="true" param1="trapSpikesWoodDmg0" />
+  </append>
+
+  <append xpath="/blocks/block[@name='trapSpikesScrapIronMaster']">
+    <property name="CanPickup" value="true" param1="trapSpikesIronDmg0" />
+  </append>
+
+  <append xpath="/blocks/block[@name='barbedFence']">
+    <property name="CanPickup" value="true" />
+  </append>
+  
+  
+<!-- Allow healing when standing on bedroll-->
+	<append xpath="/blocks/block[@name='bedroll']">
+		<property name="BuffsWhenWalkedOn" value="buffHealHealth"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='bed01']">
+		<property name="BuffsWhenWalkedOn" value="buffHealHealth"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='bed02']">
+		<property name="BuffsWhenWalkedOn" value="buffHealHealth"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='mattressFlat']">
+		<property name="BuffsWhenWalkedOn" value="buffHealHealth"/>
+	</append>
+	
+
+<!-- Change Movement speed based on terrain -->
+	<!--Sand -->
+	<append xpath="/blocks/block[@name='terrSand']">
+		<property name="MovementFactor" value=".8"/>
+	</append>
+	<!--Snow -->
+	<append xpath="/blocks/block[@name='terrSnow']">
+		<property name="MovementFactor" value=".8"/>
+	</append>
+	<!--Bedrock -->
+	<append xpath="/blocks/block[@name='terrBedrock']">
+		<property name="MovementFactor" value="1.6"/>
+	</append>
+	<!--Desert -->
+	<append xpath="/blocks/block[@name='terrDesertGround']">
+		<property name="MovementFactor" value=".9"/>
+	</append>
+	<!--Asphalt -->
+	<append xpath="/blocks/block[@name='terrAsphalt']">
+		<property name="MovementFactor" value="1.45"/>
+	</append>
+	<!--Gravel -->
+	<append xpath="/blocks/block[@name='terrGravel']">
+		<property name="MovementFactor" value="1.15"/>
+	</append>
+	<!--Ice-->
+	<append xpath="/blocks/block[@name='terrIce']"><!--Ice-->
+		<property name="MovementFactor" value=".75"/>
+	</append>
+	<!--Burnt Forest -->
+	<append xpath="/blocks/block[@name='terrBurntForestGround']">
+		<property name="MovementFactor" value=".95"/>
+	</append>
+	<!--Destroyed Stone -->
+	<append xpath="/blocks/block[@name='terrDestroyedStone']">
+		<property name="MovementFactor" value=".92"/>
+	</append>
+	<!--Concrete -->
+	<append xpath="/blocks/block[@name='terrConcrete']">
+		<property name="MovementFactor" value="1.45"/>
+	</append>
+	
+	<append xpath="/blocks">
+
+		<!-- Tents -->
+		<block name="DomeTent">
+			<property name="DescriptionKey" value="bedGroupDesc"/>
+			<property name="Class" value="SleepingBag"/>
+			<property name="CustomIcon" value="DomeTent"/>
+			<property name="IndexName" value="brBlock"/> <!-- need this to show the bigger covering area -->
+			<property name="Material" value="Mplants"/>
+			<property name="MaxDamage" value="100"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/DomeTent.unity3d?dome_tent"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="4,2,4"/>
+			<property name="FallDamage" value=".8"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="FuelValue" value="20"/>
+			<property name="CanPickup" value="true" />
+			<property name="BuffsWhenWalkedOn" value="buffHealHealth"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Group" value="Basics,Building,advBuilding"/>
+			<property class="RepairItems"> <property name="resourceYuccaFibers" value="20"/> </property>
+				<drop event="Harvest" name="resourceYuccaFibers" count="12" tag="allHarvest"/>
+				<drop event="Destroy" name="resourceYuccaFibers" count="1,3"/>
+				<drop event="Fall" name="resourceYuccaFibers" count="5" prob="1" stick_chance="0"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+				
+		<block name="MiniPropaneStove">
+			<property name="Class" value="Campfire"/>
+			<property name="Material" value="MstoneNoGlue"/>
+			<property name="MaxDamage" value="100"/>
+			<property name="CustomIcon" value="MiniPropaneStove"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/MiniPropaneStove.unity3d?MiniPropaneStove"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanPickup" value="true" param1="MiniPropaneStove"/>
+			<property name="ParticleName" value="campfire"/>
+			<property name="ParticleOffset" value="0.5,0,0.5"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HeatMapStrength" value="5"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+			<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+
+			<property class="Workstation">
+				<property name="Modules" value="tools,output,fuel,input"/>
+				<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+			<property name="CraftActionName" value="lblContextActionCook"/>
+			<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+			<property name="OpenSound" value="campfire_open"/>
+			<property name="CloseSound" value="campfire_close"/>
+			<property name="CraftSound" value="campfire_cook_click"/>
+			<property name="CraftCompleteSound" value="campfire_complete_item"/>
+			<property name="WorkstationJournalTip" value="heatMapTip"/>
+			<property name="PickupJournalEntry" value="campfireTip"/>
+			<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+			<drop event="Destroy" name="resourceRockSmall" count="3"/>
+			<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+			<property name="DescriptionKey" value="campfireDesc"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="70i0"/>
+		</block>
+
+		<block name="MobileSolarCase">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SolarPanel"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Path" value="solid"/>
+			<property name="CanPickup" value="true" param1="MobileSolarCase"/>
+			<property name="Model" value="#@modfolder:Resources/MobileSolarCase.unity3d?MobileSolarCase"/>
+			<!-- <property name="ModelOffset" value="0,-.5,0"/> -->
+			<property name="DisplayType" value="blockElectricalMulti"/>
+			<property name="MultiBlockDim" value="1,2,2"/>
+			<property name="CustomIcon" value="MobileSolarCase" />
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterExchange" value="imposterRamp" param1="18"/>
+			<property name="DescriptionKey" value="powerSourceDesc"/>
+			<property name="OutputPerStack" value="15"/>
+			<property name="SlotItem" value="solarCell"/>
+			<property name="MaxPower" value="800"/>
+			<property name="Group" value="Science"/>
+			<property name="ActivationDistance" value="6"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+				<property name="resourceElectricParts" value="3"/>
+				<property name="resourceElectricParts" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			  </property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+
+		<block name="PortableWaterGenerator">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="BatteryBank"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#@modfolder:Resources/PortableWaterGenerator.unity3d?PortableWaterGenerator"/> <property name="HandleFace" value="Bottom"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="DescriptionKey" value="powerSourceDesc"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,batterybankSchematic"/>
+			<property name="MaxPower" value="100"/>
+			<property name="ModelOffset" value="0,-.25,0"/>
+			<property name="InputPerTick" value="50"/>
+			<property name="ChargePerInput" value="10"/>
+			<property name="OutputPerStack" value="10"/>
+			<property name="OutputPerCharge" value="50"/>
+			<property name="SlotItem" value="carBattery"/>
+			<property name="Group" value="Science"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="8"/>
+				<property name="resourceElectricParts" value="6"/>
+				<property name="resourceElectricParts" value="2"/>
+				<property name="resourceScrapPolymers" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="120" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceForgedIron" count="3" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceElectricParts" count="2,3" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,2" prob="0.6" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="EconomicValue" value="400"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+
+		<block name="FishCache" randomrotation="true">
+			<property name="CreativeMode" value="Player"/>		 
+			<property name="Material" value="MfoodRawMeat"/>
+			<property name="StabilitySupport" value="false"/>		  
+			<property name="CustomIcon" value="Fish"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/FishSwimming.unity3d?FishSwimming"/>
+			<property name="IsTerrainDecoration" value="true"/>		  
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="Fish" count="1" tag="allToolsHarvest"/>
+			<drop event="Fall" name="Fish" count="1" prob="0.75" stick_chance="1"/>
+			<drop event="Destroy" name="Fish" count="1" prob="1"/>
+			<property name="Group" value="Food/Cooking"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="UpgradeRated.ToBlock" value="air"/>
+			<property name="UpgradeRated.Rate" value="4"/>
+		</block> 
+
+	<!-- Climb chain and rope -->
+		<block name="Climb_decoHoistChain">
+		 <property name="CustomIcon" value="decoHoistChain"/>
+			<property name="Extends" value="decoEntityMetalMaster"/>
+			<property name="Class" value="Ladder"/>
+			<property name="DisplayType" value="blockShootThroughHardened"/>
+			<property name="Material" value="Mmetal_chains"/>
+			<property name="Model" value="Entities/Industrial/hoistChainPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="LightOpacity" value="0"/>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
+		</block>
+
+
+		<block name="Climb_decoHoistSpreader">
+		<property name="CustomIcon" value="decoHoistSpreader"/>
+			<property name="Extends" value="Climb_decoHoistChain"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="Model" value="Entities/Industrial/hoistFrameSpreaderPrefab"/>
+			<property name="MultiBlockDim" value="3,2,3"/><property name="DisplayType" value="blockMulti"/>
+		</block>
+
+		<block name="Climb_decoHoistHook">
+		<property name="CustomIcon" value="decoHoistHook"/>
+			<property name="Extends" value="Climb_decoHoistChain"/>
+			<property name="Model" value="Entities/Industrial/hoistHookPrefab"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+		</block>
+
+		<block name="Climb_decoHoistMagnet">
+		<property name="CustomIcon" value="decoHoistMagnet"/>
+			<property name="Extends" value="Climb_decoHoistChain"/>
+			<property name="Model" value="Entities/Industrial/hoistMagnetPrefab"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+		</block>
+
+		<block name="Climb_decoHoistTopMount">
+			<property name="CustomIcon" value="decoHoistTopMount"/>
+			<property name="Extends" value="Climb_decoHoistChain"/>
+			<property name="Model" value="Entities/Industrial/hoistTopMountPrefab"/>
+		</block>
+
+		<block name="Climb_modularRopeTiled">
+			<property name="CustomIcon" value="modularRopeTiled"/>
+			<property name="Extends" value="decoEntityPolymerMaster" param1="RepairItems"/>
+			<property name="Class" value="Ladder"/>
+			<property name="DisplayType" value="blockShootThroughHardened"/>
+			<property name="Material" value="MclothStable"/>
+			<property name="Model" value="Entities/OutdoorDecor/modularRopeTiledPrefab"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<drop event="Harvest" name="resourceYuccaFibers" count="4" tag="allHarvest"/>
+			<drop event="Fall" count="0"/>
+		</block>
+
+		<block name="Climb_modularRopeTopTied">
+			<property name="Extends" value="Climb_modularRopeTiled"/>
+			<property name="Model" value="Entities/OutdoorDecor/modularRopeTopTiedPrefab"/>
+		</block>
+
+		<block name="Climb_modularRopeNoose">
+			<property name="Extends" value="Climb_modularRopeTiled"/>
+			<property name="Model" value="Entities/OutdoorDecor/modularRopeNoosePrefab"/>
+		</block>
+
+		<block name="Climb_cable1">
+			<property name="CustomIcon" value="cable1"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Shape" value="New"/>
+			<property name="DisplayType" value="blockShootThroughHardened"/>
+			<property name="Class" value="Ladder"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="Model" value="billboard"/> <property name="HandleFace" value="South"/>
+			<property name="Mesh" value="cutout"/>
+			<property name="Texture" value="41"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="ShapeMinBB" value="0.3,0,0.3"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<property name="FilterTags" value="fdecor,fother,felectrical"/>
+			<property name="SortOrder1" value="70c0"/>
+		</block>	
+
+
+
+ <!-- Floating Embers particles -->
+	<block name="FloatingEmbersSlow">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+		<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/Embers - Slow Floating.unity3d?Embers - Slow Floating.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+	<block name="FloatingEmbersMedium">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+		<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/Embers - Medium Moving.unity3d?Embers - Medium Moving.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+	<block name="FloatingEmbersFast">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+	<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/Embers - Fast Moving.unity3d?Embers - Fast Moving.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+	 <!-- Floating Ice particles -->
+		<block name="FloatingIceSlow">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+		<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/Ice - Slow Floating.unity3d?Ice - Slow Floating.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+	<block name="FloatingIceMedium">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+		<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/Ice - Medium Moving.unity3d?Ice - Medium Moving.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+	<block name="FloatingIceFast">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+	<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/Ice - Fast Moving.unity3d?Ice - Fast Moving.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+ <!-- Toxic particles -->	
+	<block name="GasEmitter1Effect">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+		<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/GasEmitter1Effect.unity3d?GasEmitter1Effect.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+		<block name="GasEmitter2Effect">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+	<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/GasEmitter2Effect.unity3d?GasEmitter2Effect.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+		<block name="PoisonClouds1">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+	<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/PoisonClouds1.unity3d?PoisonClouds1.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+		<block name="PoisonClouds2">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+	<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/PoisonClouds2.unity3d?PoisonClouds2.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+
+	
+	<block name="SporeEmitter1Effect">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+	<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/SporeEmitter1Effect.unity3d?SporeEmitter1Effect.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+	<block name="SporeEmitter2Effect">  
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="powerSourceDesc"/>
+		<property name="Light" value="1.5"/>
+	<property name="CustomIcon" value="WhiteSmoke"/>
+		<property name="Material" value="Mmetal_thin"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/SporeEmitter2Effect.unity3d?SporeEmitter2Effect.prefab"/>
+		<property name="ImposterDontBlock" value="false"/>
+			<!-- <property name="ModelOffset" value="0,3,0" /> -->
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Weight" value="1"/>
+		<property name="CanPickup" value="true" param1="FloatingEmbers"/>
+		<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>										
+	</block>
+	
+
+
+	
+<block name="electricfencerelay">
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="ElectricWire"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,electricfencepostSchematic"/>
+	<property name="Material" value="Mmetal_weak"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="DamageReceived" value="0.5"/>
+	<property name="Model" value="Entities/Electrical/relay_timerPrefab"/> <property name="HandleFace" value="Bottom"/>
+	<property class="RepairItems"> <property name="resourceElectricParts" value="1"/> <property name="resourceScrapIron" value="1"/> </property>
+	<property name="DisplayType" value="blockElectricalMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="RequiredPower" value="1"/>
+		<property name="PoweredType" value="Constant"/>
+	<property name="Buff" value="buffShocked"/>
+	<property name="BuffChance" value="1"/>
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="4"/>
+		<property name="resourceElectricParts" value="1"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="62"/>
+	<property name="FilterTags" value="fdecor,felectrical,ftraps"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>
+
+             
+<block name="ElectricityPole">
+	<property name="Class" value="Powered"/>
+	<property name="CustomIcon" value="poleTop01"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,generatorbankSchematic"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Industrial/pole_top01" param1="main_mesh"/><property name="HandleFace" value="Bottom"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="DisplayType" value="blockElectrical"/>
+	<property name="RequiredPower" value="1"/>
+	<property name="Group" value="Science"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceForgedIron" value="1"/></property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceElectricParts" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,5"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="EconomicValue" value="28"/>
+	<property name="FilterTags" value="fdecor,felectrical"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>	
+	</append>
+</configs>

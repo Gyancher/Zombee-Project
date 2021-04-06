@@ -1,0 +1,3 @@
+Key,Source,Context,Changes,English
+BrightVisionGoggles,items,Clothes,,Bright Night Vision Goggles
+BrightVisionGogglesDesc,items,Clothes,,"These night vision goggles provide a little face protection but has a filter to see better in the dark"

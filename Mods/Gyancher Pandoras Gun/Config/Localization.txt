@@ -1,0 +1,7 @@
+Key,Source,Context,Changes,English
+gunPistolGyancher,items,Gyancher,,,Dev: Instant Death Pistol
+gunPistolAdminGyancher,items,Gyancher,,,When you absolutely positively got to kill every zombie in the room.
+SwordSaw,items,mod,New,Gyancher's Sword Saw,,,,,
+gunBowT3CompoundCrossbowRepeaterRH,items,Melee,Crossbow Repeater,,,,,
+gunBowT3CompoundCrossbowRepeaterRHDesc,items,Melee,,,"A compound bow does more damage and arrows fly straighter which makes it easier to aim.\n\nRepair with a Repair Kit.\nScrap to Bow / Crossbow Parts.",,,,,
+gunBowT3CompoundCrossbowRepeaterRHSchematic,items,Melee,Crossbow Repeater Schematic,,,,,

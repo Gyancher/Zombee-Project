@@ -1,0 +1,2 @@
+Key,Source,Context,Changes,English,Russian
+HJ_Gate_PR,blocks,Block,New,"Garage Door","Гаражные ворота"

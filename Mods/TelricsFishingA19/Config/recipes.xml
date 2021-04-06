@@ -1,0 +1,22 @@
+<configs>
+<append xpath="/recipes">
+<recipe name="fishingPoleWood" count="1" craft_time="3">
+	<ingredient name="resourceWood" count="5"/>
+	<ingredient name="resourceForgedIron" count="1"/>
+</recipe>
+<recipe name="FishableWaterPlace" count="1" craft_time="3">
+	<ingredient name="resourceWood" count="10"/>
+</recipe>
+
+<recipe name="foodGrilledFishFillet" count="2" craft_time="3" craft_area="campfire" craft_tool="toolCookingGrill">
+	<ingredient name="resourceBlueFish" count="1"/>
+</recipe>
+
+</append>
+
+
+
+
+
+
+</configs>

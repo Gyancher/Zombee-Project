@@ -1,0 +1,61 @@
+<configs>
+	<append xpath="/blocks">
+
+
+
+
+<block name="barbedWireSpindle">
+	<property name="Extends" value="barbedWireSheet" param1="SortOrder1,SortOrder2"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Bandits/Barbedwire/barbedwire_spindlePrefab"/>
+	<property name="Collide" value="melee,rocket"/>
+	<property name="MultiBlockDim" value="3,1,1"/><property name="DisplayType" value="blockMulti"/>
+	<property name="ModelOffset" value="0,0,-0.25"/>
+</block>
+
+<block name="barbedWireSpindle1m">
+	<property name="Extends" value="barbedWireSpindle"/>
+	<property name="Model" value="Entities/Bandits/Barbedwire/barbedwire_spindle_1mPrefab"/>
+	<property name="MultiBlockDim" value="1,1,1"/><property name="DisplayType" value="blockMulti"/>
+	<property name="ModelOffset" value="0,0,0"/>
+</block>
+
+<block name="barbedWireSpindleDiagonal1m">
+	<property name="Extends" value="barbedWireSpindle"/>
+	<property name="Model" value="Entities/Bandits/Barbedwire/barbedwire_spindle_diagonal_1mPrefab"/>
+	<property name="MultiBlockDim" value="1,1,1"/><property name="DisplayType" value="blockMulti"/>
+	<property name="ModelOffset" value="0,0,0"/>
+</block>
+
+<block name="barbedWireSpindle2">
+	<property name="Extends" value="barbedWireSpindle"/>
+	<property name="Model" value="Entities/Bandits/Barbedwire/barbedwire_spindle2Prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+</block>
+
+<block name="barbedWireSpindle3">
+	<property name="Extends" value="barbedWireSpindle"/>
+	<property name="Model" value="Entities/Bandits/Barbedwire/barbedwire_spindle3Prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+</block>
+
+<block name="barbedWireSpindle4">
+	<property name="Extends" value="barbedWireSpindle"/>
+	<property name="Model" value="Entities/Bandits/Barbedwire/barbedwire_spindle4Prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+</block>
+
+<block name="raft">
+	<property name="Material" value="Mwood"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="4,6,4"/>
+	<property name="Model" value="#Entities/Vehicles?Raft/raftPrefab.prefab"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+</block>
+
+
+</append>
+</configs>

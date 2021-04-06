@@ -1,0 +1,18 @@
+<configs>
+<append xpath="/materials">
+
+<material id="SuperGlide">
+	<property name="damage_category" value="wood"/>
+	<property name="surface_category" value="wood"/>
+	<property name="forge_category" value="iron"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="20"/>
+	<property name="Mass" type="int" value="5"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="movement_factor" value="50"/>
+	<property name="friction" value="20"/>
+	<property name="Experience" value="2"/>
+</material>
+</append>
+</configs>

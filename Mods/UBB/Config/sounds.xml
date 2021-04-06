@@ -1,0 +1,16 @@
+<configs>
+	<append xpath="/Sounds">
+	
+		<SoundDataNode name="SoundBarNoise">
+			<AudioSource name="Sounds/AudioSource_Explosion"/>
+			<AudioClip ClipName="#@modfolder:Resources/ZTTechRebuilds.unity3d?ZTSoundBarSilentTrigger" Loop="false"/>
+				<Noise ID="5" noise="250" time="14"/>
+				<LocalCrouchVolumeScale value="1"/>
+				<CrouchNoiseScale value="1"/>
+				<NoiseScale name="1"/>
+				<MaxVoices value="3"/>
+				<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+	
+	</append>
+</configs>

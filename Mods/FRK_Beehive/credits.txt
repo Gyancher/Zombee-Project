@@ -1,0 +1,3 @@
+3D Model from Blenderboom (https://sketchfab.com/3d-models/beehive-box-79e7f4b1d2db4e72bb51c804683da6bd)
+Used under CCA license (https://creativecommons.org/licenses/by/4.0/).
+Textures altered slightly to fit theme.

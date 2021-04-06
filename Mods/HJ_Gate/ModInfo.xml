@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="HJ_Gate" />
+		<Description value="HJ_Gate" />
+		<Author value="HammerJade" />
+		<Version value="0.8" compat="A19.1" />
+		<Website value="" />
+	</ModInfo>
+</xml>

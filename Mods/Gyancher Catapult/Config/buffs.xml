@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+
+<append xpath="buffs/buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@trigger='onSelfFallImpact']">
+	<requirement name="NotHasBuff" buff="NoFallDamage"/>
+	<requirement name="NotHasBuff" buff="buffInjuryKnockdown01Cooldown"/>
+ </append>
+ 
+	<append xpath="buffs">
+
+		<buff name="JumpPadBuff" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0.5"/>
+			<effect_group>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="NoFallDamage"/>
+				<triggered_effect trigger="onSelfJump" action="RemoveBuff" buff="NoFallDamage"/>
+				<triggered_effect trigger="onSelfJump" action="AddBuff" buff="Superjump"/>
+				<triggered_effect trigger="onSelfJump" action="PlaySound" sound="m136_fire" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="NoFallDamage"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffInjuryKnockdown01"/>
+			
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0"/>
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="ETrapHit" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="electric_fence_impact"/>
+			
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffBurningElementDuration" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffBurningElement"/>
+			</effect_group>
+		</buff>
+
+		<buff name="Superjump" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0.5"/>
+			<effect_group>
+				<passive_effect name="JumpStrength" operation="base_set" value="8.5"/>
+			</effect_group>
+			<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkParkour" operation="GTE" value="3"/>
+				<passive_effect name="JumpStrength" operation="base_set" value="8"/>
+			</effect_group>
+			<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkParkour" operation="GTE" value="5"/>
+				<passive_effect name="JumpStrength" operation="base_set" value="6"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="NoFallDamage" hidden="true">
+		<display_value_key value="No Fall Damage"/> <display_value value="xxx"/> 
+			<stack_type value="ignore"/>
+			<duration value="10"/>
+		</buff>
+		
+		
+		<buff name="nojumpingtrigger2" hidden="false">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<update_rate value=".1"/>
+			<effect_group>
+				<requirements>
+					<requirement name="NotHasBuff" buff="traprelease"/>
+					<requirement name="NotHasBuff" buff="traprelease2"/>
+					<requirement name="NotHasBuff" buff="traprelease3"/>
+					<requirement name="NotHasBuff" buff="nojumping2"/>					
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="nojumping2" target_tags="zombie,animal,player"/>
+			</effect_group>
+		</buff>
+
+		<buff name="nojumping2" name_key="So Sticky!" description_key="You have been caught in a sticky trap! Good Luck!" icon="trap2-icon">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<requirements>
+					<requirement name="NotHasBuff" buff="traprelease"/>
+					<requirement name="NotHasBuff" buff="traprelease2"/>
+					<requirement name="NotHasBuff" buff="traprelease3"/>
+					<requirement name="NotHasBuff" buff="nojumpingtrigger2"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="nojumping2"/>
+			</effect_group>
+
+			<effect_group>																								<!-- Changes below are only when you are on the trap block -->
+				<passive_effect name="JumpStrength" operation="base_set" value="0"/> <!-- Anytihing above zero will allow jumping while on trap, however will take fiddling if you adjust as "1" is not vanilla -->
+				<passive_effect name="WalkSpeed" operation="base_set" value=".1"/> <!-- Changes the speed you walk with "1" being vanilla. Done as a percentage so .5 is 50% of vanilla and "2" is 200% -->
+				<passive_effect name="RunSpeed" operation="base_set" value=".05"/> <!-- Changes the speed you run with "1" being vanilla. Done as a percentage so .5 is 50% of vanilla and "2" is 200% -->
+
+			</effect_group>
+		</buff>
+
+	</append>
+</configs>

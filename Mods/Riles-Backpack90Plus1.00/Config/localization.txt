@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+perkPackMuleRank1LongDesc,progression,perk Str,,,"Who has time to organize their stuff perfectly? Carry nine more items without being encumbered."
+perkPackMuleRank2LongDesc,progression,perk Str,,,"You know it's in there somewhere. Carry an additional nine more items without being encumbered."
+perkPackMuleRank3LongDesc,progression,perk Str,,,"You know exactly where everything is. Carry nine additional items without being encumbered."
+perkPackMuleRank4LongDesc,progression,perk Str,,,"You just passed inspection, private. Carry nine more items without being encumbered."
+perkPackMuleRank5LongDesc,progression,perk Str,,,"Now you are just showing off, you are either part mule or a strongman. Carry nine more items without being encumbered."

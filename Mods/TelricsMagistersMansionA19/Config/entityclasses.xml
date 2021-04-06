@@ -1,0 +1,333 @@
+<configs>
+<append xpath="/entity_classes">
+<!-- Magisters Mansion -->
+<entity_class name="zombieTheButcher" extends="zombieTemplateMale">
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFeralRagdoll.prefab"/>
+	<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
+	<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
+	<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
+	<property name="SoundHurt" value="Enemies/Feral_Zombie/zombieferalpain"/>
+	<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath"/>
+	<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
+	<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="210"/>
+
+	<property name="DismemberMultiplierHead" value=".07"/><property name="DismemberMultiplierArms" value=".07"/><property name="DismemberMultiplierLegs" value=".07"/><!-- Feral -->
+	<property name="PainResistPerHit" value=".25"/><!-- Feral -->
+
+	<!-- Gameplay -->
+	<property name="MoveSpeedAggro" value=".5, .5"/>
+	<property name="HandItem" value="meleeHandGhost"/>
+	<property name="JumpMaxDistance" value="4.6, 5"/>
+
+	<property name="ExperienceGain" value="750"/> <!-- XP strong -->
+	<property name="LootDropProb" value="1"/> <!-- Feral -->
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/MagistersMansion.unity3d?ButcherDistortion"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/MagistersMansion.unity3d?ButcherDistortion"/>
+	<property name="TimeStayAfterDeath" value="60"/>
+	<property name="DeadBodyHitPoints" value="350"/>
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="750"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	</effect_group>
+</entity_class>
+<entity_class name="zombieTheLibrarian" extends="zombieTemplateMale">
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFeralRagdoll.prefab"/>
+	<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
+	<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
+	<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
+	<property name="SoundHurt" value="Enemies/Feral_Zombie/zombieferalpain"/>
+	<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath"/>
+	<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
+	<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="210"/>
+
+	<property name="DismemberMultiplierHead" value=".07"/><property name="DismemberMultiplierArms" value=".07"/><property name="DismemberMultiplierLegs" value=".07"/><!-- Feral -->
+	<property name="PainResistPerHit" value=".25"/><!-- Feral -->
+
+	<!-- Gameplay -->
+	<property name="MoveSpeedAggro" value=".5, .5"/>
+	<property name="HandItem" value="meleeHandGhost"/>
+	<property name="JumpMaxDistance" value="4.6, 5"/>
+
+	<property name="ExperienceGain" value="750"/> <!-- XP strong -->
+	<property name="LootDropProb" value="1"/> <!-- Feral -->
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/MagistersMansion.unity3d?LibrarianDistortion"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/MagistersMansion.unity3d?LibrarianDistortion"/>
+	<property name="TimeStayAfterDeath" value="60"/>
+	<property name="DeadBodyHitPoints" value="350"/>
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="750"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	</effect_group>
+</entity_class>
+<entity_class name="zombieTheBoiler" extends="zombieTemplateMale">
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFeralRagdoll.prefab"/>
+	<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
+	<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
+	<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
+	<property name="SoundHurt" value="Enemies/Feral_Zombie/zombieferalpain"/>
+	<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath"/>
+	<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
+	<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="210"/>
+
+	<property name="DismemberMultiplierHead" value=".07"/><property name="DismemberMultiplierArms" value=".07"/><property name="DismemberMultiplierLegs" value=".07"/><!-- Feral -->
+	<property name="PainResistPerHit" value=".25"/><!-- Feral -->
+
+	<!-- Gameplay -->
+	<property name="MoveSpeedAggro" value=".5, .5"/>
+	<property name="HandItem" value="meleeHandGhost"/>
+	<property name="JumpMaxDistance" value="4.6, 5"/>
+
+	<property name="ExperienceGain" value="750"/> <!-- XP strong -->
+	<property name="LootDropProb" value="1"/> <!-- Feral -->
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/MagistersMansion.unity3d?BoilerDistortion"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/MagistersMansion.unity3d?BoilerDistortion"/>
+	<property name="TimeStayAfterDeath" value="60"/>
+	<property name="DeadBodyHitPoints" value="350"/>
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="750"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	</effect_group>
+</entity_class>
+<entity_class name="zombieGhost" extends="zombieTemplateMale">
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFeralRagdoll.prefab"/>
+	<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
+	<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
+	<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
+	<property name="SoundHurt" value="Enemies/Feral_Zombie/zombieferalpain"/>
+	<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath"/>
+	<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
+	<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+	<property name="WalkType" value="7"/>
+	<property name="Mass" value="210"/>
+
+	<property name="DismemberMultiplierHead" value=".07"/><property name="DismemberMultiplierArms" value=".07"/><property name="DismemberMultiplierLegs" value=".07"/><!-- Feral -->
+	<property name="PainResistPerHit" value=".25"/><!-- Feral -->
+
+	<!-- Gameplay -->
+	<property name="MoveSpeedAggro" value=".5, .5"/>
+	<property name="HandItem" value="meleeHandGhost"/>
+	<property name="JumpMaxDistance" value="4.6, 5"/>
+
+	<property name="ExperienceGain" value="750"/> <!-- XP strong -->
+	<property name="LootDropProb" value=".03"/> <!-- Feral -->
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostDistortion"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostDistortion"/>
+	<property name="TimeStayAfterDeath" value="12"/>
+	<property name="DeadBodyHitPoints" value="350"/>
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/> <!-- Zombie HP scale -->
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	</effect_group>
+</entity_class>
+<entity_class name="zombieGhost2" extends="zombieTemplateMale">
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardNurseRagdoll.prefab"/>
+	<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
+	<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
+	<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
+	<property name="SoundHurt" value="Enemies/Feral_Zombie/zombieferalpain"/>
+	<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath"/>
+	<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
+	<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+	<property name="WalkType" value="7"/>
+	<property name="Mass" value="210"/>
+
+	<property name="DismemberMultiplierHead" value=".07"/><property name="DismemberMultiplierArms" value=".07"/><property name="DismemberMultiplierLegs" value=".07"/><!-- Feral -->
+	<property name="PainResistPerHit" value=".25"/><!-- Feral -->
+
+	<!-- Gameplay -->
+	<property name="MoveSpeedAggro" value=".5, .5"/>
+	<property name="HandItem" value="meleeHandGhost"/>
+	<property name="JumpMaxDistance" value="4.6, 5"/>
+
+	<property name="ExperienceGain" value="750"/> <!-- XP strong -->
+	<property name="LootDropProb" value=".03"/> <!-- Feral -->
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostDistortion"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostDistortion"/>
+	<property name="TimeStayAfterDeath" value="12"/>
+	<property name="DeadBodyHitPoints" value="350"/>
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/> <!-- Zombie HP scale -->
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	</effect_group>
+</entity_class>
+<entity_class name="animalRaven" extends="animalTemplateHostile">
+	<property name="Tags" value="entity,animal,zombie,hostile,vulture"/>
+	<property name="Class" value="EntityVulture"/>
+	<property name="EntityType" value="Zombie"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="PhysicsBody" value="vulture"/>
+	<property name="Mass" value="35"/>
+	<property name="Mesh" value="Animals/Vulture/animalVultureStandardRagdoll"/>
+	<property name="SizeScale" value=".7"/>
+
+	<property name="AITask-1" value=""/>
+	<property name="AITarget-1" value=""/>
+
+	<property name="SoundRandom" value="Animals/Vulture/vultureroam"/>
+	<property name="SoundAlert" value="Animals/Vulture/vulturealert"/>
+	<property name="SoundHurt" value="Animals/Vulture/vulturepain"/>
+	<property name="SoundDeath" value="Animals/Vulture/vulturedeath"/>
+	<property name="SoundAttack" value="Animals/Vulture/vultureattack"/>
+	<property name="SoundSense" value="Animals/Vulture/vulturesense"/>
+	<property name="SoundGiveUp" value="Animals/Vulture/vulturegiveup"/>
+
+	<!-- Stealth -->
+	<property name="SightRange" value="70"/>
+
+	<!-- Gameplay -->
+	<property name="MoveSpeed" value="1"/>
+	<property name="MoveSpeedAggro" value="2.1, 2.1"/> <!-- Used when player in vehicle -->
+	<property name="MaxTurnSpeed" value="190"/>
+
+	<property name="HandItem" value="meleeHandAnimalZombieVulture"/>
+	<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+
+	<property name="DismemberMultiplierLegs" value="0"/>
+
+	<property name="DeadBodyHitPoints" value="175"/>
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieVulture -->
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="30"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="6"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
+	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostDistortion"/>
+	<property name="ReplaceMaterial1" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostDistortion"/>
+	
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="30"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+	</effect_group>
+</entity_class>
+<entity_class name="zombieLillian" extends="zombieTemplateMale">
+	<property name="Tags" value="entity,zombie,walker,Lillian"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardScreamerRagdoll.prefab"/>
+	<property name="SoundRandom" value="MaleBanditChase"/>
+	<property name="SoundAlert" value="MaleBanditChase"/>
+	<property name="SoundAttack" value="MaleBanditChase"/>
+	<property name="SoundHurt" value="MaleBanditChase"/>
+	<property name="SoundDeath" value="MaleBanditChase"/>
+	<property name="SoundSense" value="MaleBanditChase"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="3"/>
+	<property name="Mass" value="250"/>
+	<property name="PhysicsBody" value="zombieFat"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	
+	<property name="PainResistPerHit" value="1"/>
+	
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostDistortion"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/p_spark_electricity"/>
+	
+	<property name="AITask-1" value="BreakBlock"/><!-- 
+	<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=2;duration=5"/>-->
+	<property name="AITask-2" value="ApproachAndAttackTarget" data="class=EntityEnemyAnimal,0,EntityPlayer,0,EntityNPC,0"/>
+	<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityEnemyAnimal,0,EntityPlayer,0,EntityNPC,0"/>
+	<property name="AITask-4" value="ApproachSpot"/>
+	<property name="AITask-5" value="Look"/>
+	<property name="AITask-6" value="Wander"/>
+	<property name="AITask-7" value=""/>
+	<!-- Gameplay -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.55"/> <!-- just shambling around -->
+	<property name="MoveSpeedAggro" value="0.7, 1.25"/> <!-- chasing a target min/max (like day or night)-->
+	<property name="MoveSpeedPanic" value="0.55"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbVertical" value="true"/>
+	<property name="JumpMaxDistance" value="2.8, 3.9"/>
+	<!-- Gameplay -->
+	<property name="HandItem" value="meleeHandLillian"/>
+	<property name="JumpMaxDistance" value=".9, 1"/>
+	
+	<property name="Buffs" value="buffLillianBuff"/>
+
+	<property name="ExperienceGain" value="550"/> <!-- XP strong -->
+	<property name="LootDropProb" value="1"/> 
+	<property name="LootDropEntityClass" value="lootLillian"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="5000"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+	</effect_group>
+</entity_class>
+<!-- loot -->
+<entity_class name="lootLillian">
+	<property name="Mesh" value="#@modfolder:Resources/MagistersMansion.unity3d?LillianFireLootPrefab"/>
+	<property name="ModelType" value="Custom"/>
+	<property name="Prefab" value="Backpack"/>
+	<property name="Class" value="EntityLootContainer"/>
+	<property name="Parent" value="Backpack"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="TimeStayAfterDeath" value="1200"/>
+	<property name="LootListOnDeath" value="358"/> <!-- used to determine container X/Y size -->
+	<property name="Faction" value="none"/>
+</entity_class>
+<entity_class name="lootGhost">
+	<property name="Mesh" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostEssencePrefab"/>
+	<property name="ModelType" value="Custom"/>
+	<property name="Prefab" value="Backpack"/>
+	<property name="Class" value="EntityLootContainer"/>
+	<property name="Parent" value="Backpack"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="TimeStayAfterDeath" value="60"/>
+	<property name="LootListOnDeath" value="360"/> <!-- used to determine container X/Y size -->
+	<property name="Faction" value="none"/>
+</entity_class>
+<!-- tests -->
+
+</append>
+
+
+
+
+
+
+
+
+</configs>

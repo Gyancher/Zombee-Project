@@ -1,0 +1,18 @@
+<configs>
+	<append xpath="/recipes">
+	
+		
+		<recipe name="DeadBladeSpinner" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable"> <!-- trap -->
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+			<ingredient name="resourceOil" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedIron,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
+			</effect_group>
+		</recipe>
+		
+		
+	</append>
+</configs>

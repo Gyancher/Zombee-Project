@@ -1,0 +1,10 @@
+<configs>
+	<append xpath="/recipes">
+	
+	   <recipe name="Toasted Bread" count="2" craft_area="WorkingToaster" craft_time="2"> 
+				<ingredient name="Bread" count="2"/>
+		</recipe>
+		
+	</append>
+	
+</configs>

@@ -1,0 +1,7 @@
+﻿<configs>
+    <append xpath="//biomes/biome[@name='pine_forest']//decorations" >
+    <decoration type="block" blockname="terrAirSpawner" prob="0.01" rotatemax="4" />
+  </append>
+ </configs>
+
+

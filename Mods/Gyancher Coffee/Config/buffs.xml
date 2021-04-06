@@ -1,0 +1,29 @@
+<configs>
+<append xpath="/buffs">
+
+	<buff name="buffRiseAndShine" name_key="Rise and Shine!" description_key="+40% walk/run speed, +1 Fort +1 Agi +Stam/HP regen." tooltip_key="Coffee Coffee Coffee!!" icon="ui_game_symbol_coffee" icon_color="102,83,22" icon_blink="true" tags="drug">
+		<stack_type value="replace"/>
+		<duration value="15"/>
+		<effect_group>
+					<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffRiseAndShine">
+						<requirement name="HasBuff" buff="buffFatty"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffHealthy">
+						<requirement name="HasBuff" buff="buffRiseAndShine"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffIllInfection0,buffIllInfection1,buffIllInfection2,buffIllInfection3,buffNightTime">
+						<requirement name="HasBuff" buff="buffRiseAndShine"/>
+					</triggered_effect>
+			<passive_effect name="WalkSpeed" operation="perc_add" value="1"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".3"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="3" />
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="3" />
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+			<passive_effect name="StaminaChangeOT" operation="base_add" value="5" duration="5"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="5" duration="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffHealthy"/>
+		</effect_group>
+	</buff>
+</append>
+</configs>

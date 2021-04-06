@@ -1,0 +1,20 @@
+<JaxTeller718>
+	<append xpath="/blockplaceholders">
+		<placeholder name="pottedPlantRandomLootHelperGY">
+			<block name="pottedPlant01GY" prob="1"/>
+			<block name="pottedPlant03GY" prob="1"/>
+		</placeholder>
+		<placeholder name="gardenFlowerRandomLootHelperGY">
+			<block name="gardenFlower01GY" prob="0.2"/>
+			<block name="gardenFlower02GY" prob="0.2"/>
+			<block name="gardenFlower03GY" prob="0.2"/>
+			<block name="gardenFlower04GY" prob="0.2"/>
+			<block name="gardenFlower05GY" prob="0.2"/>
+		</placeholder>
+		
+	<placeholder name="treePlant02">
+		<block name="pottedPlant01GY" prob="1"/>
+		<block name="treePlant02GY" prob="1"/>
+	</placeholder>
+	</append>
+</JaxTeller718>

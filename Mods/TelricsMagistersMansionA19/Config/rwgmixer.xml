@@ -1,0 +1,19 @@
+<configs>
+<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='prefabList']">
+	<prefab name="MagistersMansion" />
+	<prefab name="MagistersMansion" />
+	<prefab name="MagistersMansion" />
+	<prefab name="MagistersMansion" />
+	<prefab name="MagistersMansion" />
+</append>
+
+
+
+
+
+
+
+</configs>
+
+
+

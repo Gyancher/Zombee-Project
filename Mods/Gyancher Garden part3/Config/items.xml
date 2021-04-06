@@ -1,0 +1,18 @@
+<configs>
+	<append xpath="/items">
+	
+	<!-- Schematics-->
+	
+    <item name="GreenHouseSchematic">
+      <property name="Extends" value="schematicMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="greenhouse"/>
+      <property name="Unlocks" value="GreenHouse"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="GreenHouse" operation="set" value="1" />
+      </effect_group>
+    </item>
+	
+	
+	</append>
+</configs>

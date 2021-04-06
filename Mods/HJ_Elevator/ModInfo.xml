@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Service lift" />
+		<Description value="Service lift" />
+		<Author value="HammerJade" />
+		<Version value="0.6" compat="A19.1" />
+		<Website value="" />
+	</ModInfo>
+</xml>

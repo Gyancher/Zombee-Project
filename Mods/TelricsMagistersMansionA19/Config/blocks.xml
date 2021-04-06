@@ -1,0 +1,823 @@
+<configs>
+<append xpath="/blocks">
+<!-- Magisters Mansion -->
+<!-- Siera Nightstalker -->
+<block name="SieraNightstalkerCrouchIdle">
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="351"/>
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mpaper"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?SieraNightstalkerCrouchIdlePrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="DowngradeBlock" value="SieraNightstalkerCrouchIdle2"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="SieraNightstalkerCrouchIdle2">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mpaper"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?SieraNightstalkerCrouchIdlePrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.Next" value="SieraNightstalkerCrouchIdle"/>
+	<property name="PlantGrowing.GrowthRate" value="1.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/> 
+	<property name="PlantGrowing.LightLevelStay" value="0"/> 
+	<property name="DowngradeBlock" value="SieraNightstalkerCrouchIdle"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="SieraNightstalkerStandingIdle">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mpaper"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?SieraNightstalkerStandingIdlePrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="SieraNightstalkerSittingIdle">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mpaper"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?SieraNightstalkerSittingIdlePrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="SieraNightstalkerFallenIdle">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mpaper"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?SieraNightstalkerFallenIdlePrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="SieraNightstalkerSittingIdle"/>
+			<property name="Item" value="medicalBandage"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="SieraNightstalkerAttackReadyIdle">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mpaper"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?SieraNightstalkerAttackReadyIdlePrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<!-- decorations -->
+<block name="MansionSmoke">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?MansionSmokePrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="GhostOrb">
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="353"/>
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostOrbPrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="GhostOrb2">
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="354"/>
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostOrbPrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="GhostOrb3">
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="355"/>
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostOrbPrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="DinnerPlate">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?DinnerPlatePrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="DinnerPlateFull"/>
+			<property name="Item" value="foodRawMeat"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="DinnerPlateFull">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?DinnerPlateFullPrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="BoilerRoomFire">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?BoilerRoomFireUpgradedPrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="LillianFire">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?LillianFirePrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="GiovaniReleased"/>
+			<property name="Item" value="LillianEssence"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="BoilerRoomFireTrap">
+	<property name="Class" value="TrapDoor"/>
+	<property name="TriggerDelay" value="0.25"/>
+	<property name="TriggerSound" value="stepwoodsmallcreak"/>
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?FireTrapPrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="DowngradeBlock" value="BoilerRoomFire2"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="BoilerRoomFire2">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?BoilerRoomFirePrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="BuffsWhenWalkedOn" value="buffBoilerRoomFireDebuff"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="BoilerBodyYellow">
+	<property name="Extends" value="bodyBagBlack"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="BoilerRoomFire"/>
+			<property name="Item" value="BoilerRoomFuel"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+        <property name="MaxDamage" value="25000"/>
+	<property name="Model" value="Entities/Misc/body_bag_yellow_fliesPrefab"/>
+</block>
+<block name="BurialRites">
+	<property name="Extends" value="bodyBagBlack"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="BurialOrb"/>
+			<property name="Item" value="GhostlyOrb4"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+        <property name="MaxDamage" value="25000"/>
+	<property name="Model" value="Entities/Misc/body_bag_yellow_fliesPrefab"/>
+</block>
+<block name="BurialOrb">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostOrbPrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="Pentagram">
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?PentagramPrefab"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="GiovaniReleased">
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="359"/>
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?GiovaniReleasedPrefab"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="DowngradeBlock" value="MansionDoorAir"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<!-- doors -->
+<block name="MansionDoorAir">
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0j0"/>
+	<property name="SortOrder2" value="0050"/>
+</block>
+<block name="MansionDoorEntrance">
+        <property name="CustomIcon" value="houseFrontDoor2_v1" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?MansionDoorPrefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="MansionDoorAir"/>
+			<property name="Item" value="keyMagistersMansionEntrance"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="MansionDoorAlwaysLocked">
+        <property name="CustomIcon" value="houseFrontDoor2_v1" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?MansionDoorPrefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+		<property name="DisplayInfo" value="Name"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="MansionDoorB">
+        <property name="CustomIcon" value="houseFrontDoor2_v1" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?MansionDoorPrefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="MansionDoorAir"/>
+			<property name="Item" value="keyMagistersMansionButcher"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="MansionDoorC">
+        <property name="CustomIcon" value="houseFrontDoor2_v1" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?MansionDoorPrefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="MansionDoorAir"/>
+			<property name="Item" value="keyMagistersMansionLibrary"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="MansionDoorD">
+        <property name="CustomIcon" value="houseFrontDoor2_v1" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?MansionDoorPrefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="MansionDoorAir"/>
+			<property name="Item" value="keyMagistersMansionBoiler"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="MansionDoorE">
+        <property name="CustomIcon" value="houseFrontDoor2_v1" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?MansionDoorPrefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+		<property name="DisplayInfo" value="Name"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="MansionDoorAir"/>
+			<property name="Item" value="keyMagistersMansionBoiler2"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="MansionDoorF">
+        <property name="CustomIcon" value="houseFrontDoor2_v1" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?MansionDoorPrefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="MansionDoorAir"/>
+			<property name="Item" value="keySieraLockpick"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="MansionDoorG">
+        <property name="CustomIcon" value="houseFrontDoor2_v1" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?MansionDoorPrefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="25000"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="MansionDoorAir"/>
+			<property name="Item" value="keyMagistersMansionLillian"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+<!-- loot blocks -->
+<block name="MansionHiddenPurse">
+	<property name="Extends" value="cntBackpack01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="#Entities/LootContainers?pursePrefab.prefab"/>
+	<property name="LootList" value="352"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="MansionHiddenPurse2">
+	<property name="Extends" value="cntBackpack01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="#Entities/LootContainers?pursePrefab.prefab"/>
+	<property name="LootList" value="356"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="MansionHiddenPurse3">
+	<property name="Extends" value="cntBackpack01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="#Entities/LootContainers?pursePrefab.prefab"/>
+	<property name="LootList" value="357"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<!-- spawners -->
+<block name="spawnerTheButcher">
+	<property name="Extends" value="sleeperSit"/>
+	
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>
+	<property name="Pose" value="5"/>
+	<property name="LookIdentity" value="0,0,1"/>
+	<property name="SpawnGroup" value="TheButcher"/>
+</block>
+<block name="spawnerTheLibrarian">
+	<property name="Extends" value="sleeperSit"/>
+	
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>
+	<property name="Pose" value="5"/>
+	<property name="LookIdentity" value="0,0,1"/>
+	<property name="SpawnGroup" value="TheLibrarian"/>
+</block>
+<block name="spawnerTheBoiler">
+	<property name="Extends" value="sleeperSit"/>
+	
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>
+	<property name="Pose" value="5"/>
+	<property name="LookIdentity" value="0,0,1"/>
+	<property name="SpawnGroup" value="TheBoiler"/>
+</block>
+<block name="spawnerGhosts">
+	<property name="Extends" value="sleeperSit"/>
+	
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>
+	<property name="Pose" value="5"/>
+	<property name="LookIdentity" value="0,0,1"/>
+	<property name="SpawnGroup" value="Ghosts"/>
+</block>
+<block name="spawnerLillian">
+	<property name="Extends" value="sleeperSit"/>
+	
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>
+	<property name="Pose" value="5"/>
+	<property name="LookIdentity" value="0,0,1"/>
+	<property name="SpawnGroup" value="Lillian"/>
+</block>
+<!-- buff blocks -->
+<block name="terrHauntedGround">
+	<property name="Material" value="MforestGround"/><property name="NoScrapping" value="true"/>
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="195,570,570,570,570,570"/>
+	<property name="LPHardnessScale" value="2"/>
+	<property name="Map.Color" value="35,80,45"/>
+	<!--property class="Map"> <property name="Color" value="44,48,26"/> <property name="Color2" value="44,60,25"/> <property name="ElevMinMax" value="50,80"/> </property-->
+	<property name="ImposterExclude" value="true"/>
+	<property class="RepairItems"> <property name="resourceClayLump" value="14"/> </property>
+	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrForestGround" count="1" prob="0.25" stick_chance="1"/>
+	<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
+	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0k0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrainFertile"/>
+	<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+	<property name="BuffsWhenWalkedOn" value="buffHauntedMansionStart"/>
+</block>
+<!-- rewards -->
+<block name="RewardOrb">
+        <property name="CustomIcon" value="GhostlyOrbIcon" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/MagistersMansion.unity3d?GhostOrbPrefab"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="RewardOrbDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="350"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" name="RewardOrb" count="1"/>
+</block>
+
+<!-- tests -->
+
+</append>
+
+
+
+
+
+
+
+
+</configs>

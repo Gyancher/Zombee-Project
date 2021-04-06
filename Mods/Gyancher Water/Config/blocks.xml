@@ -1,0 +1,190 @@
+<configs>
+	<append xpath="/blocks">
+<block name="Water Bubbles_v1">
+			<property name="CustomIcon" value="Bubbles" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Bubbles_v1.unity3d?Bubbles_v1" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Bubbles_v1" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Bubbles_v1" count="1" />
+		</block>
+
+
+<block name="Water Bubbles_v2">
+			<property name="CustomIcon" value="Bubbles" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Bubbles_v2.unity3d?Bubbles_v2" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Bubbles_v2" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Bubbles_v2" count="1" />
+		</block>
+		
+		
+<block name="Water Bubbles_v3">
+			<property name="CustomIcon" value="Bubbles" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Bubbles_v3.unity3d?Bubbles_v3" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Bubbles_v3" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Bubbles_v3" count="1" />
+		</block>
+		
+<block name="Water Foam_v1">
+			<property name="CustomIcon" value="Foam" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Foam_v1.unity3d?Foam_v1" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Foam_v1" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Foam_v1" count="1" />
+		</block>
+			
+<block name="Water Foam_v2">
+			<property name="CustomIcon" value="Foam" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Foam_v2.unity3d?Foam_v2" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Foam_v2" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Foam_v2" count="1" />
+		</block>
+				
+<block name="Water Foam_v3">
+			<property name="CustomIcon" value="Foam" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Foam_v3.unity3d?Foam_v3" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Foam_v3" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Foam_v3" count="1" />
+		</block>
+				
+<block name="Water Mist_v1">
+			<property name="CustomIcon" value="Mist" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Mist_v1.unity3d?Mist_v1" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Mist_v1" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Mist_v1" count="1" />
+		</block>
+					
+<block name="Water Mist_v2">
+			<property name="CustomIcon" value="Mist" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Mist_v2.unity3d?Mist_v2" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Mist_v2" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Mist_v2" count="1" />
+		</block>
+					
+<block name="Water Mist_v3">
+			<property name="CustomIcon" value="Mist" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Mist_v3.unity3d?Mist_v3" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Mist_v3" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Mist_v3" count="1" />
+		</block>
+		
+					
+<block name="Water Splash_v1">
+			<property name="CustomIcon" value="Splash" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Splash_v1.unity3d?Splash_v1" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Splash_v1" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Splash_v1" count="1" />
+		</block>
+						
+<block name="Water Splash_v2">
+			<property name="CustomIcon" value="Splash" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Splash_v2.unity3d?Splash_v2" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Splash_v2" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Splash_v2" count="1" />
+		</block>
+						
+<block name="Water Splash_v3">
+			<property name="CustomIcon" value="Splash" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Splash_v3.unity3d?Splash_v3" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Splash_v3" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Splash_v3" count="1" />
+		</block>
+							
+<block name="Water Waterfall_v1">
+			<property name="CustomIcon" value="Waterfall" />
+			<property name="CustomIconTint" value="0,0,255" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Waterfall_v1.unity3d?Waterfall_v1" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Waterfall_v1" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Waterfall_v1" count="1" />
+		</block>
+	
+		
+</append>
+</configs>

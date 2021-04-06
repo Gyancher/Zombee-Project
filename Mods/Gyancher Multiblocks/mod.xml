@@ -1,0 +1,12 @@
+
+
+<mod>
+	<info>
+		<author>PitMonk</author>
+		<name>PitMonks_Better_Ramps_Modlet</name>
+		<description>Allows the player to craft a 1 in 4 drop ramp.</description>
+		<mod_version>1.0</mod_version>
+		<game_version>A19.3 (b6)</game_version>
+		<launcher_version>1.0.0</launcher_version>
+	</info>
+</mod>

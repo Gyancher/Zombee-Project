@@ -1,0 +1,19 @@
+Key,english,japanese,german
+fishingPoleWood,"[e7a729]Wood Fishing Pole[-]","[e7a729]木製釣り竿[-]","[e7a729]German[-]"
+fishingPoleWoodDesc,"[e7a729]A very simple fishing pole. Left click to cast. Over the duration of the cast, you have a chance for a fish to bite. Once you have a bite, rapidly hit the F button to reel the fish in. Getting 100 or more points will allow you to right click to gather the fish you caught.[-]","[e7a729]とてもシンプルな釣り竿。\n「釣りポイント」の釣り竿アイコンの上に立ち、泡のエフェクトに向かって左クリックを押してキャストし、魚がかかるまで待ちます。\n15秒間の間に魚がかからなければ、再度キャストして待ちます。\n魚がかかったら、Fキーを連打し、バフのポイントをためて魚を釣り上げます。\nポイントが100に達すると、右クリックで魚を竿から外すことが出来ます。[-]","[e7a729]German[-]"
+resourceBlueFish,"[e7a729]Fish[-]","[e7a729]魚[-]","[e7a729]German[-]"
+resourceBlueFishDesc,"[e7a729]A simple fish with a small brain. It will nibble on anything, which is probably why it was caught.[-]","[e7a729]小さな脳みそを持つシンプルな魚。\n\nあまり賢くないので、何にでも食らいつきます。[-]","[e7a729]German[-]"
+
+buffFishingPoleWoodCastName,"[e7a729]Fishing[-]","[e7a729]魚釣り[-]","[e7a729]German[-]"
+buffFishingPoleWoodCastDesc,"[e7a729]Living life in the slow lane.[-]","[e7a729]のんびりしましょう。[-]","[e7a729]German[-]"
+buffFishingPoleWoodCatchName,"[e7a729]Hooked![-]","[e7a729]かかった！[-]","[e7a729]German[-]"
+buffFishingPoleWoodCatchDesc,"[e7a729]You have a fish hooked! Reel it in by rapidly hitting the F button![-]","[e7a729]魚がかかりました！　Fボタンを連打して釣り上げましょう！[-]","[e7a729]German[-]"
+
+FishableWaterReadyDesc,"[e7a729]Fish are near the surface![-]","[e7a729]魚が水面近くにいます！[-]","[e7a729]German[-]"
+FishableWaterPlace,"[e7a729]Fishing Location[-]","[e7a729]釣りポイント[-]","[e7a729]German[-]"
+FishableWaterPlaceDesc,"[e7a729]Craft this and place it near water. The white square is where the player will stand to get the ability to use the fishing pole. The block should be placed so the particle effect is over the water. Placing this will give you 30 seconds to change your mind. You can destroy this block quickly to remove it. Once the 30 second window has passed, you cannot remove the block, unless you dig under it.[-]","[e7a729]水の近くに設置します。\n波紋と泡のエフェクトが水の上に表示されるよう、調整しながら設置してください。\n設置後30秒間(白い箱の状態の間)は破壊可能です。\n設置した位置が気に入らない場合、30秒以内に破壊して取り除いてください。\n30秒を過ぎると、ブロックの下を掘らない限り、ブロックを取り除くことが出来なくなるので、ご注意ください。[-]","[e7a729]German[-]"
+
+foodGrilledFishFillet,"[e7a729]Grilled Fish Fillet[-]","[e7a729]焼き魚[-]","[e7a729]German[-]"
+foodGrilledFishFilletDesc,"[e7a729]Grilled fish. Yum![-]","[e7a729]美味しそうな焼き魚！[-]","[e7a729]German[-]"
+foodGrilledFishFillet,"[e7a729]Grilled Fish Fillet[-]","[e7a729]焼き魚[-]","[e7a729]German[-]"
+foodGrilledFishFilletDesc,"[e7a729]Grilled fish. Yum![-]","[e7a729]美味しそうな焼き魚！[-]","[e7a729]German[-]"

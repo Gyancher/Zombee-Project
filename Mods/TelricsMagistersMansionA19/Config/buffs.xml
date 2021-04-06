@@ -1,0 +1,243 @@
+<configs>
+<append xpath="/buffs">
+<!-- Lillian -->
+<buff name="buffLillianBuff" name_key="buffLegSprainedName" description_key="buffLegSprainedDesc" tooltip_key="buffLegSprainedTooltip" icon="ui_game_symbol_brokenbone" icon_color="255,128,0">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="7" />
+		<effect_group name="Base Attaches">
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/MagistersMansion.unity3d?LillianFireAmmoPrefab" local_offset="0,-1,0" local_rotation="90,0,0" parent_transform="Hips"/>
+							
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="LillianFireAmmoPrefab" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="buffLillianHealBuff" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="LillianGhostStrikePrefab" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="5mIndicatorPrefab" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="12mIndicatorPrefab" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="LillianAOEPrefab" />
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="LillianFireAmmoPrefab" />
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffLillianHealBuff" />
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="LillianGhostStrikePrefab" />
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="5mIndicatorPrefab" />
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="12mIndicatorPrefab" />
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="LillianAOEPrefab" />
+		</effect_group>
+		<effect_group name="Life Tap: 12m">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLillianLifeTapBuff" target="self">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,10" operation="LTE" value="4"/>
+				</triggered_effect>
+		</effect_group>
+		<effect_group name="Ghost Strike: 5m">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLillianGhostStrikeBuff" target="self">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,10" operation="LTE" value="8"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,10" operation="GTE" value="5"/>
+				</triggered_effect>
+		</effect_group>
+	</buff>
+<!-- Ghost Strike lillian -->
+<buff name="buffLillianGhostStrikeBuff" name_key="buffLegSprainedName" description_key="buffLegSprainedDesc" tooltip_key="buffLegSprainedTooltip" icon="ui_game_symbol_brokenbone" icon_color="255,128,0">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value="1.5"/>
+		<effect_group>	
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/MagistersMansion.unity3d?5mIndicatorPrefab" local_offset="0,.2,0" local_rotation="0,0,0" parent_transform="Origin"/>
+				
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.3" />
+				<passive_effect name="WalkSpeed" operation="perc_add" value="-.3" />
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffGhostStrikeBuff" target="selfAOE" range="2"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffLillianGhostStrikeParticleBuff" target="self" />
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="5mIndicatorPrefab"/>				
+				<triggered_effect trigger="onSelfBuffFinish" action="PlaySound" sound="LillianGhostStrike" />	
+		</effect_group>
+	</buff>
+<buff name="buffLillianGhostStrikeParticleBuff" name_key="buffLegSprainedName" description_key="buffLegSprainedDesc" tooltip_key="buffLegSprainedTooltip" icon="ui_game_symbol_brokenbone" icon_color="255,128,0">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/MagistersMansion.unity3d?LillianGhostStrikePrefab" local_offset="0,.6,0" local_rotation="0,0,0" parent_transform="Origin"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="LillianGhostStrikePrefab"/>
+		</effect_group>
+	</buff>
+<!-- ghost strike player -->
+<buff name="buffGhostStrikeBuff" name_key="buffLegSprainedName" description_key="buffLegSprainedDesc" tooltip_key="buffLegSprainedTooltip" icon="ui_game_symbol_brokenbone" icon_color="255,128,0" hidden="true">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value=".2"/>
+		<effect_group>				
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player2painlg" >	
+					<requirement name="IsMale" invert="true"/>
+				</triggered_effect>	
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player1painlg">	
+					<requirement name="IsMale" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="subtract" value="10"/>
+		</effect_group>
+	</buff>	
+
+	
+<!-- life tap lillian -->
+<buff name="buffLillianLifeTapBuff" name_key="buffLegSprainedName" description_key="buffLegSprainedDesc" tooltip_key="buffLegSprainedTooltip" icon="ui_game_symbol_brokenbone" icon_color="255,128,0">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value="3.5"/>
+		<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/MagistersMansion.unity3d?12mIndicatorPrefab" local_offset="0,.2,0" local_rotation="0,0,0" parent_transform="Origin"/>
+				
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.3" />
+				<passive_effect name="WalkSpeed" operation="perc_add" value="-.3" />
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffLifeTapBuff" target="selfAOE" range="5"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffLillianLifeTapParticleBuff" target="self" />
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="12mIndicatorPrefab"/>				
+				<triggered_effect trigger="onSelfBuffFinish" action="PlaySound" sound="LillianLifeTap" />		
+		</effect_group>
+	</buff>
+<buff name="buffLillianLifeTapParticleBuff" name_key="buffLegSprainedName" description_key="buffLegSprainedDesc" tooltip_key="buffLegSprainedTooltip" icon="ui_game_symbol_brokenbone" icon_color="255,128,0">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value="1.5"/>
+		<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/MagistersMansion.unity3d?LillianAOEPrefab" local_offset="0,.2,0" local_rotation="0,0,0" parent_transform="Origin"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="LillianAOEPrefab"/>
+		</effect_group>
+	</buff>
+<!-- life tap player -->	
+<buff name="buffLifeTapBuff" name_key="buffLegSprainedName" description_key="buffLegSprainedDesc" tooltip_key="buffLegSprainedTooltip" icon="ui_game_symbol_brokenbone" icon_color="255,128,0" hidden="true">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value=".2"/>
+		<effect_group>			
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player2painlg" >	
+					<requirement name="IsMale" invert="true"/>
+				</triggered_effect>	
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player1painlg">	
+					<requirement name="IsMale" />
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="subtract" value="20"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffLillianHealBuff" target="selfAOE" range="35" target_tags="Lillian"/>
+		</effect_group>
+	</buff>	
+<buff name="buffLillianHealBuff" name_key="buffLegSprainedName" description_key="buffLegSprainedDesc" tooltip_key="buffLegSprainedTooltip" icon="ui_game_symbol_brokenbone" icon_color="255,128,0">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value="1.5"/>
+		<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/MagistersMansion.unity3d?LillianHealNumberPrefab" local_offset="0,.1,0" local_rotation="90,0,0" parent_transform="Hips"/>
+				
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="100"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="LillianHealNumberPrefab" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="LillianHealNumberPrefab" />
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="LillianHealNumberPrefab" />
+		</effect_group>
+	</buff>
+
+<!-- block buffs -->
+<buff name="buffHauntedMansionStart" name_key="buffLegSprainedName" description_key="buffLegSprainedDesc" tooltip_key="buffLegSprainedTooltip" icon="ui_game_symbol_brokenbone" icon_color="255,128,0" hidden="true">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<requirement name="IsNight" invert="true"/>
+			<requirement name="NotHasBuff" buff="buffHauntedMansionWarning"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffHauntedMansionWarning" target="self"/>
+		</effect_group>
+	</buff>
+<buff name="buffHauntedMansionWarning" name_key="buffHauntedMansionWarningName" description_key="buffHauntedMansionWarningDesc" tooltip_key="buffHauntedMansionWarningTooltip" icon="ui_game_symbol_stealth" icon_color="107,43,217">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value="10.5"/>
+		<effect_group>
+			<requirement name="IsNight" invert="true"/>
+		</effect_group>
+	</buff>
+<!-- debuffs -->
+<buff name="buffCursedDebuff" name_key="buffCursedDebuffName" description_key="buffCursedDebuffDesc" tooltip_key="buffCursedDebuffTooltip" icon="ui_game_symbol_stunned" icon_color="107,43,217">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value="12"/>
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="2"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="2"/>
+		</effect_group>
+	</buff>
+<buff name="buffBoilerRoomFireDebuff" hidden="true">
+		<damage_type value="heat"/>
+		<stack_type value="replace"/><duration value="3"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffIsOnFire"/>
+
+			<!-- Player damage outgoing
+			case 0: _strength = Mathf.RoundToInt(_strength * 2.0f);
+			case 1: _strength = Mathf.RoundToInt(_strength * 1.5f);
+			case 2: 1
+			case 3: _strength = Mathf.RoundToInt(_strength * 0.83f);
+			case 4: _strength = Mathf.RoundToInt(_strength * 0.66f);
+			case 5: _strength = Mathf.RoundToInt(_strength * 0.5f);
+
+			Player damage incoming
+			case 0: _strength = Mathf.RoundToInt(_strength * 0.5f);
+			case 1: _strength = Mathf.RoundToInt(_strength * 0.75f);
+			case 2: 1
+			case 3: _strength = Mathf.RoundToInt(_strength * 1.5f);
+			case 4: _strength = Mathf.RoundToInt(_strength * 2.0f);
+			case 5: _strength = Mathf.RoundToInt(_strength * 2.5f); -->
+
+			<passive_effect name="HealthChangeOT" operation="base_subtract"  value="4">
+				<requirement name="EntityTagCompare" tags="player"/>
+			</passive_effect>
+
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value="1.5"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="35"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="-15"/>
+		</effect_group>
+
+		<effect_group>
+			<requirement name="!EntityTagCompare" tags="player"/>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,8,14,18" value="10,36,51,56">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,8,14,18" value="7.5,27,38.2,42">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,8,14,18" value="5,18,25.5,28">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,8,14,18" value="4.2,14.9,21.1,23.2">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,8,14,18" value="3.3,11.9,16.8,18.5">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,8,14,18" value="2.5,9,12.7,14">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect>
+		</effect_group>
+	</buff>
+<!-- equipped items -->
+<buff name="buffSpecterAttackBuff" name_key="buffLegSprainedName" description_key="buffLegSprainedDesc" tooltip_key="buffLegSprainedTooltip" icon="ui_game_symbol_brokenbone" icon_color="255,128,0">
+		<damage_type value="sprain"/>
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/MagistersMansion.unity3d?CursedAttackPrefab" local_offset="0,0,0" local_rotation="90,0,0" parent_transform="Hips"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="CursedAttackPrefab" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="CursedAttackPrefab" />
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="subtract" value="15" />
+		</effect_group>
+	</buff>
+</append>
+
+
+
+
+
+
+
+
+</configs>

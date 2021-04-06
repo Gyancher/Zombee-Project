@@ -1,0 +1,20 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+xuiChangeLogHeaderMENU,UI,Menu,x,,ChangeLog - Mods...
+xuiChangeLogMENU,UI,Menu,x,,[AF1E19]*[-] Added: Gyancher Mods.\n[AF1E19]*[-] Added: CreaturePackAnimals.\n[AF1E19]*[-] Added: CreaturePackHumans.\n,,,,,
+
+xuiOpeningLoot,UI,Use Prompt,,,Searching...,,Suchen...,Procurando...,Recherche...,Ricerca...,探す...,수색...,Badawczy...,Procurando...,Поиск...,Aranıyor...,正在搜寻...,正在搜尋...,buscando...
+
+xuiChangeLogHeaderHUD,UI,Menu,x,,ChangeLog - DMT...
+xuiChangeLogHUD,UI,Menu,x,,[AF1E19]*[-] Added: New Terrain Textures.\n[AF1E19]*[-] Added: Gyancher SupplyCrates.\n,,,,,
+
+xuiChangeLogHeaderUI,UI,Menu,x,,ChangeLog - Updates...
+xuiChangeLogUI,UI,Menu,x,,[AF1E19]*[-] Updated: mods compatible with Alpha 19,4 (b7).\n[AF1E19]*[-] Updated: biodome particles.\n,,,,,
+
+xuiChangeLogHeaderINFO,UI,Menu,x,,Welcome to the ZOMBEE mod collection...
+xuiChangeLogINFO,UI,Menu,x,,[AF1E19]*This is overhal mod for 7 Days 2 Die that I play with my wife.\n[AF1E19]*[-] Updated: biodome particles.\n,,,,,
+
+smxCurrentVersionBranch,UI,Menu,x,,CURRENT STABLE VERSION
+smxCurrentVersionNumber,UI,Menu,x,,A19.4 (b7).Release1.2
+
+SMXmenuWelcome,UI,Menu,x,,GAME INFO
+SMXmenuWelcomeText,UI,Menu,x,,ZOMBEE version 1.2 now needs DMT!.\n[AF1E19]*[-] New: PuppyWorld Prefabs included.\n,,,,,

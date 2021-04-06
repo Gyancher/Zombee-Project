@@ -1,0 +1,14 @@
+<configs>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']">
+		<item name="BrightVisionGoggles" count="6" />
+	</append>	
+		
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']">
+		<item name="BrightVisionGoggles" count="6" />
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+		<item name="BrightVisionGoggles" count="6" />
+	</append>
+	
+</configs>

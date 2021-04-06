@@ -1,0 +1,22 @@
+﻿<configs>
+
+<!-- Show Zombies  -->
+
+	<insertAfter xpath="/nav_object_classes/nav_object_class[@name='zombie']">
+		<property name="requirement_type" value="None" />
+	</insertAfter>
+
+	<append xpath="/nav_object_classes/nav_object_class[@name='zombie']">
+		<onscreen_settings>
+			<property name="sprite_name" value="ui_game_symbol_zombie"/>
+			<property name="min_distance" value="10"/>
+			<property name="max_distance" value="50"/>
+			<property name="color" value="255,180,0,255"/>
+			<property name="has_pulse" value="true"/>
+			<property name="show_distance" value="true"/>
+			<property name="offset" value="0,2.1,0" />
+			<property name="show_offscreen" value="true" />
+		</onscreen_settings>
+	</append>
+
+</configs>

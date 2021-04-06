@@ -1,0 +1,21 @@
+<configs>
+	<append xpath="/blocks">
+
+
+ <block name="GreenHouse">
+   <property name="CreativeMode" value="Player"/>
+   	<property name="CustomIcon" value="greenhouse" />
+	<property name="DescriptionKey" value="GreenHouseDesc"/>
+	<property name="Light" value="1.5"/>
+	<property name="Material" value="Mmetal_thin"/>	
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/greenhouse.unity3d?Pref_GreenHouse1_A.prefab"/>	
+	<property name="ImposterDontBlock" value="false"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Weight" value="1"/>
+	<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>		
+</block>	
+		
+</append>
+</configs>

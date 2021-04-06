@@ -1,0 +1,9 @@
+<configs>
+		<append xpath="/recipes" >		
+			<recipe name="HJ_Gate_PR" count="1" craft_area="workbench">
+				<ingredient name="resourceForgedIron" count="18" />
+				<ingredient name="resourceMechanicalParts" count="10"/>
+				<ingredient name="resourceBrokenGlass" count="20"/>
+			</recipe>
+		</append> 
+</configs>

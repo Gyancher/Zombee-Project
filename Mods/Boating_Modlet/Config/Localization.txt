@@ -1,0 +1,6 @@
+Key,Source,Context,English
+vehicleFlatBoatPlaceable,vehicles,Item,"Flat Boat"
+vehicleDinghyPlaceable,vehicles,Item,"Dinghy"
+vehicleFlatBoat,vehicles,vehicle,"Flat Boat"
+vehicleDinghy,vehicles,vehicle,"Dinghy"
+

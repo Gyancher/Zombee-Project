@@ -1,0 +1,78 @@
+<configs>
+	
+<append xpath="/buffs">
+		
+<buff name="buffWebTrap"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="4"/>
+		<update_rate value="1" />
+		<effect_group>																								<!-- Changes below are only when you are on the trap block -->
+				<passive_effect name="JumpStrength" operation="base_set" value="0"/> <!-- Anytihing above zero will allow jumping while on trap, however will take fiddling if you adjust as "1" is not vanilla -->
+				<passive_effect name="WalkSpeed" operation="base_set" value=".1"/> <!-- Changes the speed you walk with "1" being vanilla. Done as a percentage so .5 is 50% of vanilla and "2" is 200% -->
+				<passive_effect name="RunSpeed" operation="base_set" value=".05"/> <!-- Changes the speed you run with "1" being vanilla. Done as a percentage so .5 is 50% of vanilla and "2" is 200% -->
+			</effect_group>
+		
+		<effect_group name="Damage" >
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="8"/>	
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffInjuryKnockdown01,buffInjuryKnockdown02,buffInjuryUnconscious"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0"/>
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="ETrapHit" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="electric_fence_impact"/>
+			
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffBurningElementDuration" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffBurningElement"/>				
+		</effect_group>
+	</buff>
+	
+	<buff name="buffPlayerWebImmunity"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="Slow">	
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffWebTrap"/>
+		</effect_group>
+	</buff>
+	
+		<buff name="Shocked" name_key="buffShocked" description_key="[00FFFF]buffShocked" tooltip_key="[00FFFF]buffShocked" icon="ui_game_symbol_critical" icon_color="255,0,0" icon_blink="true">
+
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		<update_rate value=".7"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="15" buff="buffShocked"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="buffShocked"/>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="15" buff="buffRadiation03"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="buffRadiation03"/>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="15" buff="buffPuking01"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="buffPuking01"/>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="15" buff="buffPuking01"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="buffPuking01"/>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="15" buff="buffStatusHungry01"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="buffStatusHungry01"/>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="15" buff="buffLegSprained"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="buffLegSprained"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" target="self" sound="FireMediumLoop" play_in_head="true"/>
+			<triggered_effect trigger="onSelfBuffStart" action="FadeOutSound" target="self" sound="FireMediumLoop" play_in_head="true"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" target="self" sound="forge_fire_die" play_in_head="true"/>
+		</effect_group>
+	</buff>
+	
+	
+	</append>
+</configs>

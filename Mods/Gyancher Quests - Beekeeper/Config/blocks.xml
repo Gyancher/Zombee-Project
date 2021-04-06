@@ -1,0 +1,131 @@
+<Config>
+	
+<append xpath="/blocks">
+	
+
+		
+		<block name="hornetsHive">
+			<property name="CustomIcon" value="hive" />
+			<property name="Material" value="Morganic" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/hive.unity3d?hive0" />
+			<property name="Texture" value="214,214,65,65,65,65" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="hive1" />
+				<property name="Item" value="chrysanthemumFlower" />
+				<property name="ItemCount" value="10" />
+				<property name="UpgradeHitCount" value="2" />
+			</property>
+			<property class="RepairItems">
+				<property name="woodPlank" value="10" />
+			</property>
+			<property name="Group" value="Worktables" />
+		</block>
+		<block name="hive1">
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Morganic" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/hive.unity3d?hive0" />
+			<property name="Texture" value="214,214,65,65,65,65" />
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.Next" value="hive2" />
+			<property name="PlantGrowing.GrowthRate" value="180" />
+			<property name="PlantGrowing.LightLevelStay" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="PlantGrowing.GrowIfAnythinOnTop" value="true" />
+			<drop event="Destroy" count="0" />
+			<property class="RepairItems">
+				<property name="woodPlank" value="10" />
+			</property>
+		</block>
+		<block name="hive2">
+			<property name="Class" value="PlantGrowing" />
+				<property name="Material" value="Morganic" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/hive.unity3d?hive0" />
+			<property name="Texture" value="214,214,65,65,65,65" />
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.Next" value="hive3" />
+			<property name="PlantGrowing.GrowthRate" value="180" />
+			<property name="PlantGrowing.LightLevelStay" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="PlantGrowing.GrowIfAnythinOnTop" value="true" />
+			<drop event="Destroy" count="0" />
+			<property class="RepairItems">
+				<property name="woodPlank" value="10" />
+			</property>
+		</block>
+		<block name="hive3">
+			<property name="Class" value="PlantGrowing" />
+				<property name="Material" value="Morganic" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/hive.unity3d?hive0" />
+			<property name="Texture" value="214,214,65,65,65,65" />
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.Next" value="hive4" />
+			<property name="PlantGrowing.GrowthRate" value="180" />
+			<property name="PlantGrowing.LightLevelStay" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="PlantGrowing.GrowIfAnythinOnTop" value="true" />
+			<drop event="Destroy" count="0" />
+			<property class="RepairItems">
+				<property name="woodPlank" value="10" />
+			</property>
+		</block>
+		<block name="hive4">
+			<property name="Class" value="PlantGrowing" />
+				<property name="Material" value="Morganic" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/hive.unity3d?hive0" />
+			<property name="Texture" value="214,214,65,65,65,65" />
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.Next" value="hive5" />
+			<property name="PlantGrowing.GrowthRate" value="180" />
+			<property name="PlantGrowing.LightLevelStay" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="PlantGrowing.GrowIfAnythinOnTop" value="true" />
+			<drop event="Destroy" count="0" />
+			<property class="RepairItems">
+				<property name="woodPlank" value="10" />
+			</property>
+		</block>
+		<block name="hive5">
+			<property name="Class" value="Loot" />
+				<property name="Material" value="Morganic" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/hive.unity3d?hive1" />
+			<property name="Texture" value="214,214,65,65,65,65" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="LootList" value="187" />
+			<drop event="Destroy" count="0" prob="1" />
+			<property name="DowngradeBlock" value="hornetsHive" />
+			<property class="RepairItems">
+				<property name="woodPlank" value="10" />
+			</property>
+		</block>
+
+<block name="beesWaxCandle">
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="Entities/Lighting/candle_table_playerPrefab"/>
+			<property name="CustomIcon" value="candleTable" />
+			<property name="Collide" value="melee,bullet,arrow,rocket" />
+			<property name="IsDecoration" value="true" />
+			<property name="StabilitySupport" value="false" />
+			<!-- build restriction -->
+			<property name="CreativeMode" value="Player" />
+			<property name="Class" value="Torch" />
+			<property name="Material" value="Morganic" />
+			<property name="MaxDamage" value="1" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="OnlySimpleRotations" value="true" />
+			<property name="CanPickup" value="true" param1="waxCandle" />
+			<property name="HeatMapStrength" value="1" />
+			<property name="HeatMapTime" value="1200" />
+			<property name="HeatMapFrequency" value="15" />
+			<drop event="Destroy" name="waxCandle" count="1" />
+			<property name="Group" value="Building" />
+			<property name="DescriptionKey" value="torchGroupDesc" />
+		</block>
+		
+</append>		
+</Config>

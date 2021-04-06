@@ -1,0 +1,9 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+PitMonks_Ramps,blocks,block,,,(PM) 1 in 4 Ramps
+blockVariantPitmonksRampsDesc,blocks,block,,,(PM) 1 in 4 Ramps Wood-Brick-Concrete Only
+
+PMwoodWedgeNarrowTip,blocks,block,,,(PM) Ramp 1 TIP
+PMwoodWedgeNarrowLow,blocks,block,,,(PM) Ramp 2 LOW
+PMwoodWedgeNarrowMid,blocks,block,,,(PM) Ramp 3 MID
+PMwoodWedgeNarrowHigh,blocks,block,,,(PM) Ramp 4 TOP

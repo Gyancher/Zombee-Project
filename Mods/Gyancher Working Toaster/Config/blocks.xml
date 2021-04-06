@@ -1,0 +1,21 @@
+
+<configs>
+    <append xpath="/blocks">	
+		
+		   <block name="WorkingToaster">
+			<property name="Class" value="Campfire" />
+				<property name="Material" value="MtreeWoodSmall"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="Path" value="solid"/>
+				<property name="Model" value="Entities/Appliances/toasterPrefab"/>
+				<property name="LightOpacity" value="0"/>
+				<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+				<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+				<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="CustomIcon" value="cntToaster" />      
+		</block>
+		
+		
+    </append>
+   
+</configs>

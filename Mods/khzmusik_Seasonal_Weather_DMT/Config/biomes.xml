@@ -1,0 +1,13 @@
+<config>
+    <!-- Set the biome temperatures to be have a wider variation than they do now -->
+    <set xpath="worldgeneration/biomes/biome[@name='snow']/weather/Temperature/@min">-65</set>
+    <set xpath="worldgeneration/biomes/biome[@name='snow']/weather/Temperature/@max">-15</set>
+    <set xpath="worldgeneration/biomes/biome[@name='pine_forest']/weather/Temperature/@min">-45</set>
+    <set xpath="worldgeneration/biomes/biome[@name='pine_forest']/weather/Temperature/@max">30</set>
+    <set xpath="worldgeneration/biomes/biome[@name='desert']/weather/Temperature/@min">0</set>
+    <set xpath="worldgeneration/biomes/biome[@name='desert']/weather/Temperature/@max">60</set>
+    <set xpath="worldgeneration/biomes/biome[@name='wasteland']/weather/Temperature/@min">-45</set>
+    <set xpath="worldgeneration/biomes/biome[@name='wasteland']/weather/Temperature/@max">45</set>
+    <set xpath="worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature/@min">-30</set>
+    <set xpath="worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature/@max">45</set>
+</config>

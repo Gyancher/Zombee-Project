@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="BAR19-PrefabMenu" />
+		<Description value="Re-enable the prefab menu (K)" />
+		<Author value="Bar0th" />
+		<Version value="A19.163" />
+		<Website value="" />
+	</ModInfo>
+</xml>

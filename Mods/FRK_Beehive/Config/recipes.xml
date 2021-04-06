@@ -1,0 +1,11 @@
+<FRK>
+<append xpath="/recipes">
+	<recipe name="FRK_Beehive" craft_area="workbench" tags="perkLivingOffTheLand,learnable,workbenchCrafting">
+		<ingredient name="resourceWood" count="80" />
+		<ingredient name="resourceGlue" count="1" />
+		<ingredient name="resourceNail" count="10" />
+	</recipe>
+
+</append>
+
+</FRK>

@@ -1,0 +1,131 @@
+<configs>
+<append xpath="/items">
+<!-- fishing -->
+<item name="fishingPoleWood"> 
+	<property name="Tags" value="canHaveCosmetic,tool"/>
+	<property name="CustomIcon" value="FishingPoleWoodIcon" />
+	<property name="HoldType" value="2"/>
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsFishing.unity3d?FishingPoleWoodPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="250"/>
+	<property name="EconomicValue" value="30"/>
+	<property class="Action0">
+		<requirement name="NotHasBuff" buff="buffFishingPoleWoodCast" />
+		<requirement name="HasBuff" buff="buffFishableWaterReady" />
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value=".15"/>
+		<property name="Sound_start" value="FishingPoleCast"/>
+
+		<property name="GrazeStart" value=".25"/>
+		<property name="GrazeEnd" value=".35"/>
+		<property name="SwingDegrees" value="65"/>
+		<property name="SwingAngle" value="180"/>
+		<property name="UseGrazingHits" value="true"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+		<property name="IsHorizontalSwing" value="true"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="woodhitorganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="woodgrazeorganic"/>
+		</property>
+	</property>
+	<property class="Action1">
+		<requirement name="HasBuff" buff="buffFishingPoleWoodComplete" />
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value=""/>
+		<property name="Consume" value="false"/>
+		<property name="Create_item" value="resourceBlueFish"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<effect_group name="FishingPoleWood">
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> <!-- meleeToolPickaxeIron -->
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="60"/><!-- Gazz change 55 to 65 -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="12.9" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="150,250" tier="1,6"/><!-- 75, 150 -->
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="2.4"/>
+
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="1" tags="EconomicValue"/>
+
+
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="terrGravel"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+	</effect_group>
+	<effect_group name="Additional Stuffs">
+				
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFishingPoleWoodCast" target="self"/>
+		
+		
+		<triggered_effect trigger="onSelfItemActivate" action="ModifyCVar" cvar="FishingCatchTrigger" operation="add" value="randomint(1,7)">
+				<requirement name="HasBuff" buff="buffFishingPoleWoodCatch"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfItemDeactivate" action="ModifyCVar" cvar="FishingCatchTrigger" operation="add" value="randomint(1,7)">
+				<requirement name="HasBuff" buff="buffFishingPoleWoodCatch"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfItemActivate" action="PlaySound" sound="FishingReelShort">
+				<requirement name="HasBuff" buff="buffFishingPoleWoodCatch"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfItemDeactivate" action="PlaySound" sound="FishingReelShort">
+				<requirement name="HasBuff" buff="buffFishingPoleWoodCatch"/>
+		</triggered_effect>
+		
+		
+		
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" buff="buffFishingPoleWoodCast" />
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" buff="buffFishingPoleWoodComplete" />
+	</effect_group>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+<item name="resourceBlueFish">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="31"/>
+	<property name="CustomIcon" value="BlueFishIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="32000"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="Group" value="Food/Cooking"/>
+	<property name="FuelValue" value="1"/>
+</item>
+
+<item name="foodGrilledFishFillet">
+	<property name="Tags" value="food"/>
+	<property name="CustomIcon" value="FishFilletIcon" />
+	<property name="HoldType" value="31"/>
+	<property name="DisplayType" value="food"/>
+	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="EconomicValue" value="25"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_eating"/>
+		<!-- jar from cooking food <property name="Create_item" value="drinkJarEmpty"/> -->
+	</property>
+	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+	<effect_group tiered="false" name="Food Tier 0/1">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+</append>
+</configs>

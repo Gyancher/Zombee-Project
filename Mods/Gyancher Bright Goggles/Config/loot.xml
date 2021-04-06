@@ -1,0 +1,123 @@
+<configs>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='8']">
+		<item name="BrightVisionGoggles" prob=".4"/>		
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='10']">
+		<item name="BrightVisionGoggles" count="1,9" prob=".2"/>
+		
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='15']">
+		<item name="BrightVisionGoggles" count="1,9" prob=".2"/>
+		
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='16']">
+		<item name="BrightVisionGoggles" count="1,9" prob=".5"/>
+		
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='17']">
+			<item name="BrightVisionGoggles" prob=".007"/>
+				
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='18']">
+		<item name="BrightVisionGoggles" prob=".2"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='19']">
+			<item name="BrightVisionGoggles" prob=".01"/>		
+		
+		<item name="BrightVisionGoggles" prob=".2"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='20']">
+			<item name="BrightVisionGoggles" prob=".02"/>	
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='22']">
+		<item name="BrightVisionGoggles" prob=".2"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='24']">
+		<item name="BrightVisionGoggles" prob=".2"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='38']">
+			<item name="BrightVisionGoggles" prob=".1"/>	
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='39']">
+			<item name="BrightVisionGoggles" prob=".1"/>	
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='45']">
+			<item name="BrightVisionGoggles" prob=".01"/>	
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='45']">
+		<item name="BrightVisionGoggles" prob=".2"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='47']">
+			<item name="BrightVisionGoggles" prob=".002"/>	
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='48']">
+			<item name="BrightVisionGoggles" prob=".002"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='52']">
+			<item name="BrightVisionGoggles" prob=".002"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='54']">
+			<item name="BrightVisionGoggles" prob=".002"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='58']">
+			<item name="BrightVisionGoggles" prob=".002"/>
+			
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='59']">
+			<item name="BrightVisionGoggles" prob=".008"/>	
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='70']">
+			<item name="BrightVisionGoggles" prob=".09"/>
+		
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='71']">
+			<item name="BrightVisionGoggles" prob=".012"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='73']">
+			<item name="BrightVisionGoggles" prob=".012"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='94']">
+			<item name="BrightVisionGoggles" prob=".02"/>	
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='95']">
+			<item name="BrightVisionGoggles" prob=".08"/>	
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='111']">
+			<item name="BrightVisionGoggles" prob=".008"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='112']">
+			<item name="BrightVisionGoggles" prob=".008"/>	
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='113']">
+			<item name="BrightVisionGoggles" prob=".008"/>	
+	</append>
+
+</configs>

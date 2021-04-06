@@ -1,0 +1,9 @@
+<xml>
+	<ModInfo>
+		<Name value="Robot Bartender" />
+		<Description value="Adds a Bartender to the game"/>
+		<Author value="Gyancher" />
+		<Version value="1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

@@ -1,0 +1,6 @@
+<configs>
+
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']"/>
+	
+
+</configs>

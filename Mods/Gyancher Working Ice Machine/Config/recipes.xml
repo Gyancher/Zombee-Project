@@ -1,0 +1,16 @@
+<configs>
+	<append xpath="/recipes">
+	
+		 <recipe name="resourceSnowBall" count="10" craft_area="WorkingIceMachine" craft_time="120"> 
+				<ingredient name="bucketRiverWater" count="1"/>
+		</recipe>
+	
+		<recipe name="WorkingIceMachine" count="1" craft_area="workbench" craft_time="1200">
+			<ingredient name="resourceMetalPipe" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+		
+	</append>
+	
+</configs>

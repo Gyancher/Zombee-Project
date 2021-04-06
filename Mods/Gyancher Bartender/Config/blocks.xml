@@ -1,0 +1,93 @@
+<configs>
+	<append xpath="/blocks">
+	<block name="Bartender">
+		<property name="Material" value="Mmetal"/>
+		<property name="DescriptionKey" value="cntUFODesc"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Class" value="CarExplodeLoot"/>
+		<property name="CustomIcon" value="Bartender"/>
+		<property name="LootList" value="934"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="MaxDamage" value="1000"/>
+		<property name="IsTerrainDecoration" value="false"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="Model" value="#@modfolder:Resources/mp_marsoasis_robot_bartender_LOD0.unity3d?Bartender"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="DisplayType" value="blockMulti" />
+		<property name="MultiBlockDim" value="1,2,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="ShowModelOnFall" value="false"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="15" prob="0.5" tag="salvageHarvest"/>			
+		<drop event="Harvest" name="resourceHeadlight" count="3" prob="0.45" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="300" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="20,30" tag="salvageHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="25,35" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="15,25" prob="0.1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1"/>
+		<property name="BigDecorationRadius" value="5"/>
+		<property name="CanDecorateOnSlopes" value="false"/>
+		<property class="Explosion">
+			<property name="ParticleIndex" value="4"/>
+			<property name="RadiusBlocks" value="8"/> 
+			<property name="BlockDamage" value="500"/> 
+			<property name="RadiusEntities" value="15"/> 
+			<property name="EntityDamage" value="70"/>
+		</property>
+		<property name="ActivationDistance" value="8"/>
+		<property name="FilterTags" value="floot"/>
+	</block>	
+	
+	<block name="GirlRobot">
+		<property name="Material" value="Mmetal"/>
+		<property name="DescriptionKey" value="cntUFODesc"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Class" value="CarExplodeLoot"/>
+		<property name="CustomIcon" value="GirlRobot"/>
+		<property name="LootList" value="934"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="MaxDamage" value="1000"/>
+		<property name="IsTerrainDecoration" value="false"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="Model" value="#@modfolder:Resources/GirlRobot.unity3d?GathererGirlRobot"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="DisplayType" value="blockMulti" />
+		<property name="MultiBlockDim" value="1,2,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="ShowModelOnFall" value="false"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="15" prob="0.5" tag="salvageHarvest"/>			
+		<drop event="Harvest" name="resourceHeadlight" count="3" prob="0.45" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="300" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="20,30" tag="salvageHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="25,35" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="15,25" prob="0.1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1"/>
+		<property name="BigDecorationRadius" value="5"/>
+		<property name="CanDecorateOnSlopes" value="false"/>
+		<property class="Explosion">
+			<property name="ParticleIndex" value="4"/>
+			<property name="RadiusBlocks" value="8"/> 
+			<property name="BlockDamage" value="500"/> 
+			<property name="RadiusEntities" value="15"/> 
+			<property name="EntityDamage" value="70"/>
+		</property>
+		<property name="ActivationDistance" value="8"/>
+		<property name="FilterTags" value="floot"/>
+	</block>	
+	
+	</append>
+	
+	
+	
+</configs>

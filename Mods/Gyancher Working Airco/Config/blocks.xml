@@ -1,0 +1,28 @@
+
+<configs>
+    <append xpath="/blocks">	
+	
+       <block name="WorkingAirConditioner">
+			<property name="Extends" value="airConditioner"/>     
+			<property name="CustomIcon" value="airConditioner"/>	
+			<property name="BuffsWhenWalkedOn" value="buffElementFreezing"/>
+			<property name="ActiveRadiusEffects" value="buffElementCold"/>
+		</block>	
+        
+		 <block name="WorkingAirConditionVentFan">
+			<property name="Extends" value="airConditionVentFan"/>   
+			<property name="CustomIcon" value="airConditionVentFan"/>				
+			<property name="BuffsWhenWalkedOn" value="buffElementFreezing"/>
+			<property name="ActiveRadiusEffects" value="buffElementCold"/>
+		</block>
+		
+      <block name="WorkingaAirConditionVentFanDouble">
+			<property name="Extends" value="airConditionVentFanDouble"/>  
+			<property name="CustomIcon" value="airConditionVentFanDouble"/>				
+			<property name="BuffsWhenWalkedOn" value="buffElementFreezing"/>
+			<property name="ActiveRadiusEffects" value="buffElementCold"/>
+		</block>
+		
+    </append>
+   
+</configs>

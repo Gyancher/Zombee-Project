@@ -1,0 +1,11 @@
+<configs>
+	
+	 <append xpath="/recipes">
+	<recipe name="+WorkingwoodBurningStove" count="1" craft_area="workbench">
+<ingredient name="resourceMetalPipe" count="4"/>
+<ingredient name="resourceMechanicalParts" count="5"/>
+<ingredient name="resourceForgedIron" count="10"/>
+</recipe>
+
+</append>
+</configs>

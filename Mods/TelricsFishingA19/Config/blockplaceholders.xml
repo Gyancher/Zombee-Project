@@ -1,0 +1,15 @@
+<configs>
+<append xpath="/blockplaceholders">
+	<!-- fishing -->
+	<placeholder name="FishableWaterHelper">
+		<block name="FishableWaterReady" prob=".3"/>
+		<block name="FishableWaterAir" prob="1"/>
+	</placeholder>
+</append>
+
+
+
+
+
+
+</configs>

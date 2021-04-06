@@ -1,0 +1,145 @@
+<configs>
+	<append xpath="/blocks">
+
+<block name="Angel Statue">
+	<property name="Material" value="Mconcrete" />
+	<property name="CustomIcon" value="AngelStatue" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/angel.unity3d?Angel.prefab"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="FuelValue" value="100" />
+	<property name="MultiBlockDim" value="2,3,2" />
+	<property name="ModelOffset" value="0,-3,0" />
+	<property name="LightOpacity" value="0"/>
+	<!-- <property name="IsDeveloper" value="true" /> -->
+	<property name="CanPickup" value="false" />
+	<property name="DescriptionKey" value="StatueDesc"/>
+	<property name="EconomicValue" value="10000"/>
+</block>
+		
+	<block name="Angel Statue 2">
+	<property name="Material" value="Mconcrete" />
+	<property name="CustomIcon" value="AngelStatue" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/angel2.unity3d?Angel2.prefab"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="FuelValue" value="100" />
+	<property name="MultiBlockDim" value="2,3,2" />
+	<!-- <property name="ModelOffset" value="0,-3,0" /> -->
+	<property name="LightOpacity" value="0"/>
+	<!-- <property name="IsDeveloper" value="true" /> -->
+	<property name="CanPickup" value="false" />
+	<property name="DescriptionKey" value="StatueDesc"/>
+	<property name="EconomicValue" value="10000"/>
+</block>
+			
+		
+<block name="ButterflyPurple">
+	<property name="Material" value="Mmetal_thin"/>
+	<property name="StabilitySupport" value="false"/>
+		<property name="CustomIcon" value="ButterflyPurple" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ButterflyPurple.unity3d?ButterflyPurple.prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Weight" value="24"/>
+
+	<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+</block>
+
+		
+		<block name="Morel">
+			<property name="CustomIcon" value="Morel" />
+			<property name="Material" value="Mmushrooms" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Mesh" value="models" />
+			<property name="Model" value="#@modfolder:Resources/Morel.unity3d?Morel" /> 
+			<!-- <property name="HandleFace" value="Bottom"/> -->
+			<property name="ModelOffset" value="0,.5,0" />
+			<property name="Collide" value="melee,bullet,arrow,rocket" />
+			<property name="CanPickup" value="true" param1="Morel" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="HarvestOverdamage" value="false" />
+			<drop event="Destroy" name="Morel" count="1" />
+		</block>
+		
+	
+<block name="scarecrow">
+	<property name="Material" value="Mconcrete" />
+	<property name="CustomIcon" value="scarecrow" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/scarecrow.unity3d?scarecrow.prefab"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="FuelValue" value="100" />
+	<property name="MultiBlockDim" value="1,3,1" />
+	<property name="ModelOffset" value="0,-.5,0" />
+	<property name="LightOpacity" value="0"/>
+	<property name="IsDeveloper" value="true" />
+	<property name="CanPickup" value="false" />
+	<property name="DescriptionKey" value="StatueDesc"/>
+	<property name="EconomicValue" value="10000"/>
+</block>
+
+	
+		<block name="Tractor">			
+			<property name="DescriptionKey" value="TractorDesc"/>
+			<property name="CustomIcon" value="Tractor" />
+			<property name="Group" value="Special Items"/>
+			<property name="Tags" value="fother"/>
+			<property name="Class" value="SecureLoot"/>
+			<property name="DisplayType" value="blockHardenedMulti"/>
+			<property name="Material" value="Msteel"/>
+			<property name="MaxDamage" value="20000"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/TractorPrefab.unity3d?TractorPrefab"/>
+			<property name="MultiBlockDim" value="4,4,4"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="18"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="LootList" value="421"/>
+			<property class="RepairItems"> <property name="resourceForgedIron" value="30"/> </property>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>			
+			<property name="SellableToTrader" value="false" />
+			<property name="FilterTags" value="floot,ffurniture"/>
+		</block>	
+		
+
+
+<block name="Fountain2">
+	<property name="Material" value="Mconcrete" />
+	<property name="CustomIcon" value="Water_Fountain" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Fountain.unity3d?Fountain.prefab"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="FuelValue" value="100" />
+	<property name="MultiBlockDim" value="2,3,2" />
+	<!-- <property name="ModelOffset" value="0,-3,0" /> -->
+	<property name="LightOpacity" value="0"/>
+	<property name="IsDeveloper" value="true" />
+	<property name="CanPickup" value="false" />
+	<property name="DescriptionKey" value="StatueDesc"/>
+	<property name="EconomicValue" value="10000"/>
+</block>
+
+<block name="Fountain Water">
+	<property name="Material" value="Mconcrete" />
+	<property name="CustomIcon" value="Water_Fountain" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Water_Fountain.unity3d?Water_Fountain.prefab"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="FuelValue" value="100" />
+	<property name="MultiBlockDim" value="2,3,2" />
+	<!-- <property name="ModelOffset" value="0,-3,0" /> -->
+	<property name="LightOpacity" value="0"/>
+	<property name="IsDeveloper" value="true" />
+	<property name="CanPickup" value="false" />
+	<property name="DescriptionKey" value="StatueDesc"/>
+	<property name="EconomicValue" value="10000"/>
+</block>
+</append>
+</configs>

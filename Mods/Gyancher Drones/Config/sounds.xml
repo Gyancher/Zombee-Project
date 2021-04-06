@@ -1,0 +1,93 @@
+<configs>
+	<append xpath="/Sounds">
+	
+	<!-- CyberDrone Sounds -->
+	
+		<SoundDataNode name="CyberDroneSoundsAlert"> 
+			<AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+				<AudioClip ClipName="#@modfolder:/Resources/CyberDroneSounds.unity3d?CyberDrone_Danger" />
+				<AudioClip ClipName="#@modfolder:/Resources/CyberDroneSounds.unity3d?CyberDrone_Emergency" />
+				<AudioClip ClipName="#@modfolder:/Resources/CyberDroneSounds.unity3d?CyberDrone_Redalert" />
+			<Channel name="Mouth"/>
+			<Priority name="3"/>
+			<maxVoicesPerEntity value="1"/>
+			<LocalCrouchVolumeScale value="1.0"/> 
+			<CrouchNoiseScale value="0.5"/> 
+			<NoiseScale value="1"/> 
+			<MaxVoices value="10"/> 
+			<MaxRepeatRate value="0.9"/> 
+		</SoundDataNode>
+		
+		<SoundDataNode name="CyberDroneSoundsRandom">
+			<AudioSource name="Sounds/AudioSource_Creatures"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+				<AudioClip ClipName="#@modfolder:/Resources/CyberDroneSounds.unity3d?CyberDrone_Idle 1" />
+				<AudioClip ClipName="#@modfolder:/Resources/CyberDroneSounds.unity3d?CyberDrone_Idle 2" />
+			<Channel name="Mouth"/>
+			<Priority name="3"/>
+			<maxVoicesPerEntity value="1"/>
+			<LocalCrouchVolumeScale value="1.0"/> 
+			<CrouchNoiseScale value="0.5"/> 
+			<NoiseScale value="1"/> 
+			<MaxVoices value="10"/> 
+			<MaxRepeatRate value="0.9"/> 
+		</SoundDataNode>	
+			
+		<SoundDataNode name="CyberDroneSoundsDie">		
+			<AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+				<AudioClip ClipName="#@modfolder:/Resources/CyberDroneSounds.unity3d?CyberDrone_Die" />
+			<Channel name="Mouth"/>
+			<Priority name="3"/>
+			<maxVoicesPerEntity value="1"/>
+			<LocalCrouchVolumeScale value="1.0"/> 
+			<CrouchNoiseScale value="0.5"/> 
+			<NoiseScale value="1"/> 
+			<MaxVoices value="10"/> 
+			<MaxRepeatRate value="0.9"/> 
+		</SoundDataNode>
+				
+		<SoundDataNode name="CyberDroneSoundsSense">
+			<AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+				<AudioClip ClipName="#@modfolder:/Resources/CyberDroneSounds.unity3d?CyberDrone_Warning" />
+			<Channel name="Mouth"/>
+			<Priority name="3"/>
+			<maxVoicesPerEntity value="1"/>
+			<LocalCrouchVolumeScale value="1.0"/> 
+			<CrouchNoiseScale value="0.5"/> 
+			<NoiseScale value="1"/> 
+			<MaxVoices value="10"/> 
+			<MaxRepeatRate value="0.9"/> 
+		</SoundDataNode>
+					
+		<SoundDataNode name="CyberDroneSoundsAttack">
+			<AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+				<AudioClip ClipName="#@modfolder:/Resources/CyberDroneSounds.unity3d?CyberDrone_Attack" />
+			<Channel name="Mouth"/>
+			<Priority name="3"/>
+			<maxVoicesPerEntity value="1"/>
+			<LocalCrouchVolumeScale value="1.0"/> 
+			<CrouchNoiseScale value="0.5"/> 
+			<NoiseScale value="1"/> 
+			<MaxVoices value="10"/> 
+			<MaxRepeatRate value="0.9"/> 
+		</SoundDataNode>
+						
+		<SoundDataNode name="CyberDroneSoundsHurt"> 
+			<AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+				<AudioClip ClipName="#@modfolder:/Resources/CyberDroneSounds.unity3d?CyberDrone_Danger" />
+			<Channel name="Mouth"/>
+			<Priority name="3"/>
+			<maxVoicesPerEntity value="1"/>
+			<LocalCrouchVolumeScale value="1.0"/> 
+			<CrouchNoiseScale value="0.5"/> 
+			<NoiseScale value="1"/> 
+			<MaxVoices value="10"/> 
+			<MaxRepeatRate value="0.9"/> 
+		</SoundDataNode>
+	</append>
+</configs>

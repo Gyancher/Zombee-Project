@@ -1,0 +1,22 @@
+<configs>
+    <append xpath="/items">
+	 
+		
+		<item name="Toasted Bread">
+            <property name="CreativeMode" value="Player"/>
+            <property name="HoldType" value="31"/>
+            <property name="Group" value="Food/Cooking"/>
+            <property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Morganic"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="EconomicValue" value="4"/>
+            <property name="EconomicBundleSize" value="5"/>
+            <property name="CraftingIngredientTime" value="10"/>
+            <property name="Weight" value="5"/>
+            <property name="CustomIcon" value="toast"/>
+        </item>
+		
+	
+    </append>
+</configs>

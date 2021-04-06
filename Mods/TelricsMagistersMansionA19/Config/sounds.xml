@@ -1,0 +1,28 @@
+<configs>
+<append xpath="/Sounds">
+<!-- Magisters Mansion -->
+<SoundDataNode name="LillianLifeTap"> <AudioSource name="Sounds/AudioSource_Screamer"/>
+	<AudioClip ClipName="#@modfolder:Resources/MagistersMansion.unity3d?LillianSyphon"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="10"/>
+  <LowestPitch name="0.95"/>
+  <HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value=".1"/> </SoundDataNode>
+<SoundDataNode name="LillianGhostStrike"> <AudioSource name="Sounds/AudioSource_Screamer"/>
+	<AudioClip ClipName="#@modfolder:Resources/MagistersMansion.unity3d?LillianGhostStrike"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="10"/>
+  <LowestPitch name="0.95"/>
+  <HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value=".1"/> </SoundDataNode>
+</append>
+
+
+
+
+
+
+
+</configs>

@@ -1,0 +1,45 @@
+<configs>
+<append xpath="/lootcontainers">
+<!-- Magisters Mansion -->
+<!-- Siera Nighstalker lootables -->
+<lootcontainer id="351" count="1" size="6,2" sound_open="UseActions/close_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+	<item name="MagistersMansionQuestStart" count="1"/>
+</lootcontainer>
+<lootcontainer id="352" count="1" size="6,2" sound_open="UseActions/close_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+	<item name="keyMagistersMansionLibrary" count="1"/>
+</lootcontainer>
+<lootcontainer id="353" count="1" size="6,2" sound_open="UseActions/close_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+	<item name="GhostlyOrb" count="1"/>
+</lootcontainer>
+<lootcontainer id="354" count="1" size="6,2" sound_open="UseActions/close_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+	<item name="GhostlyOrb2" count="1"/>
+</lootcontainer>
+<lootcontainer id="355" count="1" size="6,2" sound_open="UseActions/close_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+	<item name="GhostlyOrb3" count="1"/>
+</lootcontainer>
+<lootcontainer id="356" count="1" size="6,2" sound_open="UseActions/close_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+	<item name="keyMagistersMansionBoiler" count="1"/>
+</lootcontainer>
+<lootcontainer id="357" count="1" size="6,2" sound_open="UseActions/close_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+	<item name="keyMagistersMansionBoiler2" count="1"/>
+</lootcontainer>
+<lootcontainer id="358" count="1" size="6,2" sound_open="UseActions/close_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+	<item name="LillianEssence" count="1"/>
+</lootcontainer>
+<lootcontainer id="359" count="1" size="6,2" sound_open="UseActions/close_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+	<item name="apparelWhitesongPendant" count="1"/>
+</lootcontainer>
+
+<lootcontainer id="360" count="1" size="6,2" sound_open="UseActions/close_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+	<item name="oldCash" count="0,350"/>
+</lootcontainer>
+</append>
+
+
+
+
+
+
+
+
+</configs>

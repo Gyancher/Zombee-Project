@@ -1,0 +1,11 @@
+<configs>
+    <append xpath="/blocks">
+		<block name="+WorkingCoffeeMachine">
+			<property name="Class" value="Campfire" />
+			<property name="Extends" value="cntCoffeeMaker"/>
+			<property name="Model" value="Entities/Appliances/commercialCoffeeMakerPrefab"/>
+				<property name="MultiBlockDim" value="1,2,2"/><property name="DisplayType" value="blockMulti"/>
+		  <property name="CustomIcon" value="cntCoffeeMakerCommercial" />      
+		</block>		
+    </append>   
+</configs>

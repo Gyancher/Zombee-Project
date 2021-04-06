@@ -1,0 +1,542 @@
+<Config>
+<append xpath="/blocks">
+
+	<block name="SlidingDoor">
+		<property name="Class" value="DoorSecure"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlidingDoor" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlidingDoor.unity3d?SlidingDoor.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+
+	<block name="SlidingDoorPowered">
+		<property name="Recipes_to_learn" value="poweredDoorsSchematic" />
+		<property name="Class" value="PoweredDoor"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlidingDoor" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<property name="Tag" value="Door"/>
+		<property name="Place" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlidingDoor.unity3d?SlidingDoor.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceElectricParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+		<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+	</block>
+
+	<block name="SlidingDoor2">
+		<property name="Class" value="DoorSecure"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlidingDoor2" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlidingDoor2.unity3d?SlidingDoor2.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+
+	<block name="SlidingDoor2Powered">
+		<property name="Recipes_to_learn" value="poweredDoorsSchematic" />
+		<property name="Class" value="PoweredDoor"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlidingDoor2" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<property name="Tag" value="Door"/>
+		<property name="Place" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlidingDoor2.unity3d?SlidingDoor2.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceElectricParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+		<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+	</block>
+
+	<block name="SlidingDoor3">
+		<property name="Class" value="DoorSecure"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlidingDoor3" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlidingDoor3.unity3d?SlidingDoor3.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+
+	<block name="SlidingDoor3Powered">
+		<property name="Recipes_to_learn" value="poweredDoorsSchematic" />
+		<property name="Class" value="PoweredDoor"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlidingDoor3" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<property name="Tag" value="Door"/>
+		<property name="Place" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlidingDoor3.unity3d?SlidingDoor3.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceElectricParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+		<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+	</block>
+
+	<block name="SlidingDoor4">
+		<property name="Class" value="DoorSecure"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlidingDoor4" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlidingDoor4.unity3d?SlidingDoor4.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+	<block name="SlidingDoor4Powered">
+		<property name="Recipes_to_learn" value="poweredDoorsSchematic" />
+		<property name="Class" value="PoweredDoor"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlidingDoor4" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<property name="Tag" value="Door"/>
+		<property name="Place" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlidingDoor4.unity3d?SlidingDoor4.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceElectricParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+		<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+	</block>
+	
+	<block name="SlidingDoor5">
+		<property name="Class" value="DoorSecure"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlidingDoor5" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlidingDoor5.unity3d?SlidingDoor5.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+	<block name="SlidingDoor5Powered">
+		<property name="Recipes_to_learn" value="poweredDoorsSchematic" />
+		<property name="Class" value="PoweredDoor"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlidingDoor5" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<property name="Tag" value="Door"/>
+		<property name="Place" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlidingDoor5.unity3d?SlidingDoor5.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceElectricParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+		<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+	</block>
+	
+	<block name="Crusher">
+		<property name="Class" value="Damage"/>
+		<property name="Damage" value="10"/>
+	<property name="DamageType" value="BarbedWire"/>
+	<property name="Damage_received" value="6"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="Crusher" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/Crusher.unity3d?Crusher.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+	
+	<block name="CrusherPowered">
+		<property name="Recipes_to_learn" value="poweredDoorsSchematic" />
+		<property name="Class" value="PoweredDoor"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="Crusher" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<property name="Tag" value="Door"/>
+		<property name="Place" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/Crusher.unity3d?Crusher.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceElectricParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+		<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+	</block>
+	
+	<block name="Crusher2">
+	<property name="Class" value="Damage"/>
+	<property name="Damage" value="10"/>
+	<property name="DamageType" value="BarbedWire"/>
+	<property name="Damage_received" value="6"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="Crusher2" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/Crusher2.unity3d?Crusher2.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+	
+	<block name="Crusher2Powered">
+		<property name="Recipes_to_learn" value="poweredDoorsSchematic" />
+		<property name="Class" value="PoweredDoor"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="Crusher2" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<property name="Tag" value="Door"/>
+		<property name="Place" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/Crusher2.unity3d?Crusher2.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceElectricParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+		<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+	</block>
+	
+	<block name="Belt">
+		<property name="Class" value="DoorSecure"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="Belt" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/Belt.unity3d?Belt.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+	
+	<block name="BeltPowered">
+		<property name="Recipes_to_learn" value="poweredDoorsSchematic" />
+		<property name="Class" value="PoweredDoor"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="Belt" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<property name="Tag" value="Door"/>
+		<property name="Place" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/Belt.unity3d?Belt.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceElectricParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+		<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+	</block>
+	
+	<block name="SlideWall">
+		<property name="Class" value="DoorSecure"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlideWall" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlideWall.unity3d?SlideWall.prefab"/> 
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="MultiBlockDim" value="1,2,2" />
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+	
+	<block name="SlideWallPowered">
+		<property name="Recipes_to_learn" value="poweredDoorsSchematic" />
+		<property name="Class" value="PoweredDoor"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="SlideWall" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<property name="Tag" value="Door"/>
+		<property name="Place" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/SlideWall.unity3d?SlideWall.prefab"/> 
+		<property name="MultiBlockDim" value="1,2,2" />
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceElectricParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+		<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+	</block>
+	
+	<block name="Trap1">
+		<property name="Class" value="DoorSecure"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="Trap1" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/Trap1.unity3d?Trap1.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+	
+	<block name="BarnDoor">
+		<property name="Class" value="DoorSecure"/>
+		<property name="Material" value="Msteel"/>
+		<property name="CustomIcon" value="BarnDoor" />
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		<!-- <property name="Tag" value="Door"/> -->
+		<!-- <property name="Place" value="Door"/> -->
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="Model" value="#@modfolder:Resources/BarnDoor.unity3d?BarnDoor.prefab"/> <property name="ModelOffset" value="0,.5,0"/>
+		<property name="MultiBlockDim" value="1,3,3" />
+		<property name="ImposterExclude" value="true"/>
+		<property name="OpenSound" value="open_door_jail"/>
+		<property name="CloseSound" value="close_door_jail"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="fdecor,fdoors"/>
+	</block>
+		
+	
+</append>
+</Config>

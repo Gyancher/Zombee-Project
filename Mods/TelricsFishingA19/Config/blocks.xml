@@ -1,0 +1,111 @@
+<configs>
+<append xpath="/blocks">
+<!-- fishing -->
+<block name="FishableWaterPlace">
+		<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="FishableWaterIcon" />
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="5" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+        <property name="Model" value="#@modfolder:Resources/TelricsFishing.unity3d?FishableWaterPlacePrefab"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Collide" value="sight,melee,ranged"/>
+	<property class="RepairItems"> <property name="resourceRepairKit" value="1"/> </property>
+	<property name="Stacknumber" value="500"/>
+	<property name="EconomicValue" value="1"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="FishableWaterHelper"/>
+	<property name="PlantGrowing.GrowthRate" value=".5"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/> 
+	
+</block>
+<block name="FishableWaterHelper">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mplants"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/TelricsFishing.unity3d?FishableWaterPlacePrefab"/>
+        <property name="Collide" value="melee"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value="FishableWaterHelperDesc"/>
+        <property name="EconomicValue" value="300"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="3"/>
+		<!-- <property name="DisplayInfo" value="Name"/> -->
+		<property name="Place" value="TowardsPlacer"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="FishableWaterAir">
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0j0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="FishableWaterHelper"/>
+	<property name="PlantGrowing.GrowthRate" value=".5"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+<block name="FishableWaterReady">
+        <property name="CustomIcon" value="" />
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="DisplayInfo" value="Description"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="100000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+        <property name="Model" value="#@modfolder:Resources/TelricsFishing.unity3d?FishableWaterReadyPrefab"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Collide" value="sight"/>
+	<property class="RepairItems"> <property name="resourceRepairKit" value="1"/> </property>
+	<property name="Stacknumber" value="500"/>
+	<property name="EconomicValue" value="1"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	
+	<property name="BuffsWhenWalkedOn" value="buffFishableWaterReady"/>
+	
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="FishableWaterHelper"/>
+	<property name="PlantGrowing.GrowthRate" value="2"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/> 
+	
+</block>
+</append>
+
+
+</configs>

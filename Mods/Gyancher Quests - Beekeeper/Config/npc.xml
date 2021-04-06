@@ -1,0 +1,15 @@
+<configs>
+<insertAfter xpath="/npc/npc_info[@id='traderTest']" >
+		<npc_info
+			id="beeKeeper"
+			name="beekeeper"
+			name_key="beeKeeper"
+			faction="trader"
+			portrait="npc_hugh"
+			greeting_type="nearby"
+			stance="Neutral" voice_set="trader"
+			trader_id="1" dialog_id="trader" 
+			quest_list="beeKeeper_quests" />
+				
+	</insertAfter>		
+</configs>

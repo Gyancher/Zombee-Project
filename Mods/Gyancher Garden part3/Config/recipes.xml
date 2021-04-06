@@ -1,0 +1,10 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="GreenHouse" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="120" />
+		</recipe>
+		
+		
+		
+	</append>
+</configs>

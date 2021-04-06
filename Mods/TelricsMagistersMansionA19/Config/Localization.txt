@@ -1,0 +1,217 @@
+Key,english,japanese
+
+--------------------------Magisters Mansion Blocks ---------------------
+SieraNightstalkerCrouchIdle,[2bd99f]Siera Nightstalker[-],"[2bd99f]シエラ・ナイトストーカー[-]"
+SieraNightstalkerCrouchIdle2,[2bd99f]Siera Nightstalker[-],"[2bd99f]シエラ・ナイトストーカー[-]"
+SieraNightstalkerSittingIdle,[2bd99f]Siera Nightstalker[-],"[2bd99f]シエラ・ナイトストーカー[-]"
+SieraNightstalkerStandingIdle,[2bd99f]Siera Nightstalker[-],"[2bd99f]シエラ・ナイトストーカー[-]"
+SieraNightstalkerFallenIdle,[2bd99f]Siera Nightstalker[-],"[2bd99f]シエラ・ナイトストーカー[-]"
+SieraNightstalkerAttackReadyIdle,[2bd99f]Siera Nightstalker[-],"[2bd99f]シエラ・ナイトストーカー[-]"
+
+MansionDoorEntrance,[2bd99f]Magisters Mansion || Recommended night time[-],,,,,[2bd99f]マジスターの館の入り口 【夜間に攻略する事をお勧めします】[-],,,,,,
+MansionDoorAlwaysLocked,[ed3119]It's completely jammed shut.[-],"[ed3119]完全に閉ざされています。[-]"
+MansionDoorB,[2bd99f]Mansion Door[-],"[2bd99f]館のドア[-]"
+MansionDoorC,[2bd99f]Mansion Door[-],"[2bd99f]館のドア[-]"
+MansionDoorD,[2bd99f]Mansion Door[-],"[2bd99f]館のドア[-]"
+MansionDoorE,[ed3119]Fire Exit[-],"[ed3119]非常口[-]"
+MansionDoorF,[2bd99f]Mansion Door[-],"[2bd99f]館のドア[-]"
+MansionDoorG,[2bd99f]Mansion Door[-],"[2bd99f]館のドア[-]"
+
+BoilerBodyYellow,[2bd99f]Something to Ignite[-],"[2bd99f]火を熾す物[-]"
+LillianFire,[2bc8d9]Eternal Fire[-],"[2bc8d9]永遠の炎[-]"
+GiovaniReleased,[2bc8d9]Giovani[-],"[2bc8d9]ジョヴァンニ[-]"
+
+GhostOrb,[2bd99f]Ghostly Essence[-],"[2bd99f]ゴースト・エッセンス[-]"
+GhostOrb2,[2bd99f]Ghostly Essence[-],"[2bd99f]ゴースト・エッセンス[-]"
+GhostOrb3,[2bd99f]Ghostly Essence[-],"[2bd99f]ゴースト・エッセンス[-]"
+
+RewardOrb,[2bd99f]Ghostly Essence[-],"[2bd99f]お持ち帰り用エッセンス[-]"
+RewardOrbDesc,[2bd99f]A purified Ghost essence. Rewarded for your assistance in putting the butcher, librarian, and boiler to rest for good.[-],"[2bd99f]3人の共犯者たちの霊たちを鎮めた報酬として入手したゴースト・エッセンス。\n\n霊はもうこの世にはいないので、綺麗な飾りアイテムとして使用できます。[-]"
+
+MansionHiddenPurse,[2bd99f]Hidden Purse[-],"[2bd99f]隠された財布[-]"
+MansionHiddenPurse2,[2bd99f]Hidden Purse[-],"[2bd99f]隠された財布[-]"
+MansionHiddenPurse3,[2bd99f]Hidden Purse[-],"[2bd99f]隠された財布[-]"
+
+BurialRites,[2bd99f]Grave[-],"[2bd99f]死者[-]"
+BurialOrb,[2bd99f]Grave[-],"[2bd99f]オーブ[-]"
+
+DinnerPlate,[2bd99f]Feed a Ghost[-],"[2bd99f]ディナープレート[-]"
+-------------------------Magisters Mansion Items---------------------
+MagistersMansionQuestStart,"[e7a729]Magisters Mansion[-]","[e7a729]マジスターの館[-]"
+MagistersMansionQuestStartDesc,"[e7a729]Follow [-][2bd99f]Siera Nightstalker[-][e7a729] through the mansion, learning what happened in that haunted place.[-][1cb431]TIP: Highly recommended to be done during night.[-]","[e7a729][-][2bd99f]シエラ・ナイトストーカー[-][e7a729]に館内を案内してもらい、そこで何が起こったかを知りましょう。[-]\n\n[1cb431]ヒント: この館のクエストは夜間用に調整されています。\n夜になっても館内の敵は走りません、ぜひ夜間にプレイしてください。[-]"
+
+keyMagistersMansionEntrance,"[e7a729]Entrance Key[-]","[e7a729]エントランスの鍵[-]"
+keyMagistersMansionEntranceDesc,"[e7a729]This key is used to gain access to Magisters Mansion.[-]","[e7a729]マジスターの館内に入るための鍵。[-]"
+keyMagistersMansionButcher,"[e7a729]Butcher's Key[-]","[e7a729]屠殺者の鍵[-]"
+keyMagistersMansionButcherDesc,"[e7a729]A key held closely by the Butcher. What door could it go to?[-]","[e7a729]屠殺者が大切に持っていた鍵。\n\nどこで使うのでしょう？[-]"
+keyMagistersMansionLibrary,"[e7a729]Librarian's Key[-]","[e7a729]司書の鍵[-]"
+keyMagistersMansionLibraryDesc,"[e7a729]A key hidden away from plain sight. The librarian would use this to get quicker access to [-][2bd99f]Giovanni's[-] [e7a729] room.[-]","[e7a729]隠されていた鍵。\n\n司書が[-][2bd99f]ジョヴァンニ[-][e7a729]の部屋に入るために使用していた鍵のようです。[-]"
+keyMagistersMansionBoiler,"[e7a729]Boiler's Key[-]","[e7a729]火夫の鍵[-]"
+keyMagistersMansionBoilerDesc,"[e7a729]A key hidden away from plain sight. The boiler was one of the hardest workers, working in extreme heat.","[e7a729]隠されていた鍵。\n\n火夫は毎日高温に耐えながら働いていたようです。"
+keyMagistersMansionBoiler2,"[e7a729]Boiler's Emergency Key[-]","[e7a729]火夫の緊急脱出鍵[-]"
+keyMagistersMansionBoiler2Desc,"[e7a729]A key the boiler would hide away juuuust in case of a fire broke out. It wasn't very wise to hide it on top of the boiler units though...[-]","[e7a729]火事発生時の緊急脱出用の鍵。\n\nボイラーユニットの上に隠すのはあまり賢くありませんね...[-]"
+keyMagistersMansionLillian,"[e7a729]Important Key[-]","[e7a729]重要な鍵[-]"
+keyMagistersMansionLillianDesc,"[e7a729]A very important looking key. It can only go to a door that hides away something special.[-]","[e7a729]非常に重要そうな鍵。\n\n重要な何かが隠してある部屋の鍵に違いありません。[-]"
+keySieraLockpick,"[e7a729]Siera's Lock Picking tool[-]","[e7a729]シエラのロックピックツール[-]"
+keySieraLockpickDesc,"[e7a729]Her name isn't Nightstalker for nothing. She's a master at stealth.[-]","[e7a729]ナイトストーカーの名前は伊達ではありませんね。\n\n本当に高いステルス能力の持ち主です。[-]"
+
+BoilerRoomFuel,"[e7a729]Siera's Special Brew[-]","[e7a729]シエラが作った燃料[-]"
+BoilerRoomFuelDesc,"[e7a729]A deep dark secret of the Nightstalker family line. They used to use this to start massive fires when pillaging villages. Siera knows the power of this brew and is wise to use it sparingly.[-]","[e7a729]シエラが作った、先祖代々受け継がれている非常に強力な燃料レシピ。\n\nシエラの先祖はこの燃料を使って村を燃やして襲っていたようです。\n\n威力の高さを知っているため、なるべくシエラは使わないようにしているようです。"
+
+GhostlyOrb,"[e7a729]The Butcher's Essence[-]","[e7a729]屠殺者のエッセンス[-]"
+GhostlyOrbDesc,"[e7a729]One of three essences hidden away by those that assisted [2bd99f]Lillian[-][e7a729] in the murders. This holds the very essence of the [2bd99f]Butcher[-][e7a729].[-]","[e7a729][2bd99f]リリアン[-][e7a729]が行った殺人の共犯者が隠した3つのエッセンスの内の1つ。\n\nこれは[2bd99f]屠殺者[-][e7a729]が隠したエッセンスのようです。[-]"
+GhostlyOrb2,"[e7a729]The Librarian's Essence[-]","[e7a729]司書のエッセンス[-]"
+GhostlyOrb2Desc,"[e7a729]One of three essences hidden away by those that assisted [2bd99f]Lillian[-][e7a729] in the murders. This holds the very essence of the [2bd99f]Librarian[-][e7a729].[-]","[e7a729][2bd99f]リリアン[-][e7a729]が行った殺人の共犯者が隠した3つのエッセンスの内の1つ。\n\nこれは[2bd99f]司書[-][e7a729]が隠したエッセンスのようです。[-]"
+GhostlyOrb3,"[e7a729]The Boiler's Essence[-]","[e7a729]火夫のエッセンス[-]"
+GhostlyOrb3Desc,"[e7a729]One of three essences hidden away by those that assisted [2bd99f]Lillian[-][e7a729] in the murders. This holds the very essence of the [2bd99f]Boiler[-][e7a729].[-]","[2bd99f]リリアン[-][e7a729]が行った殺人の共犯者が隠した3つのエッセンスの内の1つ。\n\nこれは[2bd99f]火夫[-][e7a729]が隠したエッセンスのようです。[-]"
+GhostlyOrb4,"[e7a729]Defused Essence[-]","[e7a729]無力化したエッセンス[-]"
+GhostlyOrb4Desc,"[e7a729]Combining all three essences defuses them, nullifying any power within them. [-]","[e7a729]3つのエッセンスを組み合わせる事により、無力化する事に成功しました。\n\n彼らの魂を鎮めるために、裏庭の墓場に収めましょう。[-]"
+
+LillianEssence,"[e7a729]Lillian's Essence[-]","[e7a729]リリアンのエッセンス[-]"
+LillianEssenceDesc,"[2bd99f]Lillian's[-][e7a729] final essence. It's cold to the touch but also spread a warmth through your body.[-]","[2bd99f]リリアンの[-][e7a729]本質。\n\n手に持つと暖かいような、冷たいような、不思議なアイテムです。[-]"
+
+apparelWhitesongPendant,"[e7a729]Whitesong Pendant[-]","[e7a729]ホワイトソングのペンダント[-]"
+apparelWhitesongPendantDesc,"[e7a729]A family heirloom gifted to you by [-][2bd99f]Giovani[-][e7a729] for purging the corruption from his mansion. Wearing this will allow [-][2bd99f]Giovani[-][e7a729] to empower you.\n\nThe essence of [-][2bd99f]Giovani[-][e7a729] surrounds you with light.\nAttacks landed at night cause [-][2bd99f]Touch of Giovani[-][e7a729], doing additional damage.\n[-][2bd99f]Giovani's[-][e7a729] strength increases your movement speed by 15% and max health by 20%, at night.[-]","[e7a729]先祖代々 [-][2bd99f]ジョヴァンニ[-][e7a729]の家族が受け継いできた大切なペンダント。\n\n彼の館から邪悪なものを取り除いてくれたお礼として受け取りました。\n\n身に着けると、[-][2bd99f]ジョヴァンニ[-][e7a729]の加護により、あなたの周囲が明るく照らされ、夜間のみいくつかのステータスが上昇します。\n\n・夜間のみ、敵へ追加ダメージエフェクト。\n・夜間のみ、移動速度15%上昇。\n・夜間のみ、最大体力20%増加。[-]"
+
+foodGhostPizza,"[e7a729]Giovani's Pizza[-]","[e7a729]ジョヴァンニのピザ[-]"
+foodGhostPizzaDesc,"[e7a729]Giovani's famous recipe. A deliciously greasy pizza.[-]","[e7a729]ジョヴァンニが作った、カロリーたっぷりのピザ。[-]"
+foodGhostPizzaSchematic,"[e7a729]Recipe: Giovani's Pizza[-]","[e7a729]レシピ: ジョヴァンニのピザ[-]"
+foodGhostPizzaSchematicDesc,"[e7a729]Unlocks Giovani's Special Pizza recipe.[-]","[e7a729]とても美味しいジョヴァンニのピザのレシピがアンロックされます。[-]"
+ 
+-----------------------Entities------------------------------
+zombieTheButcher,[ed3119]The Butcher[-],"[ed3119]屠殺者[-]",
+zombieTheLibrarian,[ed3119]The Librarian[-],"[ed3119]司書[-]",
+zombieTheBoiler,[ed3119]The Boiler[-],"[ed3119]火夫[-]",
+zombieLillian,[ed3119]Lillian[-],"[ed3119]リリアン[-]",
+zombieGhost,"Ghost","ゴースト(男)",
+zombieGhost2,"Ghost","ゴースト(女)",
+
+lootLillian,[ed3119]Barely Burning Fire[-],"[ed3119]消えそうな炎[-]",
+lootTheButcher,[ed3119]The Butcher's Favorite Meal[-],"[ed3119]屠殺者の得意料理[-]",
+lootGhost,[ed3119]Spectral Essence[-],"[ed3119]スペクトル・エッセンス[-]",
+
+------------------------Buffs-------------------------------
+buffCursedDebuffName,"[2bd99f]Cursed[-]","[2bd99f]呪われた[-]",
+buffCursedDebuffDesc,"[2bd99f]A ghost has cursed you! Your controls are reversed.[-]","[2bd99f]霊に呪われたため、一時的に移動が逆になってしまっています！[-]",
+buffCursedDebuffTooltip,"[2bd99f]A ghost has cursed you.[-]","[2bd99f]霊に呪われて混乱しています。[-]",
+
+buffHauntedMansionWarningName,"[2bd99f]Uneasy Feeling[-]","[2bd99f]奇妙な感覚[-]",
+buffHauntedMansionWarningTooltip,"[2bd99f]An uneasy feeling comes to you...[-]","[2bd99f]とても奇妙で嫌な感覚に襲われています...[-]",
+buffHauntedMansionWarningDesc,"[2bd99f]An uneasy feeling comes to you as you approach the mansion. You feel like someone's watching you... You might want to come back at night so you're not so noticeable.[-][1cb431] TIP: This POI is recommended to be done at night.[-]","[2bd99f]館に近付くと奇妙な感覚に襲われます\n\n誰かがじっと見ているような気がします...\n\n夜出直したほうが良さそうです。[-]\n\n[1cb431]ヒント: この館のクエストは夜間用に調整されています。\n夜になっても館内の敵は走りません、ぜひ夜間にプレイしてください。[-]",
+
+-----------------------Magisters Mansion Quests -----------------------
+MagistersMansionMainQuest,"[e7a729]Magisters Mansion Pt.1 [-]","[e7a729]マジスターの館 Pt.1 [-]"
+MagistersMansionMainQuest_title,"[e7a729]Magisters Mansion Pt.1 [-]","[e7a729]マジスターの館 Pt.1 [-]"
+MagistersMansionMainQuest_offer_title,"[e7a729]Magisters Mansion Pt.1 [-]","[e7a729]マジスターの館 Pt.1 [-]"
+MagistersMansionMainQuest_offer,"[e7a729]Hello traveler. I'm [-][2bd99f]Siera Nightstalker[-][e7a729]. Have you come to help me launch this attack? We need to infiltrate this place and stop [-][2bd99f]Lillian Whitesong[-][e7a729] once and for all. She's gone too far... You don't know the story do you? Help me open this door and I'll tell you. We'll need a stone axe.[-][1cb431] TIP: This POI is recommended to be done at night.[-]","[e7a729]始めまして、私の名は [-][2bd99f]シエラ・ナイトストーカー[-][e7a729]です。\n\n私と共に館に侵入し、数々の悪事を働いている[-][2bd99f]リリアン・ホワイトソング[-][e7a729]を止める手伝いをしていただけませんでしょうか？\n\nここで何が行われているのかをお話するので、ついて来てください。[-]\n\n[1cb431]ヒント: この館のクエストは夜間用に調整されています。\n夜になっても館内の敵は走りません、ぜひ夜間にプレイしてください。[-]"
+
+MagistersMansionMainQuest2,"[e7a729]Magisters Mansion Pt.2 [-]","[e7a729]マジスターの館 Pt.2 [-]"
+MagistersMansionMainQuest2_title,"[e7a729]Magisters Mansion Pt.2 [-]","[e7a729]マジスターの館 Pt.2 [-]"
+MagistersMansionMainQuest2_offer_title,"[e7a729]Magisters Mansion Pt.2 [-]","[e7a729]マジスターの館 Pt.2 [-]"
+MagistersMansionMainQuest2_offer,"[e7a729]Great. Thank you for helping me. This... Is [-][2bd99f]Magisters Mansion[-][e7a729]. As the story goes, this was the house of the wealthy and intelligent [-][2bd99f]Giovani Whitesong[-][e7a729]. He was a very successful man and was loved dearly by the community. He married a woman named [-][2bd99f]Lillian[-][e7a729]. She seemed odd to say the least. One day during a gathering of friends, in broad daylight, she rams a knife right through his heart. Then she turned the knife on the guests. She murdered so many people that night. Finally, she turned it on herself. Now she haunts this mansion, killing anyone who dares enter... When you're ready, use a [-][1cb431]stone axe[-][e7a729] and this key to unlock the entrance door.[-][1cb431] If a quest requires an upgrade objective, use a stone axe with the required items. All special blocks that require an upgrade will be made of wood for easy repairing if hit by a stray bullet or an enemy.[-]","[e7a729]手助けしてくれるのですね、ありがとう！\n\nこれ... が[-][2bd99f]マジスターの館[-][e7a729]です。\nこの館の持ち主は非常に裕福で頭が切れる[-][2bd99f]ジョヴァンニ・ホワイトソング[-][e7a729]という名の方でした。\n彼はとても気の良い方だったので、周りに愛されていました。\n[-][2bd99f]リリアン[-][e7a729]という名の女性と結婚したのですが、彼女はとても奇妙な方でした...\n\nある日、友人たちと集まっている最中、突然彼女はジョヴァンニの心臓をナイフで刺し、集まっていた友人たちにも次々と襲い掛かりました。\n全員殺した後、その刃を自分へと向け、自殺しました。\n\n死んでもなお、この館に足を踏み入れた者全ての命を奪っています...\n\n準備が出来たら、この鍵が鞄に入っている状態で、ストーンアックスを手に持ち、ドアを右クリックでアップグレードしてください。[-]"
+
+MagistersMansionMainQuest3,"[e7a729]Magisters Mansion Pt.3 [-]","[e7a729]マジスターの館 Pt.3 [-]"
+MagistersMansionMainQuest3_title,"[e7a729]Magisters Mansion Pt.3 [-]","[e7a729]マジスターの館 Pt.3 [-]"
+MagistersMansionMainQuest3_offer_title,"[e7a729]Magisters Mansion Pt.3 [-]","[e7a729]マジスターの館 Pt.3 [-]"
+MagistersMansionMainQuest3_offer,"[e7a729]We're in. Be sure to stay low. The ghosts within this place are no longer friendly. You might want to place a bedroll nearby in case things go wrong. Now.. Where was I... Ah yes. [-][2bd99f]Lillian's[-][e7a729] actions were not just hers though. She had help and I know it. She was very close to the mansions [-][ed3119]butcher[-][e7a729]. I bet anything we'll find clues with his ghost. Let's head that way. I'll sneak through and unlock the door to the [-][1cb431]dinner hall[-][e7a729]. Just past the dinner hall will be a staircase that leads to the butcher room. Meet me there and we'll tackle this guy together.[-]","[e7a729]静かに、ここにいる霊は非常に強いので、注意してください。\n念のためにベッドロールを設置しておいたほうが良いかもしれません、念のために...\n\n[-][2bd99f]リリアン[-][e7a729]には何人かの共犯者がいました。\n\n怪しいのは、彼女と親しかった[-][ed3119]屠殺者(とさつしゃ)[-][e7a729]です。\n彼の霊もここにいるので、ヒントが見つかると良いのですが...\nさっそく[-][1cb431]ダイニングホール[-][e7a729]へ向かってみましょう。\nダイニングホールの奥にある階段を上がると、[-][ed3119]屠殺者[-][e7a729]の自室があります、そちらを調べてみてください。\n\n私は先に行って鍵を開けておきます、気を付けてください。[-]"
+
+MagistersMansionMainQuest4,"[e7a729]Magisters Mansion Pt.4 [-]","[e7a729]マジスターの館 Pt.4 [-]"
+MagistersMansionMainQuest4_title,"[e7a729]Magisters Mansion Pt.4 [-]","[e7a729]マジスターの館 Pt.4 [-]"
+MagistersMansionMainQuest4_offer_title,"[e7a729]Magisters Mansion Pt.4 [-]","[e7a729]マジスターの館 Pt.4 [-]"
+MagistersMansionMainQuest4_offer,"[db6619]*You hear [-][2bd99f]Siera[-][db6619] wincing in pain from behind the counter*[-] [e7a729]AHH! Ouch! He got me good didn't he... I tripped on the stairs coming up. As soon as he heard me fall, I knew it was going to be bad. Well... At least I didn't end up being ghost food. Do you have a spare [-][1cb431]simple bandage[-][e7a729] that you can lend me?[-]","[db6619]*[-][2bd99f]シエラ[-][db6619]が負傷したようです*[-]\n[e7a729]痛っ！油断してしまいました...\n階段を踏み外し、大きな音を立ててしまい、彼に見つかってしまいました...\n散々投げまわされたので、怪我はしましたけど、一応生きています。\n\nすみません、[-][1cb431]包帯[-][e7a729]を一つ分けてもらえませんでしょうか？\n\n包帯を鞄に入れた状態で、ストーンアックスを手に持ち、シエラを右クリックでアップグレードしてください。[-]"
+
+MagistersMansionMainQuest5,"[e7a729]Magisters Mansion Pt.5 [-]","[e7a729]マジスターの館 Pt.5 [-]"
+MagistersMansionMainQuest5_title,"[e7a729]Magisters Mansion Pt.5 [-]","[e7a729]マジスターの館 Pt.5 [-]"
+MagistersMansionMainQuest5_offer_title,"[e7a729]Magisters Mansion Pt.5 [-]","[e7a729]マジスターの館 Pt.5 [-]"
+MagistersMansionMainQuest5_offer,"[e7a729]Thank you. Much better. So the [-][ed3119]butcher[-][e7a729] really did have something to hide. I got this off his belt when he was throwing me around.[-][db6619] *[-][2bd99f]Siera[-][db6619] pulls a key from her pocket*[-][e7a729] This key must go to another room in the house. Go find it and unlock it. I'll meet you there in a moment. I just need to rest.[-]","[e7a729]ありがとうございます、これで動けるようになりました。\n彼は間違いなく共犯者の一人でした、[-][ed3119]屠殺者[-][e7a729]との戦闘中にこれを入手しました。\n\n[-][db6619]*[-][2bd99f]シエラ[-][db6619]がポケットから鍵を取り出します*[-][e7a729]\n\n館の部屋の鍵のようですが、どの部屋の鍵かは分かりませんので、探していただけますか？\n\nごめんなさい、私はもう少しだけ休んでから追いつきます。[-]"
+
+MagistersMansionMainQuest6,"[e7a729]Magisters Mansion Pt.6 [-]","[e7a729]マジスターの館 Pt.6 [-]"
+MagistersMansionMainQuest6_title,"[e7a729]Magisters Mansion Pt.6 [-]","[e7a729]マジスターの館 Pt.6 [-]"
+MagistersMansionMainQuest6_offer_title,"[e7a729]Magisters Mansion Pt.6 [-]","[e7a729]マジスターの館 Pt.6 [-]"
+MagistersMansionMainQuest6_offer,"[e7a729]Mansions typically have their own library. Usually they hire a few people to upkeep the place and organize. [-][2bd99f]Giovani[-][e7a729] was such a great man that he allowed others to live within the mansion, as long as they worked there. That's why the [-][ed3119]butcher[-][e7a729] and [-][2bd99f]Lillian[-][e7a729] were so close. Poor [-][2bd99f]Giovani[-][e7a729]. He had no idea the whole time... All along there was a plot against him. I have no information on the [-][ed3119]librarian[-][e7a729]. It's very possible the entire house was against the man. Jealousy can turn anyone into a machine. Lets [-][1cb431]search for information[-][e7a729] about this librarian.[-]","[e7a729]これだけ大きな館なら図書室があるはずです。\nそして、大きな図書室ならば、管理をする[-][ed3119]司書[-][e7a729]もいます。\n\n[-][2bd99f]ジョヴァンニ[-][e7a729]は全ての使用人に部屋を与え、住み込みで働けるようにしていましたが、残念ながらそれは間違いだったようです。\n\n彼の成功を妬んだ使用人たちと[-][2bd99f]リリアン[-][e7a729]が手を組み、[-][2bd99f]ジョヴァンニ[-][e7a729]を殺害したようですね...\n\n共犯者の一人かもしれない[-][ed3119]司書[-][e7a729]が図書室のどこかに隠した鍵を探し出してください。[-]"
+
+MagistersMansionMainQuest7,"[e7a729]Magisters Mansion Pt.7 [-]","[e7a729]マジスターの館 Pt.7 [-]"
+MagistersMansionMainQuest7_title,"[e7a729]Magisters Mansion Pt.7 [-]","[e7a729]マジスターの館 Pt.7 [-]"
+MagistersMansionMainQuest7_offer_title,"[e7a729]Magisters Mansion Pt.7 [-]","[e7a729]マジスターの館 Pt.7 [-]"
+MagistersMansionMainQuest7_offer,"[e7a729]Wow. I'll hand it to him, that's a great place to hide something you want to keep hidden from everyone. I wonder how many other secrets there are within this place... It looks like that key will go to this door near me. Must be a secret passage way that no one could access except the [-][ed3119]librarian[-][e7a729]. Let's see whats behind it.[-]","[e7a729]本当によく隠されていましたね...\n\nその鍵はここのドアの鍵のようです。\n\n[-][ed3119]司書[-][e7a729]のみが知っていた、秘密の通路ですね...さっそく入ってみましょう。\n\nインベントリ内に鍵が入った状態で、ストーンアックスを手に持ち、右クリックでドアをアップグレードしてください。[-]"
+
+MagistersMansionMainQuest8,"[e7a729]Magisters Mansion Pt.8 [-]","[e7a729]マジスターの館 Pt.8 [-]"
+MagistersMansionMainQuest8_title,"[e7a729]Magisters Mansion Pt.8 [-]","[e7a729]マジスターの館 Pt.8 [-]"
+MagistersMansionMainQuest8_offer_title,"[e7a729]Magisters Mansion Pt.8 [-]","[e7a729]マジスターの館 Pt.8 [-]"
+MagistersMansionMainQuest8_offer,"[db6619]*[-][2bd99f]Siera's[-][db6619] face is white with shock as she sits next to a body bag*[-][e7a729]Just look at this... These bodies are recent. This has gone way too far. How can someone be this cruel to just murder over and over... We need to end this. We must take out [-][2bd99f]Lillian[-][e7a729]. Look around this room. There must be another key around here somewhere. Let me just sit here and send these two bodies off to the spirit world...[-]","[db6619]*死体袋の横で[-][2bd99f]シエラ[-][db6619]がショックを受けています*[-]\n[e7a729]酷い...亡くなって間もないようです...\n許せません。\nこれ以上被害者が出る前に、早く[2bd99f]リリアン[-][e7a729]を止めなければ...\n\nこの部屋のどこかに次の鍵が隠されているはずです、探してください。\n\n私はこの方々が成仏できるよう、祈っておきます...[-]"
+
+MagistersMansionMainQuest9,"[e7a729]Magisters Mansion Pt.9 [-]","[e7a729]マジスターの館 Pt.9 [-]"
+MagistersMansionMainQuest9_title,"[e7a729]Magisters Mansion Pt.9 [-]","[e7a729]マジスターの館 Pt.9 [-]"
+MagistersMansionMainQuest9_offer_title,"[e7a729]Magisters Mansion Pt.9 [-]","[e7a729]マジスターの館 Pt.9 [-]"
+MagistersMansionMainQuest9_offer,"[e7a729]Hmm... A boiler room key. Boiler rooms are where the dirtiest and sweatiest work happens. I'm unsure if [-][2bd99f]Lillian[-][e7a729] was acquaintances with the boiler workers. Judging by the [-][ed3119]librarian[-][e7a729] being a part of it, I have very little doubt we'll have another fight on our hands soon. I'm almost done sending these bodies off... Go find the boiler room and clear any ghosts out. I'll catch up soon.[-]","[e7a729]ボイラー室の鍵ですね...\n[-][ed3119]火夫[-][e7a729]と[-][2bd99f]リリアン[-][e7a729]は親しかったので、きっと共犯者の一人に違いありません。\n\nもう少しで祈り終わります。\n\n先に、1階にあるボイラー室へ向かっておいていただけますか？\n\n祈り終わり次第、私もすぐに向かいます。[-]"
+
+MagistersMansionMainQuest10,"[e7a729]Magisters Mansion Pt.10 [-]","[e7a729]マジスターの館 Pt.10 [-]"
+MagistersMansionMainQuest10_title,"[e7a729]Magisters Mansion Pt.10 [-]","[e7a729]マジスターの館 Pt.10 [-]"
+MagistersMansionMainQuest10_offer_title,"[e7a729]Magisters Mansion Pt.10 [-]","[e7a729]マジスターの館 Pt.10 [-]"
+MagistersMansionMainQuest10_offer,"[db6619]*[-][2bd99f]Siera[-][db6619] rushes in behind you and sits in front of a body bag*[-][e7a729] More bodies... More send offs... Thankfully the boilers haven't been in use in ages. It's not quite too hot in here. But it is very dark. We need to [-][1cb431]find something to light[-][e7a729] so I can see to do the send offs. Here. Use some of this brew. It's a family heirloom recipe that's been passed down for centuries. Just add a little sprinkle to something for it to night. Don't add too much. It's very very strong.[-]","[db6619]*[-][2bd99f]シエラ[-][db6619]が素早く死体袋の前へと移動します*[-]\n[e7a729]\nまた死体が...\n\nボイラーは何年も使われていなかったようです、暑くありませんね。\n暑くはありませんけど、とても暗いので、明かりが欲しい所です。\n\nこの燃料を使ってください、先祖代々伝わっているレシピで作った物です。\n\nほんの数滴で火が熾せるので、使い過ぎないように気を付けてくださいね。\n\n[-][1cb431]燃やせそうな物を見つけ[-][e7a729]、鞄に燃料が入った状態で、ストーンアックスを手に持ち、右クリックでアップグレードしてください。[-]"
+
+MagistersMansionMainQuest11,"[e7a729]Magisters Mansion Pt.11 [-]","[e7a729]マジスターの館 Pt.11 [-]"
+MagistersMansionMainQuest11_title,"[e7a729]Magisters Mansion Pt.11 [-]","[e7a729]マジスターの館 Pt.11 [-]"
+MagistersMansionMainQuest11_offer_title,"[e7a729]Magisters Mansion Pt.11 [-]","[e7a729]マジスターの館 Pt.11 [-]"
+MagistersMansionMainQuest11_offer,"[db6619]*Light explodes out of the fire you created on the body bag. [-][2bd99f]Siera[-][db6619] looks at you with absolute horror.*[-][e7a729] WHAT DID YOU DO!?! OF ALL THE THINGS TO LIGHT ON FIRE YOU CHOOSE TO LIGHT A BODY?!?!? OH THE SMELL!!![-][db6619] *[-][2bd99f]Siera[-][db6619] frantically tries to put the fire out*[-][e7a729] This isn't going to work. We need to find a way to open that emergency door NOW![-]","[db6619]*死体袋が勢い良く燃え上がり、[-][2bd99f]シエラ[-][db6619]が悲鳴を上げます。*[-]\n[e7a729]\nなんて事を！\nよりによって、そこに火を点けるだなんて！\n\n[-][db6619] *[-][2bd99f]シエラ[-][db6619]が必死になって炎を消そうとしています*[-][e7a729]\n\nらちが明かないわ！\n今すぐ脱出しなきゃ！\n\nこのボイラー室のどこかに隠してある火夫の鍵を見つけ出してください。[-]"
+
+MagistersMansionMainQuest12,"[e7a729]Magisters Mansion Pt.12 [-]","[e7a729]マジスターの館 Pt.12 [-]"
+MagistersMansionMainQuest12_title,"[e7a729]Magisters Mansion Pt.12 [-]","[e7a729]マジスターの館 Pt.12 [-]"
+MagistersMansionMainQuest12_offer_title,"[e7a729]Magisters Mansion Pt.12 [-]","[e7a729]マジスターの館 Pt.12 [-]"
+MagistersMansionMainQuest12_offer,"[e7a729]What a great place to hide an emergency fire exit key... Ok. No time to be sarcastic. Let's get out of here before it gets bad. Use the key quickly!![-]","[e7a729]緊急避難用の鍵の隠し場所としては最悪ね。\n\n炎が広がって閉じ込められる前に、とりあえず早く逃げましょう！！\n\n火夫の緊急脱出鍵を鞄に入れた状態で、ストーンアックスを手に持ち、非常口を右クリックでアップグレードしてください。[-]"
+
+MagistersMansionMainQuest13,"[e7a729]Magisters Mansion Pt.13 [-]","[e7a729]マジスターの館 Pt.13 [-]"
+MagistersMansionMainQuest13_title,"[e7a729]Magisters Mansion Pt.13 [-]","[e7a729]マジスターの館 Pt.13 [-]"
+MagistersMansionMainQuest13_offer_title,"[e7a729]Magisters Mansion Pt.13 [-]","[e7a729]マジスターの館 Pt.13 [-]"
+MagistersMansionMainQuest13_offer,"[e7a729]Thankfully that door works. That would not be a good death... Let's follow this corridor. Be careful though. That fire could spread out here fast.[-]","[e7a729]ギリギリでしたね...\n\n炎がこちらまで広がる前に、先へと進みましょう。[-]"
+
+MagistersMansionMainQuest14,"[e7a729]Magisters Mansion Pt.14 [-]","[e7a729]マジスターの館 Pt.14 [-]"
+MagistersMansionMainQuest14_title,"[e7a729]Magisters Mansion Pt.14 [-]","[e7a729]マジスターの館 Pt.14 [-]"
+MagistersMansionMainQuest14_offer_title,"[e7a729]Magisters Mansion Pt.14 [-]","[e7a729]マジスターの館 Pt.14 [-]"
+MagistersMansionMainQuest14_offer,"[db6619]*[-][2bd99f]Siera[-][db6619] rushes past you, quickly but quietly.*[-][e7a729]That was too close. Those fires spread so fast. This entire place is on fire! But we have other problems on our hands... Look there! It's the [-][ed3119]boiler operator[-][e7a729]. We need to take him out. Just [-][1cb431]be careful where you step[-][e7a729]! Those fires are probably heating up this floor as we speak. Take him out quickly![-]","[db6619]*[-][2bd99f]シエラ[-][db6619]が音を立てず、素早く先へと進みます。*[-]\n\n[e7a729]どんどん炎が広がって、あっという間に館が燃え上がりそうだけど...\n\nまだやらなければいけない事があります。\n\nあ！[-][ed3119]火夫[-][e7a729]がいました！\n\n燃えている床に注意しながら、早く倒しましょう！[-]"
+
+MagistersMansionMainQuest15,"[e7a729]Magisters Mansion Pt.15 [-]","[e7a729]マジスターの館 Pt.15 [-]"
+MagistersMansionMainQuest15_title,"[e7a729]Magisters Mansion Pt.15 [-]","[e7a729]マジスターの館 Pt.15 [-]"
+MagistersMansionMainQuest15_offer_title,"[e7a729]Magisters Mansion Pt.15 [-]","[e7a729]マジスターの館 Pt.15 [-]"
+MagistersMansionMainQuest15_offer,"[e7a729]He's down. But it's not over. We need to get out of this room.  The [-][1cb431]door next to me[-][e7a729] doesn't seem too strong. I bet we could lock pick that one. Here use this lock pick.[-]","[e7a729]彼が倒れているうちに、早く脱出しましょう。\n\n[-][1cb431]私の横にあるドア[-][e7a729]なら何とかロックピックで開けそうです。\nこのロックピックを使ってみてください。\n\nシエラのロックピックを鞄に入れた状態で、ストーンアックスを手に持ち、ドアを右クリックでアップグレードしてください。[-]"
+
+MagistersMansionMainQuest16,"[e7a729]Magisters Mansion Pt.16 [-]","[e7a729]マジスターの館 Pt.16 [-]"
+MagistersMansionMainQuest16_title,"[e7a729]Magisters Mansion Pt.16 [-]","[e7a729]マジスターの館 Pt.16 [-]"
+MagistersMansionMainQuest16_offer_title,"[e7a729]Magisters Mansion Pt.16 [-]","[e7a729]マジスターの館 Pt.16 [-]"
+MagistersMansionMainQuest16_offer,"[db6619]*[-][2bd99f]Siera[-][db6619] pats you on the back.*[-][e7a729]You've done well today... If we make it out of this alive, I'll reward you very well... Look at this. The [-][ed3119]boiler operator[-][e7a729] was holding onto this key. It looks different than the others. It looks like it would go to an important door... Possibly one that keeps [-][2bd99f]Lillian[-][e7a729] safe and out of the path of intruders like us... We need to find this door. Don't worry. That wall is a [-][1cb431]false wall[-][e7a729]. Just hack it down with an axe.[-]","[db6619]*シエラが手を叩き、喜んでいます*\n[e7a729]上手くいきましたね！\nここから無事脱出できたら、報酬は弾みます！\n\nこれを見てください、[-][ed3119]火夫[-][e7a729]が持っていた鍵です、他の鍵とは比べ物にならないほど豪華で重要そうな鍵です...\n\nきっと[-][2bd99f]リリアン[-][e7a729]の居場所に通じる鍵に違いありません、この鍵用のドアを探しましょう。\n\n行き止まりに見えますが、そこの壁は[-][1cb431]脆く[-][e7a729]、簡単に壊せるようになっています。[-]"
+
+MagistersMansionMainQuest17,"[e7a729]Magisters Mansion Pt.17 [-]","[e7a729]マジスターの館 Pt.17 [-]"
+MagistersMansionMainQuest17_title,"[e7a729]Magisters Mansion Pt.17 [-]","[e7a729]マジスターの館 Pt.17 [-]"
+MagistersMansionMainQuest17_offer_title,"[e7a729]Magisters Mansion Pt.17 [-]","[e7a729]マジスターの館 Pt.17 [-]"
+MagistersMansionMainQuest17_offer,"[db6619]*[-][2bd99f]Siera[-][db6619] breathes out a sigh of relief*[-][e7a729] I know we've been through a lot. But we're here now. She's just there. I know it. That fire is too ominous. Please, friend... Destroy this wicked witch once and for all. Be careful though. She's very strong despite her tiny appearance. This will not be an easy battle. [-][1cb431]Step forward[-][e7a729] when you're ready... And good luck.[-]","[db6619]*[-][2bd99f]シエラ[-][db6619]があなたの背中を軽く叩きながら一息つきます。*\n[-][e7a729]見つかりましたね...\n[e7a729]大変でしたけど、やっと見つけました。\n\n彼女はこの先にある不吉な炎の中にいます...\nどうか、邪悪な彼女を永遠に葬ってください！\n\n見かけによらず非常に強力なので、油断しないでくださいね。\nそう簡単には倒せないはずです。\n\n準備が整ったら[-][1cb431]進んで[-][e7a729]ください。[-]"
+
+MagistersMansionMainQuest18,"[e7a729]Magisters Mansion Pt.18 [-]","[e7a729]マジスターの館 Pt.18 [-]"
+MagistersMansionMainQuest18_title,"[e7a729]Magisters Mansion Pt.18 [-]","[e7a729]マジスターの館 Pt.18 [-]"
+MagistersMansionMainQuest18_offer_title,"[e7a729]Magisters Mansion Pt.18 [-]","[e7a729]マジスターの館 Pt.18 [-]"
+MagistersMansionMainQuest18_offer,"[db6619]*As [-][2bd99f]Lillian[-][db6619] falls, [-][2bd99f]Siera[-][db6619] screams in passion at the victory.*[-][e7a729] Finally! It's over. My life long dream to end this wicked woman has finally come true. She cannot murder anymore.[-][db6619] *[-][2bd99f]Siera[-][db6619] walks over to the body.*[-][e7a729] Her essence is still alive. Just barely. You need to finish the job. [-][1cb431]Pick up her essence[-][e7a729]. We'll destroy it completely.[-]","[db6619]*ついに[-][2bd99f]リリアン[-][db6619]が倒れ、[-][2bd99f]シエラ[-][db6619]が喜びの叫びをあげました。*[-]\n\n[e7a729]終わりましたね！\nあの時からずっと彼女を倒す事だけに集中してきました。\n\nこれでもう二度と彼女に誰かが殺される事が無くなります。[-]\n\n[db6619] *[-][2bd99f]シエラ[-][db6619]が[-][2bd99f]リリアン[-][db6619]の亡骸へ近づきます。*[-]\n\n[e7a729]まだ彼女の本質であるエッセンスが残っていますね...\n[-][1cb431]リリアンのエッセンスを拾って回収[-][e7a729]し、復活しないように完全に消滅させる必要があります。[-]"
+
+MagistersMansionMainQuest19,"[e7a729]Magisters Mansion Pt.19 [-]","[e7a729]マジスターの館 Pt.19 [-]"
+MagistersMansionMainQuest19_title,"[e7a729]Magisters Mansion Pt.19 [-]","[e7a729]マジスターの館 Pt.19 [-]"
+MagistersMansionMainQuest19_offer_title,"[e7a729]Magisters Mansion Pt.19 [-]","[e7a729]マジスターの館 Pt.19 [-]"
+MagistersMansionMainQuest19_offer,"[db6619]*The essence is cold to the touch, but warms your hands at the same time. You feel a surge of power as you cradle it to your body.*[-][e7a729] I've spent my whole life chasing this moment. It has consumed my soul. I've left behind family, my husband, friends... Everything. Just for this moment. Knowing that it's finally over is a huge relief to me... But I cannot do it. I need you to destroy her essence. [-][1cb431]Burn it in the fire over there.[-]","[db6619]*不思議です、拾い上げると冷たいのに、なぜか持っている手がじわじわと温かくなってきます。\n体に近付けると、力が湧いて来るような感覚があります。*[-]\n\n[e7a729]ずっとこの瞬間を待っていました。\n\n何もかも捨て、取り憑かれたかのように、彼女を止める事しか考える事が出来ませんでした。\n\nお願いです、そのエッセンスを炎の中に入れ、完全に消滅させてください。\n\n鞄に[-][2bd99f]リリアンのエッセンス[-][e7a729]が入った状態で、ストーンアックスを手に持ち、[-][2bd99f]永遠の炎[-][e7a729]を右クリックでアップグレードしてください。[-]"
+
+MagistersMansionMainQuest20,"[e7a729]Magisters Mansion Pt.20 [-]","[e7a729]マジスターの館 Pt.20 [-]"
+MagistersMansionMainQuest20_title,"[e7a729]Magisters Mansion Pt.20 [-]","[e7a729]マジスターの館 Pt.20 [-]"
+MagistersMansionMainQuest20_offer_title,"[e7a729]Magisters Mansion Pt.20 [-]","[e7a729]マジスターの館 Pt.20 [-]"
+MagistersMansionMainQuest20_offer,"[db6619]*The [-][2bd99f]Eternal Fire[-][db6619] explodes from the concentrated essence. A figure appears as the smoke clears. It turns to [-][2bd99f]Siera[-][db6619].*[-][e7a729] You've done it, child. With the help of this traveler, you've done it.[-][db6619]*The figure turns to face you.*[-][e7a729] I... am [-][1cb431]Giovani[-][e7a729]. I am very grateful of you for cleansing the hatred from this mansion. I know it wasn't easy.[-][db6619] *[-][2bd99f]Siera[-][db6619] speaks up with tears in her eyes.*[-][e7a729] FATHER! Oh father, I'm so sorry! I was young. I did not know what mother was doing![-][db6619] *[-][2bd99f]Giovani[-][db6619] turns to [-][2bd99f]Siera[-][db6619].*[-][e7a729] Nonsense, daughter. Do not blame yourself for this. Your mother, though I loved her until death, was corrupted by pure evil. Her actions are her own and those who assisted her. Not yours. Now stand up.[-][db6619] *[-][2bd99f]Giovani[-][db6619] looks at you one more time.*[-][e7a729] Traveler, thank you. Please take this as a token of my appreciation.[-][db6619] *[-][2bd99f]Giovani[-][db6619] holds out his hands, gesturing you to come to him.*[-]","[db6619]*エッセンスを入れると、眩い光と共に男性の姿が現れます。*[-]\n[e7a729]わが子よ、ついにやりましたね。[-]\n[db6619]*そう言った男性が次はあなたへと目を向けました。*[-]\n[e7a729]私は[-][1cb431]ジョヴァンニ[-][e7a729]、この館から邪悪な者たちを排除してくれてありがとうございます。[-]\n[db6619] *[-][2bd99f]シエラ[-][db6619]が涙を浮かべながら男性へと駆け寄ります。*[-]\n[e7a729]父様！　ごめんなさい！\n母様の企みに気付けなくて、本当にごめんなさい！[-]\n[db6619]*ジョヴァンニが[-][2bd99f]シエラ[-][db6619]に向かって微笑みます。*[-]\n[e7a729]謝る事などないんだよ。\nお前は何も悪くない、さぁ、立ち上がるんだ。[-]\n[db6619] *ジョヴァンニが何かを取り出しています。*[-]\n[e7a729] 旅のお方、どうか[-][1cb431]これ[-][e7a729]を受け取ってください。[-]\n[db6619] *[-][1cb431]ジョヴァンニ[-][db6619]が何かを手に持っています。*[-]"
+
+MagistersMansionMainQuest21,"[e7a729]Magisters Mansion Pt.21 [-]","[e7a729]マジスターの館 Pt.21 [-]"
+MagistersMansionMainQuest21_title,"[e7a729]Magisters Mansion Pt.21 [-]","[e7a729]マジスターの館 Pt.21 [-]"
+MagistersMansionMainQuest21_offer_title,"[e7a729]Magisters Mansion Pt.21 [-]","[e7a729]マジスターの館 Pt.21 [-]"
+MagistersMansionMainQuest21_offer,"[db6619]*As you take the [-][1cb431]pendant[-][db6619], [-][2bd99f]Giovani's[-][db6619] ghost vanishes from sight. [-][2bd99f]Siera[-][db6619] looks at you with relief.*[-][e7a729] Thank you, friend. Your actions will never be forgotten, just like my memories of my father. He's grateful too. You put an end to his torment from my mother... Take care of that [-][1cb431]pendant[-][db6619]. Go ahead and put it on...[-][db6619] *[-][2bd99f]Siera[-][db6619] bows to you in appreciation, then waves goodbye.*[-][e7a729] Until next time, friend. Stay safe.[-]","[db6619]*[-][1cb431]ペンダント[-][db6619]を受け取った瞬間[-][1cb431]ジョヴァンニ[-][db6619]の姿が消えます。*[-]\n\n[e7a729]本当にありがとうございます、このご恩は一生忘れません。\n\n父もやっと自由になれて喜んでいます。\n\nその[-][1cb431]ペンダント[-][e7a729]はうちに代々受け継がれてきたものなので、大切にしてくださいね。[-]\n\n[db6619] *[-][2bd99f]シエラ[-][db6619]が晴れ晴れとした表情で、バイバイと手を振っています。*[-]\n\n[e7a729]それでは、また会う時まで、お元気で。[-]"
+
+--------------------------Achievements------------------------------
+MagistersMansionEssenceQuest,"[e7a729]Side Quest: Burial Rites [-]","[e7a729]サイドクエスト: 死者を弔う [-]"
+MagistersMansionEssenceQuest_title,"[e7a729]Side Quest: Burial Rites [-]","[e7a729]サイドクエスト: 死者を弔う [-]"
+MagistersMansionEssenceQuest_offer_title,"[e7a729]Side Quest: Burial Rites[-]","[e7a729]サイドクエスト: 死者を弔う [-]"
+MagistersMansionEssenceQuest_offer,"[e7a729]Find where the accomplices stashed their essence and find a way to bury them. [-]","[e7a729]リリアンの共犯者の3人がそれぞれのエッセンスを館内に隠しています。\n\n3つのエッセンスを全て見つけ、無力化したエッセンスをクラフトしましょう。\n\n無力化したエッセンスがインベントリ内にある状態で、ストーンアックスを手に持ち、裏庭のどこかにある、アップグレード可能な死体袋を探します。[-]"
+
+MagistersMansionFoodQuest,"[e7a729]Side Quest: Pizza Party [-]","[e7a729]サイドクエスト: ピザパーティー[-]"
+MagistersMansionFoodQuest_title,"[e7a729]Side Quest: Pizza Party [-]","[e7a729]サイドクエスト: ピザパーティー[-]"
+MagistersMansionFoodQuest_offer_title,"[e7a729]Side Quest: Pizza Party[-]","[e7a729]サイドクエスト: ピザパーティー[-]"
+MagistersMansionFoodQuest_offer,"[e7a729]These poor souls have been waiting ages for supper. You could probably spare a bit of food to feed them, right?[-]","[e7a729]ここにいる方達は食事をする寸前に亡くなったため、成仏出来ないようです。\n\n可哀想な彼らに食事を出しましょう。\n\nインベントリ内に焦げ肉が入った状態で、ストーンアックスを手に持ち、テーブルの上のディナープレートを右クリックでアップグレードしてください。[-]"

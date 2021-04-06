@@ -1,0 +1,46 @@
+<configs>
+	<append xpath="/recipes">
+	
+		<recipe name="+WorkingCoffeeMachine" count="1" craft_area="workbench" craft_time="1200">
+			<ingredient name="resourceMetalPipe" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+
+		<recipe name="drinkJarCoffee" count="1" craft_area="+WorkingCoffeeMachine" craft_time="25">
+	       <ingredient name="resourceCropCoffeeBeans" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>		
+		
+		<recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="+WorkingCoffeeMachine" craft_time="25">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+		</recipe>		
+
+		<recipe name="drinkMugWienerMelange" count="1" craft_area="+WorkingCoffeeMachine" craft_time="25">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="drinkMugCoffee" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+		</recipe>
+		
+			<recipe name="drinkMugCappacino" count="1" craft_area="+WorkingCoffeeMachine" craft_time="25">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+				<ingredient name="drinkMugCoffee" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+		</recipe>
+		
+			<recipe name="drinkMugLatteMachiato" count="1" craft_area="+WorkingCoffeeMachine" craft_time="25">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+				<ingredient name="drinkMugCoffee" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+		</recipe>
+		
+		<recipe name="drinkMugLatteCaramel" count="1" craft_area="+WorkingCoffeeMachine" craft_time="25">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+				<ingredient name="drinkMugCoffee" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+		</recipe>
+		
+	</append>
+	
+</configs>

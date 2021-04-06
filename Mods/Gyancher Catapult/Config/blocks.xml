@@ -1,0 +1,76 @@
+<configs>
+    <append xpath="/blocks">
+		<block name="catapultTrap1">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="JumpPad"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="DescriptionKey" value="catapultTrapDesc"/>    
+			<property name="StabilitySupport" value="false" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="CustomIcon" value="pressureplate"/>
+			<property name="Model" value="Entities/Electrical/pressure_platePrefab"/> <property name="HandleFace" value="Bottom"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterExchange" value="imposterPlate" param1="143"/>
+			<property name="CanPickup" value="true"/>
+			<property name="TakeDelay" value="5"/>    
+			<property name="RequiredPower" value="0"/>
+			<property name="Damage" value="5" />
+			<property name="Damage_received" value="5" />
+			<property name="Group" value="Science"/>
+			<property class="RepairItems">
+				<property name="forgedIron" value="8"/>
+				<property name="resourceMechanicalParts" value="1"/>
+				<property name="resourceElectricParts" value="1"/>
+			</property>
+			<property name="BuffsWhenWalkedOn" value="JumpPadBuff"/>
+			<drop event="Harvest" name="resourceElectricParts" count="0,1" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="0,1" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceSpring" count="0,1" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0" />
+			<drop event="Destroy" name="Catapult" count="1" tool_category="Disassemble" />
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="EconomicValue" value="950"/>
+		</block> 
+		
+		<block name="catapultTrap2">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="JumpPad"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="DescriptionKey" value="catapultTrapDesc"/>    
+			<property name="StabilitySupport" value="false" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="CustomIcon" value="pressureplateLong"/>
+			<property name="Model" value="Entities/Electrical/pressure_plate_longPrefab"/> <property name="HandleFace" value="Bottom"/>
+			<property name="MultiBlockDim" value="5,1,1"/>
+			<property name="ImposterExchange" value="imposterPlate" param1="143"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="CanPickup" value="true"/>
+			<property name="TakeDelay" value="5"/>    
+			<property name="RequiredPower" value="0"/>
+			<property name="Damage" value="5" />
+			<property name="Damage_received" value="5" />
+			<property name="Group" value="Science"/>
+			<property class="RepairItems">
+				<property name="forgedIron" value="8"/>
+				<property name="resourceMechanicalParts" value="1"/>
+				<property name="resourceElectricParts" value="1"/>
+			</property>
+			<property name="BuffsWhenWalkedOn" value="JumpPadBuff"/>
+			<drop event="Harvest" name="resourceElectricParts" count="0,1" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="0,1" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceSpring" count="0,1" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0" />
+			<drop event="Destroy" name="Catapult" count="1" tool_category="Disassemble" />
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="EconomicValue" value="950"/>
+		</block> 
+		
+		
+		
+    </append>   
+</configs>

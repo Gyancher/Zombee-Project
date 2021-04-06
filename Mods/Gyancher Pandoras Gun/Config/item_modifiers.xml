@@ -1,0 +1,117 @@
+<configs>
+  <append xpath="/item_modifiers" >
+  
+  <!--Weapon Attachments-->
+	
+	<item_modifier name="mod_ChipAI" installable_tags="vehicle,clothing,armor,weapon,tool" modifier_tags="dye" type="attachment">
+		<property name="CustomIcon" value="resourceElectronicParts"/> 
+		<property name="DescriptionKey" value="mod_ChipAIDesc"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" operation="base_set" value="10"/>
+			<passive_effect name="SkillLevel" operation="base_set" value="1"/>
+			<passive_effect name="PerkLevel" operation="base_set" value="5"/>
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".25"/>
+			<passive_effect name="MaxRange" operation="perc_add" value=".50"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".3"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".5"/>
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.3"/>
+			<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value=".4"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".4"/>
+			<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".4"/>
+		</effect_group>		
+	</item_modifier>
+	
+	<item_modifier name="mod_ChipAIarmor" installable_tags="vehicle,clothing,armor,weapon,tool" modifier_tags="dye" type="attachment">
+		<property name="CustomIcon" value="resourceElectronicParts"/> 
+		<property name="DescriptionKey" value="mod_ChipAIDesc"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffImpactBracing"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffImpactBracing"/>				
+			
+			<passive_effect name="CarryCapacity" operation="base_add" value=".2"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value=".2"/>
+			<passive_effect name="Mobility" operation="perc_add" value=".03"/>
+				
+			<passive_effect name="WalkSpeed" operation="perc_add" value=".1"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
+			<passive_effect name="JumpStrength" operation="perc_add" value=".1"/>
+			<passive_effect name="StaminaLoss" operation="perc_subtract" value="-.75" tags="jumping"/>
+		</effect_group>
+		
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="stone"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="metal"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="wood"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+		</effect_group>
+		
+		<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+		</effect_group>
+		
+		<effect_group tiered="false">
+			<requirement name="ItemHasTags" tags="armorChest"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffBandolierChest"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffBandolierChest"/>
+		</effect_group>
+		
+		<effect_group tiered="false">
+			<requirement name="ItemHasTags" tags="armorLegs"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffBandolierLegs"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffBandolierLegs"/>
+		</effect_group>
+	
+	</item_modifier>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
+		<item_property_overrides name="gunBowT3CompoundCrossbowRepeater">
+			<property name="SideOffset" value="0,0,.32"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
+		<item_property_overrides name="gunBowT3CompoundCrossbowRepeater">
+			<property name="SideOffset" value="0,0,.32"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
+		<item_property_overrides name="gunBowT3CompoundCrossbowRepeater">
+			<property name="ScopeOffset" value="0,.092,-.06"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']">
+		<item_property_overrides name="gunBowT3CompoundCrossbowRepeater">
+			<property name="ScopeOffset" value="0,.092,-.06"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
+		<item_property_overrides name="gunBowT3CompoundCrossbowRepeater">
+			<property name="ScopeOffset" value="0,.061,-.0761"/>
+			<property name="ScopeScale" value=".9,.9,.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+		<item_property_overrides name="gunBowT3CompoundCrossbowRepeater">
+			<property name="ScopeOffset" value="0,.09,-.055"/>
+			<property name="ScopeScale" value=".6,.6,.6"/>
+			<property name="ScopeCameraOffset" value=".00008,-.021,.03"/>
+		</item_property_overrides>
+	</append>
+</configs>
+
+

@@ -1,0 +1,82 @@
+﻿Key,Source,Context,Changes,english,french,japanese,german
+Chair,vehicles,item,EnChanged,Wooden Chair, Chaise En Bois,"椅子 (アクセス可能)",Holzstuhl
+Chair,vehicles,vehicle,EnChanged,Wooden Chair,Chaise En Bois,"椅子 (アクセス可能)",Holzstuhl
+Chair2,vehicles,item,EnChanged,Black Wooden Chair,Chaise Noir En Bois,"椅子2 (アクセス可能)",Schwarzer Holzstuhl
+Chair2,vehicles,vehicle,EnChanged,Black Wooden Chair,Chaise Noir En Bois,"椅子2 (アクセス可能)",Schwarzer Holzstuhl
+Chair3,vehicles,item,EnChanged,Wool Chair,Chaise En Laine,"椅子3 (アクセス可能)",Wollsessel
+Chair3,vehicles,vehicle,EnChanged,Wool Chair,Chaise En Laine,"椅子3 (アクセス可能)",Wollsessel
+Chair4,vehicles,item,EnChanged,Lounge Chair,Chaise de Salon,"椅子4 (アクセス可能)",Ledersessel
+Chair4,vehicles,vehicle,EnChanged,Lounge Chair,Chaise de Salon,"椅子4 (アクセス可能)",Ledersessel
+Chair5,vehicles,item,EnChanged,Western Chair,Chaise de Western,"ロッキングチェア (アクセス可能)",Schaukelstuhl
+Chair5,vehicles,vehicle,EnChanged,Western Chair,Chaise de Western,"ロッキングチェア (アクセス可能)",Schaukelstuhl
+Pouf,vehicles,item,EnChanged,Pouf,Pouf,"プフ (アクセス可能)",Hocker
+Pouf,vehicles,vehicle,EnChanged,Pouf,Pouf,"プフ (アクセス可能)",Hocker
+Shower,vehicles,item,EnChanged,Shower,Douche,"シャワー (アクセス可能)",Dusche
+Shower,vehicles,vehicle,EnChanged,Shower,Douche,"シャワー (アクセス可能)",Dusche
+PC,vehicles,item,EnChanged,PC,PC,"パソコン (アクセス可能)",Bürotisch
+PC,vehicles,vehicle,EnChanged,PC,PC,"パソコン (アクセス可能)",Bürotisch
+Food Table,vehicles,item,EnChanged,Food Table,Table à manger,"ダイニングテーブル (アクセス可能)",Esstisch
+Food Table,vehicles,vehicle,EnChanged,Food Table,Table à manger,"ダイニングテーブル (アクセス可能)",Esstisch
+Bath,vehicles,item,EnChanged,Bathtub,Bain,"バスタブ (アクセス可能)",Badewanne
+Bath,vehicles,vehicle,EnChanged,Bathtub,Bain,"バスタブ (アクセス可能)",Badewanne
+Jacuzzi,vehicles,item,EnChanged,Jacuzzi,Jacuzzi,"ジャグジー (アクセス可能)",Jacuzzi
+Jacuzzi,vehicles,vehicle,EnChanged,Jacuzzi,Jacuzzi,"ジャグジー (アクセス可能)",Jacuzzi
+Toilet,vehicles,item,EnChanged,Toilet,Toilettes,"トイレ (アクセス可能)",Toilette
+Toilet,vehicles,vehicle,EnChanged,Toilet,Toilettes,"トイレ (アクセス可能)",Toilette
+Superior Couch,vehicles,item,EnChanged,Superior Couch,Canapé,"ソファ (アクセス可能)",3-Sitzer Sofa
+Superior Couch,vehicles,vehicle,EnChanged,Superior Couch,Canapé,"ソファ (アクセス可能)",3-Sitzer Sofa
+Piano,vehicles,item,EnChanged,Piano,Piano,"ピアノ (アクセス可能)",Klavier
+Piano,vehicles,vehicle,EnChanged,Piano,Piano,"ピアノ (アクセス可能)",Klavier
+Bed,vehicles,item,EnChanged,Bed,Lit,"ベッド (アクセス可能)",Bett
+Bed,vehicles,vehicle,EnChanged,Bed,Lit,"ベッド (アクセス可能)",Bett
+Hammock,vehicles,item,EnChanged,Hammock,Hamac,"ハンモック (アクセス可能)",Hängematte
+Hammock,vehicles,vehicle,EnChanged,Hammock,Hamac,"ハンモック (アクセス可能)",Hängematte
+Recliner Chair,vehicles,item,EnChanged,Recliner Chair,Chaise inclinable,"リクライニングチェア (アクセス可能)",Liegesessel
+Recliner Chair,vehicles,vehicle,EnChanged,Recliner Chair,Chaise inclinable,"リクライニングチェア (アクセス可能)",Liegesessel
+"Bed Frame",blocks,Block,KeyChanged EnChanged,Bed Structure,Structure de lit,"ベッドフレーム",Bettgestell
+"Bed Frame ",blocks,Block,KeyChanged EnChanged,Bed Structure,Structure de lit,"ベッドフレーム",Bettgestell
+Trone,vehicles,item,EnChanged,Throne,Trone,"玉座 (アクセス可能)",Eiserner Thron
+Trone,vehicles,vehicle,EnChanged,Throne,Trone,"玉座 (アクセス可能)",Eiserner Thron
+Ballchair,vehicles,item,EnChanged,Ball Chair,Chaise oeuf,"ボールチェア (アクセス可能)",Ball Sessel
+Ballchair,vehicles,vehicle,EnChanged,Ball Chair,Chaise oeuf,"ボールチェア (アクセス可能)",Ball Sessel
+Bar Stool,vehicles,item,EnChanged,Bar Stool,Chaise de bar,"バースツール (アクセス可能)",Barhocker
+Bar Stool,vehicles,vehicle,EnChanged,Bar Stool,Chaise de bar,"バースツール (アクセス可能)",Barhocker
+Carousel,vehicles,item,EnChanged,Carousel,Tourniquet,"回転遊具 (アクセス可能)",Kinderkarussell
+Carousel,vehicles,vehicle,EnChanged,Carousel,Tourniquet,"回転遊具 (アクセス可能)",Kinderkarussell
+Swing,vehicles,item,EnChanged,Swing,Balançoire,"ブランコ (アクセス可能)",Hollywoodschaukel
+Swing,vehicles,vehicle,EnChanged,Swing,Balançoire,"ブランコ (アクセス可能)",Hollywoodschaukel
+Bench,vehicles,item,EnChanged,Bench,Banc,"ベンチ (アクセス可能)",Holzbank
+Bench,vehicles,vehicle,EnChanged,Bench,Banc,"ベンチ (アクセス可能)",Holzbank
+"Bed 2",vehicles,item,EnChanged,Bed 2,Lit 2,"ベッド2 (アクセス可能)",Bett(2)
+"Bed 2",vehicles,vehicle,EnChanged,Bed 2,Lit 2,"ベッド2 (アクセス可能)",Bett(2)
+"Bed Frame 2",blocks,Block,KeyChanged EnChanged,Bed Structure 2,Structure de lit 2,"ベッドフレーム2",Bettgestell(2)
+"Bed Frame 2 ",blocks,Block,KeyChanged EnChanged,Bed Structure 2,Structure de lit 2,"ベッドフレーム2",Bettgestell(2)
+"Golden Toilet",vehicles,item,EnChanged,Toilet,Toilettes en or,"黄金トイレ (アクセス可能)",Goldene Toilette
+"Golden Toilet",vehicles,vehicle,EnChanged,Toilet,Toilettes en or,"黄金トイレ (アクセス可能)",Goldene Toilette
+
+
+chairbasicdesc,vehicles,vehicle,EnChanged,"Place in the world Using Right Click \nPress E to sit in it \nPress Horn key (X) to play sound","Appuyer sur Clic Droit pour placer \nAppuyer sur E pour s'asseoir \nAppuye sur la touche klaxon (X) pour jouer un son","手に持った状態で地面に向け右クリックで設置出来ます。\n\nEキーを押すと座る事が可能です。\n\nXキーを押すと、専用の音が鳴ります。\n\n使用中はスタミナが回復するバフが付きます。","Rechtsklick zum platzieren in der Welt. \nDrücke E um dich hinzusetzen. \nDrücke die Hupentaste (X) um einen Ton abzuspielen."
+chairactivedesc,vehicles,vehicle,EnChanged,"Place in the world Using Right Click \nPress E to sit in it \nPress Horn key (X) to play sound  \nPress Headlight key (F) to turn on","Appuyer sur Clic Droit pour placer \nAppuyer sur E pour s'asseoir \nAppuyer sur la touche klaxon (X) pour jouer un son \nAppuye sur la touche phares (F) pour allumer","手に持った状態で地面に向け右クリックで設置出来ます。\n\nEキーを押すと使用する事が可能です。\n\nXキーを押すと、専用の音が鳴ります。\n\n使用中はスタミナが回復するバフが付きます。\n\nFキーを押すと専用のアクションが開始します。","Rechtsklick zum platzieren in der Welt. \nDrücke E um dich hinzusetzen. \nDrücke die Hupentaste (X) um einen Ton abzuspielen. \nDrücke die Scheinwerfertaste (F) zum einschalten."
+chairwesterndesc,vehicles,vehicle,EnChanged,"Place in the world Using Right Click \nPress E to sit in it \nPress Horn key (X) to play sound  \nPress Space to swing","Appuyer sur Clic Droit pour placer \nAppuyer sur E pour s'asseoir \nAppuyer sur la touche klaxon (X) pour jouer un son \nAppuye sur espace pour vous balancer","手に持った状態で地面に向け右クリックで設置出来ます。\n\nEキーを押すと使用する事が可能です。\n\nXキーを押すと、専用の音が鳴ります。\n\n使用中はスタミナが回復するバフが付きます。\n\nスペースキーを押すと揺らす事が出来ます。","Rechtsklick zum platzieren in der Welt. \nDrücke E um dich hinzusetzen. \nDrücke die Hupentaste (X) um einen Ton abzuspielen. \nDrücke die Springtaste (Leertaste) zum schaukeln."
+chairbeddesc,vehicles,vehicle,EnChanged,"Place in the world Using Right Click \nPress E to sit in it \nPress Horn key (X) to play sound  \nGrants you rested buff after a long nap","Appuyer sur Clic Droit pour placer \nAppuyer sur E pour s'asseoir \nAppuyer sur la touche klaxon (X) pour jouer un son \nObtenez un buff après un bon somme","手に持った状態で地面に向け右クリックで設置出来ます。\n\nEキーを押すと寝る事が可能です。\n\nXキーを押すと、専用の音が鳴ります。\n\n使用するとスタミナと体力が回復するバフが付きますが、長時間寝ていると空腹になるので、お気を付けください。","Rechtsklick zum platzieren in der Welt. \nDrücke E um dich hinzusetzen. \nDrücke die Hupentaste (X) um einen Ton abzuspielen. \nGewährt einen Erholungs-Buff nach einem Nickerchen."
+chairbedstructuredesc,blocks,Block,EnChanged,"Place a Bed above it to get a rested buff when sleeping\nRight click with a repair tool to set as active spawn point \nPress E to pick it up","Posez un lit par dessus pour obtenir un buff en dormant\nClic droit avec un outil de réparation pour rendre le spawn actif \nAppuyer sur E pour ramasser","手に持った状態で地面に向け右クリックで設置出来ます。\n\nベッドフレームはリスポーン地点として使用可能です。\n\nベッド (アクセス可能)などの乗り物をベッドフレームの上にセットすることも可能です。","Platziere ein Bett darüber um einen Erholungs-Buff beim Schlafen zu erhalten. \ Rechtsklick mit einem Reparaturwerkzeug um es als aktiven Spawnpunkt festzulegen. \ Drücke E um es aufzunehmen."
+toiletbasicdesc,vehicles,vehicle,EnChanged,"Place in the world Using Right Click \nPress E to sit in it \nPress Horn key (X) to make the magic happen  \nCan cure dystentery if you're patient enough","Appuyer sur Clic Droit pour placer \nAppuyer sur E pour s'asseoir \nAppuyer sur la touche klaxon (X) pour ouvrir les vannes \nUn bon remède contre la dysenterie","手に持った状態で地面に向け右クリックで設置出来ます。\n\nEキーを押すと使用する事が可能です。\n\nXキーを押すと、専用の音が鳴ります。\n\nアクセスして一定時間が経過すると、赤痢が治りますが、長時間座っていると喉が渇くのでお気を付けください。","Rechtsklick zum platzieren in der Welt. \nDrücke E um dich hinzusetzen. \nDrücke die Hupentaste (X) um einen abzuseilen. \nKann mit genug Geduld Durchfall kurieren."
+carouseldesc,vehicles,vehicle,EnChanged,"Place in the world Using Right Click \nPress E to sit in it \nPress Horn key (X) to play sound  \nPress Left and Right (A-D) to spin","Appuyer sur Clic Droit pour placer \nAppuyer sur E pour s'asseoir \nAppuyer sur la touche klaxon (X) pour jouer un son \nAppuye sur Droite et Gauche  (Q-D) pour tourner","手に持った状態で地面に向け右クリックで設置出来ます。\n\nEキーを押すと使用する事が可能です。\n\nXキーを押すと、専用の音が鳴ります。\n\n使用中に左右の方向キーを押すと回す事が出来ます。","Rechtsklick zum platzieren in der Welt. \nDrücke E um dich hinzusetzen. \nDrücke die Hupentaste (X) um einen Ton abzuspielen. \nDrücke Links und Rechts (A-D) um dich zu drehen."
+
+"Sleeping",buffs,Buff,EnChanged,"Sleeping","Endormi","睡眠中","Schlafend"
+"Rested",buffs,Buff,EnChanged,"Rested","Reposé","元気いっぱい","Ausgeruht"
+"Sleepdesc",buffs,Buff,EnChanged,"Rested","Reposé","しっかりと寝ることは大切ですね。\n\n元気いっぱいになり、スタミナ回復速度が上昇しています！","Ausgeruht"
+"Toilet",buffs,Buff,EnChanged,"Toilet","Toilettes","トイレ","Toilette"
+"Rest",buffs,Buff,EnChanged,"Rest","Repos","休憩中","Ruhend"
+
+
+"Sleep well my friend.                                     Regenerates Health slowly                             Grants you Rested Buff after a while.           You might be hungry when you wake up.",buffs,Buff,EnChanged,"Sleep well my friend. \nRegenerates Health slowly \nGrants you Rested Buff after a while. \nYou might be hungry when you wake up.","Bonne nuit mon ami \nRégénère la vie lentement \nObtenez le buff reposé après 20s \nTout cela vous donne faim","ぐっすりお休みください。\n寝ている間は体力が徐々に回復します。\n少し時間がたつと、元気いっぱいバフが付与されます\n\n目覚めたらお腹が空いているかもしれません。","Schlaf gut, mein Freund. \nRegeneriert langsam die Gesundheit. \nGewährt einen Erholungs-Buff nach einer Weile. \nDu könntest hungrig sein, wenn du aufwachst."
+"Sleeping isn't overrated.                             Your stamina is on fire ! ",buffs,Buff,EnChanged,"Sleeping isn't overrated. \nYour stamina is on fire ! ","Ça fait du bien de dormir. \n Vous pétez le feu !","ゆっくりと寝ましたね。\n\n一時的にスタミナ回復速度が大幅に上がっています。","Schlafen wird nicht überbewertet. \nDu sprühst vor Energie und Ausdauer!"
+"You feel relaxed...",buffs,Buff,EnChanged,"You feel relaxed...","Vous êtes détendu...","とてもリラックスしています...","Du fühlst dich entspannt ..."
+"You got a great day ahead of you!",buffs,Buff,EnChanged,"You got a great day ahead of you!","Une nouvelle journée commence!","今日は素晴らしい一日になりそうです！","Dir steht ein toller Tag bevor!"
+"Makes you thirsty.                                     Removes dysentery after a while.",buffs,Buff,EnChanged,"Makes you thirsty. \nRemoves dysentery after a while.","Peut vous donner soif. \nSupprime la dysenterie au bout d'un certain temps","一定時間たつと赤痢が治ります。\n\n使用すると喉が渇くのでご注意ください。","Macht dich durstig. \nBeseitigt Durchfall nach einer Weile."
+"I wish I had a phone right now..",buffs,Buff,EnChanged,"I wish I had a phone right now..","Un téléphone ça serait pas de refus","暇つぶしのためにスマホ持ってくればよかったかもしれません...","Ich wünschte ich hätte jetzt ein Smartphone um Eihwaz Geht auf Youtube zu gucken."
+"You are resting.",buffs,Buff,EnChanged,"You are resting.","Vous vous reposez.","ゆっくりと休んでいるため、スタミナが素早く回復します。\n\n最大スタミナは回復しません。","Du ruhst dich aus."
+"That's comfy.",buffs,Buff,EnChanged,"That's comfy.","C'est confortable.","座り心地最高です。","Das ist gemütlich."
+
+

@@ -1,0 +1,125 @@
+<JaxTeller718>
+	<append xpath="/blocks">
+		<block name="gardenFlower01GY">
+			<property name="Extends" value="treeGrassMaster"/>
+			<property name="CustomIcon" value="gardenFlower01GY"/>
+			<property name="Class" value="Tallgrass"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_GardenFlowers.unity3d?gardenFlower01.prefab"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+		<block name="gardenFlower02GY">
+			<property name="Extends" value="treeGrassMaster"/>
+			<property name="CustomIcon" value="gardenFlower02GY"/>
+			<property name="Class" value="Tallgrass"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_GardenFlowers.unity3d?gardenFlower02.prefab"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+		<block name="gardenFlower03GY">
+			<property name="Extends" value="treeGrassMaster"/>
+			<property name="CustomIcon" value="gardenFlower03GY"/>
+			<property name="Class" value="Tallgrass"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_GardenFlowers.unity3d?gardenFlower03.prefab"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+		<block name="gardenFlower04GY">
+			<property name="Extends" value="treeGrassMaster"/>
+			<property name="CustomIcon" value="gardenFlower04GY"/>
+			<property name="Class" value="Tallgrass"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_GardenFlowers.unity3d?gardenFlower04.prefab"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+		<block name="gardenFlower05GY">
+			<property name="Extends" value="treeGrassMaster"/>
+			<property name="CustomIcon" value="gardenFlower05GY"/>
+			<property name="Class" value="Tallgrass"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_GardenFlowers.unity3d?gardenFlower05.prefab"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+		<block name="gardenFlowerRandomLootHelperGY">
+			<property name="Extends" value="treeGrassMaster"/>
+			<property name="CustomIcon" value="gardenFlower01GY"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Tallgrass"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_GardenFlowers.unity3d?gardenFlower01.prefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+		</block>
+		<block name="pottedPlant01GY">
+			<!-- pottedPlant -->
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Material" value="MfertilizedClayPlanter"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_PottedPlants.unity3d?pottedPlant1Prefab.prefab"/>
+			<property name="Path" value="solid"/>
+			<property name="CanPickup" value="true"/>
+			<drop event="Destroy" name="resourceClayLump" count="6"/>
+			<drop event="Fall" name="resourceClayLump" count="6" prob="1.0" stick_chance="0"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="EconomicBundleSize" value="20"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+		
+
+		<block name="pottedPlant03GY">
+			<!-- pottedPlant -->
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Material" value="MfertilizedClayPlanter"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_PottedPlants.unity3d?pottedPlant3Prefab.prefab"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Path" value="solid"/>
+			<property name="CanPickup" value="true"/>
+			<drop event="Destroy" name="resourceClayLump" count="6"/>
+			<drop event="Fall" name="resourceClayLump" count="6" prob="1.0" stick_chance="0"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="EconomicBundleSize" value="20"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+		
+
+		<block name="pottedPlantRandomLootHelperGY">
+			<property name="CustomIcon" value="pottedPlant01GY"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MfertilizedClayPlanter"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_PottedPlants.unity3d?pottedPlant1Prefab.prefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<drop event="Destroy" name="resourceClayLump" count="6"/>
+			<drop event="Fall" name="resourceClayLump" count="6" prob="1.0" stick_chance="0"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+		</block>
+		
+<block name="treePlant02GY"> <!-- pottedPlant -->
+	<property name="CustomIcon" value="treePlant02"/>
+	<property name="DescriptionKey" value="furnitureGroupDesc"/>
+	<property name="Material" value="MfertilizedClayPlanter"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Plants/plant02" param1="main_mesh"/>
+	<property name="CanPickup" value="true"/>
+	<drop event="Destroy" name="resourceClayLump" count="6"/>
+	<drop event="Fall" name="resourceClayLump" count="6" prob="1.0" stick_chance="0"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+</block>
+	</append>
+</JaxTeller718>

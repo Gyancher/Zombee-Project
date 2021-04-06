@@ -1,0 +1,94 @@
+<configs>
+	<remove xpath="//entitygroup[starts-with(@name, 'Bandits')]" />
+	<remove xpath="//entitygroup[starts-with(@name, 'Survivors')]" />
+
+	
+
+	<!-- Stop the CPHumans from spawning  -->   
+		
+	<append xpath="/entitygroups">
+		<entitygroup name="BanditsAll">		
+			<entity name="npcEveEmptyHand" prob=".03" />
+			<entity name="npcEveClub" prob=".03" />
+			<entity name="npcEveKnife" prob=".03" />
+			<entity name="npcEveSMG" prob=".01" />
+			<entity name="npcEveAK47" prob=".01" />
+			<entity name="npcEveHunter" prob=".01" />
+			<entity name="npcEvePistol" prob=".02" />
+			<entity name="npcEveXBow" prob=".02" />
+			<entity name="npcEveBow" prob=".02" />
+			<entity name="npcHeavyGuyEmptyHand" prob=".03" />
+			<entity name="npcHeavyGuyClub" prob=".03" />
+			<entity name="npcHeavyGuyKnife" prob=".03" />
+			<entity name="npcHeavyGuyPistol" prob=".02" />
+			<entity name="npcHeavyGuyBow" prob=".02" />	
+			<entity name="npcHarleyEmptyHand" prob=".03" />
+			<entity name="npcHarleyClub" prob=".03" />
+			<entity name="npcHarleyKnife" prob=".03" />
+			<entity name="npcHarleyPistol" prob=".02" />
+			<entity name="npcHarleyBow" prob=".02" />
+		</entitygroup>
+	</append> 
+	
+	
+	
+	<append xpath="/entitygroups/entitygroup[ starts-with(@name, 'EnemyAnimals')]">	
+		<entity name="npcEveEmptyHand" prob=".03" />
+		<entity name="npcEveClub" prob=".03" />
+		<entity name="npcEveKnife" prob=".03" />
+		<entity name="npcEveSMG" prob=".01" />
+		<entity name="npcEveAK47" prob=".01" />
+		<entity name="npcEveHunter" prob=".01" />
+		<entity name="npcEvePistol" prob=".02" />
+		<entity name="npcEveXBow" prob=".02" />
+		<entity name="npcEveBow" prob=".02" />
+		<entity name="npcHeavyGuyEmptyHand" prob=".03" />
+		<entity name="npcHeavyGuyClub" prob=".03" />
+		<entity name="npcHeavyGuyKnife" prob=".03" />
+		<entity name="npcHeavyGuyPistol" prob=".02" />
+		<entity name="npcHeavyGuyBow" prob=".02" />	
+		<entity name="npcHarleyEmptyHand" prob=".03" />
+		<entity name="npcHarleyClub" prob=".03" />
+		<entity name="npcHarleyKnife" prob=".03" />
+		<entity name="npcHarleyPistol" prob=".02" />
+		<entity name="npcHarleyBow" prob=".02" />
+	</append> 
+		
+	<append xpath="/entitygroups/entitygroup[ starts-with(@name, 'WildGameForest')]">	
+		<entity name="npcFarmerEmptyHand" prob=".03" />
+		<entity name="npcFarmerClub" prob=".03" />
+		<entity name="npcFarmerKnife" prob=".03" />
+		<entity name="npcFarmerSMG" prob=".01" />
+		<entity name="npcFarmerAK47" prob=".01" />
+		<entity name="npcFarmerHunter" prob=".01" />
+		<entity name="npcFarmerPistol" prob=".02" /> 
+		<entity name="npcFarmerXBow" prob=".02" />
+		<entity name="npcFarmerBow" prob=".02" />
+		<entity name="npcBakerEmptyHand" prob=".03" />
+		<entity name="npcBakerClub" prob=".03" />
+		<entity name="npcBakerKnife" prob=".03" />
+		<entity name="npcBakerSMG" prob=".01" />
+		<entity name="npcBakerAK47" prob=".01" />
+		<entity name="npcBakerHunter" prob=".01" />
+		<entity name="npcBakerPistol" prob=".02" />
+		<entity name="npcBakerXBow" prob=".02" />
+		<entity name="npcBakerBow" prob=".02" />
+		<entity name="npcNurseEmptyHand" prob=".03" />
+		<entity name="npcNurseClub" prob=".03" />
+		<entity name="npcNurseKnife" prob=".03" />
+		<entity name="npcNursePistol" prob=".02" />
+		<entity name="npcNurseBow" prob=".02" />
+		<entity name="npcJoel" prob=".03" />
+		<entity name="npcCowboyEmptyHand" prob=".03" />
+		<entity name="npcCowboyClub" prob=".03" />
+		<entity name="npcCowboyKnife" prob=".03" />
+		<entity name="npcCowboySMG" prob=".01" />
+		<entity name="npcCowboyAK47" prob=".01" />
+		<entity name="npcCowboyHunter" prob=".01" />
+		<entity name="npcCowboyPistol" prob=".02" />
+		<entity name="npcCowboyXBow" prob=".02" />
+		<entity name="npcCowboyBow" prob=".02" />	
+			
+	</append> 
+
+</configs>

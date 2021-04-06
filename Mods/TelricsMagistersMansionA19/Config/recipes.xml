@@ -1,0 +1,23 @@
+<configs>
+<append xpath="/recipes">
+<!-- Magisters Mansion -->
+<recipe name="GhostlyOrb4" count="1" craft_time="3">
+	<ingredient name="GhostlyOrb" count="1"/>
+	<ingredient name="GhostlyOrb2" count="1"/>
+	<ingredient name="GhostlyOrb3" count="1"/>
+</recipe>
+<recipe name="foodGhostPizza" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodCornMeal" count="2"/>
+	<ingredient name="foodRawMeat" count="2"/>
+	<ingredient name="foodCropMushrooms" count="2"/>
+</recipe>
+</append>
+
+
+
+
+
+
+
+
+</configs>

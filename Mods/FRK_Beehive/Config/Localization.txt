@@ -1,0 +1,5 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+FRK_Beehive,Blocks,block,,,Beehive
+FRK_Beehive_Desc,Blocks,block,,,"Generate your own healing honey!\n\nUnlocked with the 'Living off the Land' perk."
+FRK_Beehive_Full,Blocks,block,,,Full Beehive
+perkLivingOffTheLandRank1LongDesc,progression,perk For,,,"Harvest 2 items from wild or planted crops. Craft seeds for flowers and decorative plants like goldenrod, chrysanthemum, aloe, and yucca.\nFarm plots cost 30% less to craft.\nBuild Beehives to generate honey."

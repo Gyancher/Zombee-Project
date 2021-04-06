@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="FRK_Beehive" />
+		<Description value="Adds a beehive that generates honey. 3D Model from Blenderboom (https://sketchfab.com/3d-models/beehive-box-79e7f4b1d2db4e72bb51c804683da6bd)" />
+		<Author value="FreakUK" />
+		<Version value="A19_1.0" />
+	</ModInfo>
+</xml>

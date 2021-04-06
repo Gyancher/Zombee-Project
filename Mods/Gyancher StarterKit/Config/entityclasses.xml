@@ -1,0 +1,10 @@
+<configs>
+	<!-- Starting Items -->
+	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']" name="value">Heidi,BookOfExperience,backpackStartKit,starterPackBook,meleeToolTorch</setattribute>
+    <setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']" name="value">Heidi,BookOfExperience,backpackStartKit,starterPackBook,meleeToolTorch</setattribute>
+    <setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']" name="value">Heidi,BookOfExperience,backpackStartKit,starterPackBook,meleeToolTorch</setattribute>
+
+	<set xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='MoveSpeedPanic'][@value='1.3']/@value">.8</set>
+	<set xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='MoveSpeedPanic'][@value='1.55']/@value">1.1</set>
+	
+</configs>
